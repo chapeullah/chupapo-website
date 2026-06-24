@@ -1,0 +1,61 @@
+.work-process {
+  padding: 40px;
+}
+
+.work-process__content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.work-process__steps {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none; 
+  counter-reset: workProcessCounter;
+}
+
+.work-process__step {
+  counter-increment: workProcessCounter;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.work-process__step:not(:first-child) {
+  margin-top: 40px;
+}
+
+.work-process__step::before {
+  content: counter(workProcessCounter, decimal-leading-zero);
+
+  font-size: 26px;
+  font-weight: 700;
+
+  color: black;
+}
+
+.work-process__step-body {
+  display: flex;
+  margin-left: 48px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.work-process__step-title {
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: 700;
+}
+.work-process__step-description {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: rgba(0, 0, 0, 0.65);
+}

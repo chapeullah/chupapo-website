@@ -1,0 +1,8 @@
+.product__description {
+  padding: 40px;
+  align-items: center;
+}
+
+.product__description-text {
+  font-size: 15px;
+}

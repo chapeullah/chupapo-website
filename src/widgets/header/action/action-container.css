@@ -1,0 +1,12 @@
+.action-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+}
+
+.action-container__button-wrapper {
+  grid-column: 2;
+  height: 80%;
+}

@@ -1,0 +1,27 @@
+.header {
+  height: var(--header-height);
+
+  background-color: var(--color-bg-header);
+  color: var(--color-text-primary);
+  border-bottom: 1px solid var(--header-color-border);
+
+  backdrop-filter: blur(20px) saturate(500%);
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: 250px minmax(0, 1fr) 250px;
+
+  padding: 0 40px;
+  box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 100;
+}
+
+.header > * {
+  min-width: 0;
+}

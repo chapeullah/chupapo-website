@@ -1,0 +1,142 @@
+.work-experience {
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+  gap: 40px;
+}
+
+.work-experience__icon {
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.work-experience__list {
+  list-style: none;
+}
+
+.work-experience__item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.experience-card {
+  display: flex;
+  gap: 24px;
+
+  /* border: 1px solid #e5e7eb;
+  border-radius: 12px; */
+
+  color: #111111;
+
+  /* box-shadow: 0 1px 2px rgb(0 0 0 / 5%); */
+}
+
+.experience-card__icon-wrapper {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+.experience-card__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.experience-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card__header {
+  min-height: 48px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.experience-card__main {
+  min-width: 0;
+}
+
+.experience-card__role-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experience-card__role {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.experience-card__company {
+  margin-top: 4px;
+
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.experience-card__period {
+  margin: 0;
+
+  flex: 0 0 auto;
+
+  font-size: 14px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.experience-card__description {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.experience-card__section {
+  padding-top: 20px;
+}
+
+.experience-card__section:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.experience-card__section-title {
+  margin: 0 0 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.experience-card__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.experience-card__technology {
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}

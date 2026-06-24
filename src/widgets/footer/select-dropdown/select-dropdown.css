@@ -1,0 +1,151 @@
+.select-dropdown {
+    position: relative;
+    display: inline-flex;
+}
+
+.select-dropdown__button {
+    height: 40px;
+    padding: 0 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--color-text-primary);
+    background-color: transparent;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.select-dropdown__button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.select-dropdown__icon {
+    flex: 0 0 auto;
+}
+
+.select-dropdown__title {
+    line-height: 1;
+    white-space: nowrap;
+
+}
+
+.select-dropdown__caret {
+    flex: 0 0 auto;
+    transition: transform 0.2s ease;
+}
+
+.select-dropdown__button[aria-expanded="true"] .select-dropdown__caret {
+    transform: rotate(180deg);
+}
+
+.select-dropdown__menu {
+    position: absolute;
+    bottom: calc(100% + 14px);
+    left: 50%;
+
+    width: 180px;
+    padding: 14px;
+
+    color: #fff;
+    background-color: #111;
+    border-radius: 8px;
+
+    transform: translateX(-50%);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+
+    animation: select-dropdown-slide-up 0.22s ease forwards;
+}
+
+.select-dropdown__menu::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -14px;
+
+    height: 14px;
+}
+
+.select-dropdown__menu-caret {
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: #111;
+
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.select-dropdown__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.select-dropdown__item {
+    margin: 0;
+    padding: 0;
+}
+
+.select-dropdown__option {
+    width: 100%;
+    padding: 9px 10px;
+
+    display: flex;
+    align-items: center;
+
+    border: none;
+    border-radius: 4px;
+
+    color: rgba(255, 255, 255, 0.72);
+    background-color: transparent;
+
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+            color 0.2s ease,
+            background-color 0.2s ease;
+}
+
+.select-dropdown__option:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.select-dropdown__option--active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.12);
+    cursor: default;
+}
+
+.select-dropdown__option:disabled {
+    pointer-events: none;
+}
+
+@keyframes select-dropdown-slide-up {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}

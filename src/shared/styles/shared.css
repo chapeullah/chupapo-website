@@ -1,0 +1,46 @@
+.section-layout__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-layout__split-left {
+  grid-column: 1;
+}
+
+.section-layout__split-right {
+  grid-column: 2;
+}
+
+.section-layout__title {
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.section-layout__header {
+  text-align: center;
+  padding: 120px 40px;
+}
+
+.section-layout__header-label {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.section-layout__header-title {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+.logo,
+.icon {
+  display: block;
+  flex: 0 0 auto;
+
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
