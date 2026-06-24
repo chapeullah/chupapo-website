@@ -2,6 +2,7 @@ import './styles/reset.css';
 import './styles/fonts.css';
 import './styles/global.css';
 import './styles/shared.css';
+import './styles/variables.css';
 
 import LanguageProvider from "@i18n/language-provider.jsx";
 import ThemeProvider from "@theme/theme-provider.jsx";
