@@ -1,4 +1,5 @@
 import './nav-container.css'
+
 import { useLanguage } from "@i18n/use-language.js";
 
 export default function NavContainer({ onNavClick}) {

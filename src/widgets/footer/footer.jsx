@@ -5,19 +5,21 @@
 
   export default function Footer() {
     return (
-      <footer id="footer" className="footer">
+      <>
         <Divider />
+        <footer id="footer" className="footer">
 
-        <div className="footer__left">
-          <LanguageSelector />
-          <ThemeSelector />
-        </div>
+          <div className="footer__left">
+            <LanguageSelector />
+            <ThemeSelector />
+          </div>
 
-        <div className='footer__right'>
-          <p className='footer__copyright'>
-            &copy; 2026 CHUPAPO SYSTEMS. Все права защищены.
-          </p>
-        </div>
-      </footer>
+          <div className='footer__right'>
+            <p className='footer__copyright'>
+              &copy; 2026 CHUPAPO SYSTEMS. Все права защищены.
+            </p>
+          </div>
+        </footer>
+      </>
     );
   }
