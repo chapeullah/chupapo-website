@@ -11,6 +11,7 @@ export default function Homepage() {
   return (
     <div className='homepage'>
       <Hero />
+      <Divider />
       <Product />
       <Divider />
       <About />
