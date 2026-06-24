@@ -1,10 +1,13 @@
   import './footer.css';
   import LanguageSelector from './language-selector/language-selector.jsx';
   import ThemeSelector from "./theme-selector/theme-selector.jsx";
+  import Divider from "@ui/divider/divider.jsx";
 
   export default function Footer() {
     return (
       <footer id="footer" className="footer">
+        <Divider />
+
         <div className="footer__left">
           <LanguageSelector />
           <ThemeSelector />

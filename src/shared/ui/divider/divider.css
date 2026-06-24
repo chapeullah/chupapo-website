@@ -1,5 +1,4 @@
 .divider {
   height: 1px;
-  margin: 0 40px;
   background-color: var(--header-color-border);
 }
