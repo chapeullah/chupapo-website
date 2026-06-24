@@ -6,11 +6,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      '@styles': fileURLToPath(new URL('./src/app/styles', import.meta.url)),
       '@ui': fileURLToPath(new URL('./src/shared/ui', import.meta.url)),
-      '@styles': fileURLToPath(new URL('./src/shared/styles', import.meta.url)),
       '@logos': fileURLToPath(new URL('./src/shared/logos', import.meta.url)),
       '@icons': fileURLToPath(new URL('./src/shared/icons', import.meta.url)),
-      '@i18n': fileURLToPath(new URL('./src/i18n', import.meta.url)),
+      '@i18n': fileURLToPath(new URL('./src/shared/i18n', import.meta.url)),
       '@theme': fileURLToPath(new URL('./src/theme', import.meta.url)),
       '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
       '@widgets': fileURLToPath(new URL('./src/widgets', import.meta.url)),

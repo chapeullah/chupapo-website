@@ -1,4 +1,5 @@
 import './contact-button.css';
+
 import { useLanguage } from "@i18n/use-language.js";
 
 export default function ContactButton() {

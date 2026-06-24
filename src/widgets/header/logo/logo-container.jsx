@@ -1,8 +1,8 @@
+import './logo-container.css';
+
 import { useEffect, useRef } from 'react';
 
 import ChupapoLogo from '@logos/chupapo/chupapo-logo.jsx';
-
-import './logo-container.css';
 
 const MaxSpeed = 180;
 const Acceleration = 90;
