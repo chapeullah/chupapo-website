@@ -11,8 +11,7 @@ export default function Hero() {
       <div className="hero-left">
         <h1 className={'hero-left__label'}>Chupapo</h1>
         <p className={'hero-left__text'}>
-          A sleek, open-source file explorer built for Windows, designed to help you organize files and folders with
-          ease.
+          A software developer building reliable business tools, from backend services and APIs to clean web interfaces and automation.
         </p>
         <div className={'buttons-spacer'}>
           <ContactFormButton />
