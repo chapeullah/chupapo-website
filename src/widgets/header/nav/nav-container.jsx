@@ -9,7 +9,7 @@ export default function NavContainer({ onNavClick}) {
   return (
     <nav className="nav-container">
       <a
-        href="#product"
+        href="/#product"
         className="nav-container__button-link"
         onClick={onNavClick}
       >
@@ -19,7 +19,7 @@ export default function NavContainer({ onNavClick}) {
       </a>
 
       <a
-        href="#about"
+        href="/#about"
         className="nav-container__button-link"
         onClick={onNavClick}
       >
@@ -29,7 +29,7 @@ export default function NavContainer({ onNavClick}) {
       </a>
 
       <a
-        href="#contacts"
+        href="/#contacts"
         className="nav-container__button-link"
         onClick={onNavClick}
       >

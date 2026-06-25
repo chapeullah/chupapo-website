@@ -1,6 +1,5 @@
 .action-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   height: 100%;
   align-items: center;
   justify-content: end;

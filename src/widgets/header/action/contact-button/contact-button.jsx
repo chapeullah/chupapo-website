@@ -1,14 +1,10 @@
 import './contact-button.css';
-
-import { useLanguage } from "@i18n/use-language.js";
+import ContactFormIcon from "@icons/contact-form/contact-form-icon.jsx";
 
 export default function ContactButton() {
-  const { t } = useLanguage();
-  const contactButtonTexts = t.common.header;
-
   return (
-    <a href="mailto:yourmail@example.com" className="contact-button">
-      <span className="contact-button__text">{contactButtonTexts.contactButton}</span>
+    <a href="/contact-form" className="contact-button">
+      <ContactFormIcon className="contact-button__icon" />
     </a>
   );
 }
