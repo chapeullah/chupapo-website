@@ -4,6 +4,7 @@ import ProductMarquee from './product-marquee/product-marquee.jsx';
 import WorkProcess from './work-process/work-process.jsx';
 
 import { useLanguage } from "@i18n/use-language.js";
+import ServiceCards from "@pages/home/sections/service-cards/index.js";
 
 export default function Product() {
   const { t } = useLanguage();
@@ -20,7 +21,7 @@ export default function Product() {
         </h2>
       </div>
 
-      <ProductMarquee />
+      <ServiceCards />
 
       <div className="product__description section-layout__split">
         <h3 className="product__description-title section-layout__title section-layout__split-left">
