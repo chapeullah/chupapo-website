@@ -26,10 +26,3 @@
   position: relative;
   display: inline-block;
 }
-
-.nav-container__button-label {
-  display: inline-block;
-  line-height: 1;
-  transform-origin: center bottom;
-  transition: transform var(--press-duration) var(--press-ease);
-}
