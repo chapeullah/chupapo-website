@@ -1,4 +1,6 @@
 import './button.css';
+import './variants/default.css';
+import './variants/accent.css';
 
 export default function Button({
   href,

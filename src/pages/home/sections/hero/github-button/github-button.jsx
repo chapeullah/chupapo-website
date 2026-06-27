@@ -1,7 +1,3 @@
-import './github-button.css';
-
-import '../hero.css';
-
 import Button from '@ui/button/index.js';
 
 import GitHubLogo from '@logos/github/github-logo.jsx';

@@ -8,7 +8,6 @@ export default function WorkspacePage() {
   return (
     <div className="workspace">
       <Header className="workspace__header" />
-
       <main className="workspace__body">
         <SidebarNav />
         <WorkspaceContent />

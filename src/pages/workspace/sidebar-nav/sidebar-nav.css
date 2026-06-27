@@ -1,17 +1,28 @@
 .sidebar-nav {
   width: 326px;
 
-  padding: 40px;
+  border-right: 1px solid var(--header-color-border);
+}
+
+.sidebar-nav__header {
+  padding: 16px 40px;
+
+  gap: 16px;
+
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--header-color-border);
 }
 
 .sidebar-nav__list {
+  padding: 16px 40px;
   list-style: none;
 }
 
 .sidebar-nav__link {
-  justify-content: center;
-  margin: 0 4px;
-  padding: 5px 11px 6px;
+  display: flex;
+  align-items: center;
+
   border-radius: var(--control-corner-radius);
   color: var(--color-text-secondary);
   font-size: 14px;
