@@ -1,0 +1,16 @@
+.button--accent {
+    background-color: var(--accent-default);
+    border-color: var(--button-border-on-accent);
+    border-bottom-color: var(--button-border-bottom);
+    color: var(--color-white);
+}
+
+.button--accent:hover {
+    background-color: var(--accent-secondary);
+}
+
+.button--accent:active {
+    background-color: var(--accent-tertiary);
+    border-color: transparent;
+    color: var(--text-on-accent-secondary);
+}

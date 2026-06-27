@@ -1,0 +1,15 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid;
+    border-radius: var(--button-radius);
+    box-sizing: border-box;
+
+    padding-block: 4px 6px;
+    padding-inline: 11px;
+
+    text-decoration: none;
+    user-select: none;
+}

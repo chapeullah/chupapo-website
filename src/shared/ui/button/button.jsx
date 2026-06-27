@@ -1,13 +1,14 @@
 import './button.css';
 
 export default function Button({
-                                 href,
-                                 className = '',
-                                 children,
-                                 variant = 'default',
-                                 type = 'button',
-                                 ...props
-                               }) {
+  href,
+  className = '',
+  children,
+  variant = 'default',
+  type = 'button',
+  ...props
+  }
+) {
   const buttonClassName = `button button--${variant} ${className}`;
 
   if (href) {

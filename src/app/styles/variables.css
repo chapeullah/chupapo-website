@@ -29,7 +29,7 @@
     /* ACCENT */
     --accent-default: hsl(209, 100%, 36%);
     --accent-secondary: hsla(209, 100%, 36%, 90%);
-    --accent-tertiary: hsla(209, 100%, 36%, 80%);
+    --accent-tertiary: hsl(209 100% 36% / 0.8);
     --accent-disabled: hsla(0, 0%, 0%, 21.69%);
 
     --accent-text-primary: hsl(215, 100%, 29%);
@@ -146,4 +146,7 @@
     --control-fast-duration: 167ms;
     --control-faster-duration: 83ms;
     --control-fast-out-slow-in-easing: cubic-bezier(0, 0, 0, 1);
+
+    /* SIZES */
+    --button-radius: 4px;
 }

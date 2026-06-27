@@ -1,10 +1,9 @@
 import './product.css';
 
-import ProductMarquee from './product-marquee/product-marquee.jsx';
 import WorkProcess from './work-process/work-process.jsx';
+import ServiceCards from "./service-cards";
 
 import { useLanguage } from "@i18n/use-language.js";
-import ServiceCards from "@pages/home/sections/service-cards/index.js";
 
 export default function Product() {
   const { t } = useLanguage();

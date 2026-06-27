@@ -1,0 +1,17 @@
+.workspace {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+}
+
+.workspace__header {
+    position: static;
+    width: 100%;
+}
+
+.workspace__body {
+    display: flex;
+    min-height: 0;
+}
+

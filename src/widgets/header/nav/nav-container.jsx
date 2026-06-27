@@ -10,7 +10,7 @@ export default function NavContainer({ onNavClick}) {
     <nav className="nav-container">
       <a
         href="/#product"
-        className="nav-container__button-link"
+        className="nav-container__button"
         onClick={onNavClick}
       >
         <span className="nav-container__button-text">
@@ -20,7 +20,7 @@ export default function NavContainer({ onNavClick}) {
 
       <a
         href="/#about"
-        className="nav-container__button-link"
+        className="nav-container__button"
         onClick={onNavClick}
       >
         <span className="nav-container__button-text">
@@ -30,11 +30,21 @@ export default function NavContainer({ onNavClick}) {
 
       <a
         href="/#contacts"
-        className="nav-container__button-link"
+        className="nav-container__button"
         onClick={onNavClick}
       >
         <span className="nav-container__button-text">
           <span className="nav-container__button-label">{navContainerTexts.contacts}</span>
+        </span>
+      </a>
+
+      <a
+        href="/workspace"
+        className="nav-container__button"
+        onClick={onNavClick}
+      >
+        <span className="nav-container__button-text">
+          <span className="nav-container__button-label">Stack</span>
         </span>
       </a>
     </nav>
