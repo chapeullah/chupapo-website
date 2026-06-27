@@ -1,18 +1,14 @@
-.go-back-button {
-  height: 40px;
-
+.github-button {
   background-color: var(--control-fill-default);
   border-color: hsl(0 0% 0% / 6%) hsl(0 0% 0% / 6%) hsl(0 0% 0% / 16%) hsl(0 0% 0% / 6%);;
   color: var(--color-text-primary);
-
-  cursor: pointer;
 }
 
-.go-back-button:hover {
+.github-button:hover {
   background-color: var(--control-fill-secondary);
 }
 
-.go-back-button:active {
+.github-button:active {
   background-color: var(--control-fill-tertiary);
   border-color: var(--control-stroke-default);
   color: var(--color-text-secondary);

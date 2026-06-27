@@ -1,152 +1,146 @@
 :root {
-    /* BASE COLORS */
-    --color-bg: hsl(0 0% 95%);
-    --color-white: hsl(0, 0%, 100%);
-    --color-black: hsl(0, 0%, 0%);
-    --color-main: hsl(225, 9%, 17%);
-    --color-primary: hsl(0, 0%, 100%);
+  /* BASE COLORS */
+  --color-bg: hsl(0 0% 95%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-main: hsl(225, 9%, 17%);
+  --color-primary: hsl(0, 0%, 100%);
 
-    /* TEXT COLORS */
-    --color-text-primary: hsla(0, 0%, 0%, 89.56%);
-    --color-text-secondary: hsla(0, 0%, 0%, 60.63%);
-    --color-text-tertiary: hsla(0, 0%, 0%, 44.58%);
-    --color-text-disabled: hsla(0, 0%, 0%, 36.14%);
+  /* TEXT COLORS */
+  --color-text-primary: hsla(0, 0%, 0%, 89.56%);
+  --color-text-secondary: hsla(0, 0%, 0%, 60.63%);
+  --color-text-tertiary: hsla(0, 0%, 0%, 44.58%);
+  --color-text-disabled: hsla(0, 0%, 0%, 36.14%);
 
-    /* PAGE */
-    --page-color-bg: hsl(0, 0%, 95%);
-    --page-color-text: hsla(0, 0%, 0%, 89.56%);
+  /* PAGE */
+  --page-color-bg: hsl(0, 0%, 95%);
+  --page-color-text: hsla(0, 0%, 0%, 89.56%);
 
-    /* HEADER */
-    --color-bg-header: hsl(0 0% 95% / 0.8);
-    --header-color-text: hsla(0, 0%, 0%, 89.56%);
-    --header-color-border: hsla(0, 0%, 0%, 8%);
+  /* HEADER */
+  --color-bg-header: hsl(0 0% 95% / 0.8);
+  --header-color-text: hsla(0, 0%, 0%, 89.56%);
+  --header-color-border: hsla(0, 0%, 0%, 8%);
 
-    /* FOOTER */
-    --footer-color-bg: hsl(225, 9%, 17%);
-    --footer-color-text: hsl(0, 0%, 100%);
-    --footer-color-muted: hsla(0, 0%, 100%, 72%);
+  /* FOOTER */
+  --footer-color-bg: hsl(225, 9%, 17%);
+  --footer-color-text: hsl(0, 0%, 100%);
+  --footer-color-muted: hsla(0, 0%, 100%, 72%);
 
-    /* ACCENT */
-    --accent-default: hsl(209, 100%, 36%);
-    --accent-secondary: hsla(209, 100%, 36%, 90%);
-    --accent-tertiary: hsl(209 100% 36% / 0.8);
-    --accent-disabled: hsla(0, 0%, 0%, 21.69%);
+  /* ACCENT */
+  --accent-default: hsl(209, 100%, 36%);
+  --accent-secondary: hsla(209, 100%, 36%, 90%);
+  --accent-tertiary: hsl(209 100% 36% / 0.8);
+  --accent-disabled: hsla(0, 0%, 0%, 21.69%);
 
-    --accent-text-primary: hsl(215, 100%, 29%);
-    --accent-text-secondary: hsl(226, 100%, 20%);
-    --accent-text-tertiary: hsl(209, 100%, 36%);
-    --accent-text-disabled: hsla(0, 0%, 0%, 36.14%);
+  --accent-text-primary: hsl(215, 100%, 29%);
+  --accent-text-secondary: hsl(226, 100%, 20%);
+  --accent-text-tertiary: hsl(209, 100%, 36%);
+  --accent-text-disabled: hsla(0, 0%, 0%, 36.14%);
 
-    --text-on-accent-primary: hsl(0, 0%, 100%);
-    --text-on-accent-secondary: hsla(0, 0%, 100%, 70%);
-    --text-on-accent-disabled: hsla(0, 0%, 100%, 70%);
-    --text-on-accent-selected: hsl(0, 0%, 100%);
+  --text-on-accent-primary: hsl(0, 0%, 100%);
+  --text-on-accent-secondary: hsla(0, 0%, 100%, 70%);
+  --text-on-accent-disabled: hsla(0, 0%, 100%, 70%);
+  --text-on-accent-selected: hsl(0, 0%, 100%);
 
-    /* CONTROL FILLS */
-    --control-fill-transparent: transparent;
-    --control-fill-default: hsla(0, 0%, 100%, 70%);
-    --control-fill-secondary: hsla(0, 0%, 98%, 50%);
-    --control-fill-tertiary: hsla(0, 0%, 98%, 30%);
-    --control-fill-disabled: hsla(0, 0%, 98%, 30%);
-    --control-fill-input-active: hsl(0, 0%, 100%);
+  /* CONTROL FILLS */
+  --control-fill-transparent: transparent;
+  --control-fill-default: hsla(0, 0%, 100%, 70%);
+  --control-fill-secondary: hsla(0, 0%, 98%, 50%);
+  --control-fill-tertiary: hsla(0, 0%, 98%, 30%);
+  --control-fill-disabled: hsla(0, 0%, 98%, 30%);
+  --control-fill-input-active: hsl(0, 0%, 100%);
 
-    --control-strong-fill-default: hsla(0, 0%, 0%, 44.58%);
-    --control-strong-fill-disabled: hsla(0, 0%, 0%, 31.73%);
-    --control-solid-fill-default: hsl(0, 0%, 100%);
+  --control-strong-fill-default: hsla(0, 0%, 0%, 44.58%);
+  --control-strong-fill-disabled: hsla(0, 0%, 0%, 31.73%);
+  --control-solid-fill-default: hsl(0, 0%, 100%);
 
-    /* CONTROL ALT FILLS */
-    --control-alt-fill-transparent: transparent;
-    --control-alt-fill-secondary: hsla(0, 0%, 0%, 2.41%);
-    --control-alt-fill-tertiary: hsla(0, 0%, 0%, 5.78%);
-    --control-alt-fill-quaternary: hsla(0, 0%, 0%, 9.24%);
-    --control-alt-fill-disabled: transparent;
+  /* CONTROL ALT FILLS */
+  --control-alt-fill-transparent: transparent;
+  --control-alt-fill-secondary: hsla(0, 0%, 0%, 2.41%);
+  --control-alt-fill-tertiary: hsla(0, 0%, 0%, 5.78%);
+  --control-alt-fill-quaternary: hsla(0, 0%, 0%, 9.24%);
+  --control-alt-fill-disabled: transparent;
 
-    /* SUBTLE FILLS */
-    --subtle-fill-transparent: transparent;
-    --subtle-fill-secondary: hsla(0, 0%, 0%, 3.73%);
-    --subtle-fill-tertiary: hsla(0, 0%, 0%, 2.41%);
-    --subtle-fill-disabled: transparent;
+  /* SUBTLE FILLS */
+  --subtle-fill-transparent: transparent;
+  --subtle-fill-secondary: hsla(0, 0%, 0%, 3.73%);
+  --subtle-fill-tertiary: hsla(0, 0%, 0%, 2.41%);
+  --subtle-fill-disabled: transparent;
 
-    /* STROKES */
-    --control-stroke-default: hsla(0, 0%, 0%, 5.78%);
-    --control-stroke-secondary: hsla(0, 0%, 0%, 16.22%);
-    --control-strong-stroke-default: hsla(0, 0%, 0%, 44.58%);
-    --control-strong-stroke-disabled: hsla(0, 0%, 0%, 21.69%);
+  /* STROKES */
+  --control-stroke-default: hsla(0, 0%, 0%, 5.78%);
+  --control-stroke-secondary: hsla(0, 0%, 0%, 16.22%);
+  --control-strong-stroke-default: hsla(0, 0%, 0%, 44.58%);
+  --control-strong-stroke-disabled: hsla(0, 0%, 0%, 21.69%);
 
-    --control-stroke-on-accent-default: hsla(0, 0%, 100%, 8%);
-    --control-stroke-on-accent-secondary: hsla(0, 0%, 0%, 40%);
-    --control-stroke-on-accent-tertiary: hsla(0, 0%, 0%, 21.69%);
-    --control-stroke-on-accent-disabled: hsla(0, 0%, 100%, 8%);
+  --control-stroke-on-accent-default: hsla(0, 0%, 100%, 8%);
+  --control-stroke-on-accent-secondary: hsla(0, 0%, 0%, 40%);
+  --control-stroke-on-accent-tertiary: hsla(0, 0%, 0%, 21.69%);
+  --control-stroke-on-accent-disabled: hsla(0, 0%, 100%, 8%);
 
-    --card-stroke-default: hsla(0, 0%, 0%, 5.78%);
-    --card-stroke-default-solid: hsl(0, 0%, 92%);
-    --surface-stroke-default: hsla(0, 0%, 46%, 40%);
-    --surface-stroke-flyout: hsla(0, 0%, 0%, 5.78%);
-    --divider-stroke-default: hsla(0, 0%, 0%, 8.03%);
+  --card-stroke-default: hsla(0, 0%, 0%, 5.78%);
+  --card-stroke-default-solid: hsl(0, 0%, 92%);
+  --surface-stroke-default: hsla(0, 0%, 46%, 40%);
+  --surface-stroke-flyout: hsla(0, 0%, 0%, 5.78%);
+  --divider-stroke-default: hsla(0, 0%, 0%, 8.03%);
 
-    --control-border-default:
-            hsla(0, 0%, 0%, 5.78%)
-            hsla(0, 0%, 0%, 5.78%)
-            hsla(0, 0%, 0%, 16.22%)
-            hsla(0, 0%, 0%, 5.78%);
+  --control-border-default: hsla(0, 0%, 0%, 5.78%) hsla(0, 0%, 0%, 5.78%) hsla(0, 0%, 0%, 16.22%) hsla(0, 0%, 0%, 5.78%);
 
-    /* BACKGROUNDS */
-    --card-background-default: hsla(0, 0%, 100%, 70%);
-    --card-background-secondary: hsla(0, 0%, 96%, 50%);
+  /* BACKGROUNDS */
+  --card-background-default: hsla(0, 0%, 100%, 70%);
+  --card-background-secondary: hsla(0, 0%, 96%, 50%);
 
-    --layer-background-default: hsla(0, 0%, 100%, 50%);
-    --layer-background-alt: hsl(0, 0%, 100%);
-    --layer-on-acrylic-background-default: hsla(0, 0%, 100%, 25%);
-    --layer-on-accent-acrylic-background-default: hsla(0, 0%, 100%, 25%);
+  --layer-background-default: hsla(0, 0%, 100%, 50%);
+  --layer-background-alt: hsl(0, 0%, 100%);
+  --layer-on-acrylic-background-default: hsla(0, 0%, 100%, 25%);
+  --layer-on-accent-acrylic-background-default: hsla(0, 0%, 100%, 25%);
 
-    --solid-background-base: hsl(0, 0%, 95%);
-    --solid-background-secondary: hsl(0, 0%, 93%);
-    --solid-background-tertiary: hsl(0, 0%, 98%);
-    --solid-background-quaternary: hsl(0, 0%, 100%);
+  --solid-background-base: hsl(0, 0%, 95%);
+  --solid-background-secondary: hsl(0, 0%, 93%);
+  --solid-background-tertiary: hsl(0, 0%, 98%);
+  --solid-background-quaternary: hsl(0, 0%, 100%);
 
-    --smoke-background-default: hsla(0, 0%, 0%, 30%);
+  --smoke-background-default: hsla(0, 0%, 0%, 30%);
 
-    /* SYSTEM COLORS */
-    --system-attention: hsl(209, 100%, 36%);
-    --system-success: hsl(120, 78%, 27%);
-    --system-caution: hsl(36, 100%, 31%);
-    --system-critical: hsl(5, 75%, 44%);
-    --system-neutral: hsla(0, 0%, 0%, 44.58%);
-    --system-solid-neutral: hsl(0, 0%, 54%);
+  /* SYSTEM COLORS */
+  --system-attention: hsl(209, 100%, 36%);
+  --system-success: hsl(120, 78%, 27%);
+  --system-caution: hsl(36, 100%, 31%);
+  --system-critical: hsl(5, 75%, 44%);
+  --system-neutral: hsla(0, 0%, 0%, 44.58%);
+  --system-solid-neutral: hsl(0, 0%, 54%);
 
-    --system-background-attention: hsla(0, 0%, 96%, 50%);
-    --system-background-success: hsl(115, 58%, 92%);
-    --system-background-caution: hsl(47, 100%, 90%);
-    --system-background-critical: hsl(355, 85%, 95%);
-    --system-background-solid-attention: hsl(0, 0%, 97%);
-    --system-background-solid-neutral: hsl(0, 0%, 95%);
+  --system-background-attention: hsla(0, 0%, 96%, 50%);
+  --system-background-success: hsl(115, 58%, 92%);
+  --system-background-caution: hsl(47, 100%, 90%);
+  --system-background-critical: hsl(355, 85%, 95%);
+  --system-background-solid-attention: hsl(0, 0%, 97%);
+  --system-background-solid-neutral: hsl(0, 0%, 95%);
 
-    /* RADIUS */
-    --control-corner-radius: 4px;
-    --overlay-corner-radius: 8px;
+  /* RADIUS */
+  --control-corner-radius: 4px;
+  --overlay-corner-radius: 8px;
 
-    /* SHADOWS */
-    --card-shadow: 0 2px 4px hsla(0, 0%, 0%, 4%);
-    --tooltip-shadow: 0 4px 8px hsla(0, 0%, 0%, 14%);
-    --flyout-shadow: 0 8px 16px hsla(0, 0%, 0%, 14%);
-    --dialog-shadow:
-            0 32px 64px hsla(0, 0%, 0%, 18.76%),
-            0 2px 21px hsla(0, 0%, 0%, 14.74%);
+  /* SHADOWS */
+  --card-shadow: 0 2px 4px hsla(0, 0%, 0%, 4%);
+  --tooltip-shadow: 0 4px 8px hsla(0, 0%, 0%, 14%);
+  --flyout-shadow: 0 8px 16px hsla(0, 0%, 0%, 14%);
+  --dialog-shadow: 0 32px 64px hsla(0, 0%, 0%, 18.76%),
+  0 2px 21px hsla(0, 0%, 0%, 14.74%);
 
-    /* FOCUS */
-    --focus-stroke-inner: hsl(0, 0%, 100%);
-    --focus-stroke-outer: hsla(0, 0%, 0%, 89.56%);
-    --focus-stroke:
-            0 0 0 1px hsl(0, 0%, 100%),
-            0 0 0 3px hsla(0, 0%, 0%, 89.56%);
+  /* FOCUS */
+  --focus-stroke-inner: hsl(0, 0%, 100%);
+  --focus-stroke-outer: hsla(0, 0%, 0%, 89.56%);
+  --focus-stroke: 0 0 0 1px hsl(0, 0%, 100%),
+  0 0 0 3px hsla(0, 0%, 0%, 89.56%);
 
-    /* TRANSITIONS */
-    --control-slow-duration: 333ms;
-    --control-normal-duration: 250ms;
-    --control-fast-duration: 167ms;
-    --control-faster-duration: 83ms;
-    --control-fast-out-slow-in-easing: cubic-bezier(0, 0, 0, 1);
+  /* TRANSITIONS */
+  --control-slow-duration: 333ms;
+  --control-normal-duration: 250ms;
+  --control-fast-duration: 167ms;
+  --control-faster-duration: 83ms;
+  --control-fast-out-slow-in-easing: cubic-bezier(0, 0, 0, 1);
 
-    /* SIZES */
-    --button-radius: 4px;
+  /* SIZES */
+  --button-radius: 4px;
 }

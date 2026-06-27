@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
 
-  list-style: none; 
+  list-style: none;
   counter-reset: workProcessCounter;
 }
 
@@ -50,6 +50,7 @@
   font-size: 26px;
   font-weight: 700;
 }
+
 .work-process__step-description {
   margin: 0;
 

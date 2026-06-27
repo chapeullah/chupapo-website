@@ -1,126 +1,125 @@
 .theme-selector {
-    position: relative;
-    display: inline-flex;
+  position: relative;
+  display: inline-flex;
 }
 
 .theme-selector__button {
-    height: 40px;
-    padding: 0 14px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: black;
-    background-color: transparent;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  height: 40px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .theme-selector__button:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .theme-selector__title {
-    line-height: 1;
-    white-space: nowrap;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .theme-selector__caret {
-    flex: 0 0 auto;
-    transition: transform 0.2s ease;
+  flex: 0 0 auto;
+  transition: transform 0.2s ease;
 }
 
 .theme-selector__button[aria-expanded="true"] .theme-selector__caret {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .theme-selector__menu {
-    position: absolute;
-    bottom: calc(100% + 14px);
-    left: 50%;
-    width: 180px;
-    padding: 14px;
-    color: var(--color-text-primary);
-    background-color: #111;
-    border-radius: 8px;
-    transform: translateX(-50%);
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
-    animation: theme-menu-slide-up 0.22s ease forwards;
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
+  width: 180px;
+  padding: 14px;
+  color: var(--color-text-primary);
+  background-color: #111;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  animation: theme-menu-slide-up 0.22s ease forwards;
 }
 
 .theme-selector__menu::before {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    left: 0;
-    right: 0;
-    bottom: -14px;
+  left: 0;
+  right: 0;
+  bottom: -14px;
 
-    height: 14px;
+  height: 14px;
 }
 
 .theme-selector__menu-caret {
-    position: absolute;
-    bottom: -7px;
-    left: 50%;
-    width: 14px;
-    height: 14px;
-    background-color: #111;
-    transform: translateX(-50%) rotate(45deg);
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: #111;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .theme-selector__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .theme-selector__item {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .theme-selector__option {
-    width: 100%;
-    padding: 9px 10px;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 4px;
-    color: rgba(255, 255, 255, 0.72);
-    background-color: transparent;
-    font-size: 13px;
-    font-weight: 500;
-    text-align: left;
-    cursor: pointer;
-    transition:
-            color 0.2s ease,
-            background-color 0.2s ease;
+  width: 100%;
+  padding: 9px 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.72);
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease,
+  background-color 0.2s ease;
 }
 
 .theme-selector__option:hover {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .theme-selector__option--active {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.12);
-    cursor: default;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.12);
+  cursor: default;
 }
 
 .theme-selector__option:disabled {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 @keyframes theme-menu-slide-up {
-    from {
-        opacity: 0;
-        transform: translateX(-50%) translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }

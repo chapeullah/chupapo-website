@@ -33,9 +33,8 @@
   padding: 2px 0;
   color: #000;
   text-decoration: none;
-  transition:
-          opacity 0.2s ease,
-          transform 0.2s ease;
+  transition: opacity 0.2s ease,
+  transform 0.2s ease;
 }
 
 .contacts__link:hover {
@@ -196,9 +195,8 @@
   font-weight: 500;
   line-height: 1.3;
   cursor: pointer;
-  transition:
-          background-color 0.2s ease,
-          transform 0.2s ease;
+  transition: background-color 0.2s ease,
+  transform 0.2s ease;
 }
 
 .contacts__button:hover {

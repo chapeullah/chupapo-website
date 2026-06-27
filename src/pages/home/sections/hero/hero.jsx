@@ -2,8 +2,8 @@ import Cube from './cube/cube.jsx';
 
 import './hero.css';
 
-import ContactFormButton from "./contact-form-button.jsx";
-import GitHubButton from "./github-button.jsx";
+import ContactFormButton from "./contact-form-button/contact-form-button.jsx";
+import GitHubButton from "./github-button/github-button.jsx";
 
 export default function Hero() {
   return (
