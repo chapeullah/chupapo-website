@@ -19,9 +19,4 @@ export const devopsStack = [
     name:'Git',
     summary: 'Something',
   },
-  {
-    id: 'vite',
-    name: 'Vite',
-    summary: 'Something',
-  }
 ];
