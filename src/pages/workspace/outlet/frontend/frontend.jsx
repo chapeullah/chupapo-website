@@ -20,32 +20,11 @@ export default function Frontend() {
           </h1>
 
           <p className="workspace__lead">
-            Get started with GitHub Codespaces quickly.
+            Frontend technologies I use.
           </p>
         </header>
 
         <article className="workspace__article">
-          <section className="workspace__section" id="technologies">
-            <h2>Technologies</h2>
-
-            <ul>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Vite</li>
-            </ul>
-          </section>
-
-          <section className="workspace__section" id="usage">
-            <h2>Usage</h2>
-            <p>
-              I use frontend technologies to create responsive pages, reusable UI
-              components, navigation, forms and client-side logic for web
-              applications.
-            </p>
-          </section>
-
           {frontendStack.map((technology) => (
             <>
               <HeadingLink
@@ -56,7 +35,6 @@ export default function Frontend() {
               />
             </>
           ))}
-
         </article>
 
         <StackOverview stack={frontendStack}></StackOverview>
