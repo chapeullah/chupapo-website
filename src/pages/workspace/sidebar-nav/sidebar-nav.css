@@ -14,23 +14,32 @@
   border-bottom: 1px solid var(--header-color-border);
 }
 
+.sidebar-nav__link-icon {
+  transform: translateY(1px);
+}
+
 .sidebar-nav__list {
-  padding: 16px 40px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 8px;
   list-style: none;
+  gap: 2px;
+}
+
+.sidebar-nav__home {
+  display: flex;
+
+  text-decoration: none;
+  color: var(--header-color-text);
 }
 
 .sidebar-nav__link {
   display: flex;
-  align-items: center;
-
-  border-radius: var(--control-corner-radius);
-  color: var(--color-text-secondary);
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-  transition: var(--control-faster-duration) linear background-color;
+  justify-content: start;
+  gap: 8px;
 }
 
-.sidebar-nav__link:hover {
-  background-color: var(--subtle-fill-secondary);
+.sidebar-nav__link-text {
+  font-weight: 400;
 }

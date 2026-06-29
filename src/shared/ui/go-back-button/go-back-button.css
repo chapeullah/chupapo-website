@@ -1,18 +1,18 @@
-.button {
+.go-back-button {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 
   border: 1px solid;
   border-radius: var(--button-border-radius);
 
-  padding-block: 4px 6px;
+  padding-block: 8px;
   padding-inline: 11px;
+
+  gap: 8px;
 
   text-decoration: none;
   user-select: none;
-
-  transition: var(--control-faster-duration) linear background-color;
 
   cursor: pointer;
 }

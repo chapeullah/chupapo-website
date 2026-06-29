@@ -2,7 +2,8 @@ import './workspace-page.css';
 
 import Header from "@widgets/header/header.jsx";
 import SidebarNav from './sidebar-nav';
-import WorkspaceContent from './workspace-content';
+
+import { Outlet } from 'react-router-dom';
 
 export default function WorkspacePage() {
   return (
@@ -10,7 +11,9 @@ export default function WorkspacePage() {
       <Header className="workspace__header" />
       <main className="workspace__body">
         <SidebarNav />
-        <WorkspaceContent />
+        <div className="workspace__content">
+          <Outlet />
+        </div>
       </main>
     </div>
   );

@@ -8,8 +8,8 @@
 
 .nav-container__button {
   justify-content: center;
-  margin: 0 4px;
-  padding: 5px 11px 6px;
+  padding: 5px 11px 7px;
+
   border-radius: var(--control-corner-radius);
   color: var(--color-text-secondary);
   font-size: 14px;

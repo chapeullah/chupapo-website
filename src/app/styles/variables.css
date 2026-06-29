@@ -142,5 +142,5 @@
   --control-fast-out-slow-in-easing: cubic-bezier(0, 0, 0, 1);
 
   /* SIZES */
-  --button-radius: 4px;
+  --button-border-radius: 4px;
 }

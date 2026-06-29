@@ -1,18 +1,14 @@
-.go-back-button {
-  height: 40px;
-
+.go-back-button--default {
   background-color: var(--control-fill-default);
   border-color: hsl(0 0% 0% / 6%) hsl(0 0% 0% / 6%) hsl(0 0% 0% / 16%) hsl(0 0% 0% / 6%);;
   color: var(--color-text-primary);
-
-  cursor: pointer;
 }
 
-.go-back-button:hover {
+.go-back-button--default:hover {
   background-color: var(--control-fill-secondary);
 }
 
-.go-back-button:active {
+.go-back-button--default:active {
   background-color: var(--control-fill-tertiary);
   border-color: var(--control-stroke-default);
   color: var(--color-text-secondary);

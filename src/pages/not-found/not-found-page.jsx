@@ -1,6 +1,6 @@
 import './not-found-page.css';
 
-import GoBackButton from './go-back-button';
+import GoBackButton from "@ui/go-back-button";
 
 export default function NotFoundPage() {
   return (

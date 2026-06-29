@@ -47,6 +47,16 @@ export default function NavContainer({ onNavClick}) {
           <span className="nav-container__button-label">Stack</span>
         </span>
       </a>
+
+      <a
+        href="/not-found"
+        className="nav-container__button"
+        onClick={onNavClick}
+      >
+        <span className="nav-container__button-text">
+          <span className="nav-container__button-label">Not found</span>
+        </span>
+      </a>
     </nav>
   )
 }

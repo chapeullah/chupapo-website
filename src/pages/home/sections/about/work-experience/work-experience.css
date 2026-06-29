@@ -36,6 +36,10 @@
   box-shadow: 0 0 0 1px var(--card-stroke-default);
 }
 
+.experience-card:hover {
+  box-shadow: var(--card-shadow), 0 0 0 2px var(--accent-default);
+}
+
 .experience-card__icon-wrapper {
   width: 48px;
   height: 48px;

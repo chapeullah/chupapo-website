@@ -1,0 +1,8 @@
+.button--ghost {
+  color: var(--color-text-primary);
+  border: 0;
+}
+
+.button--ghost:hover {
+  background-color: var(--subtle-fill-secondary);
+}
