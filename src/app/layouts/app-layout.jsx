@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import Header from "@widgets/header/Header";
-import Footer from "@widgets/footer/footer.jsx";
+import Header from "@widgets/header";
+import Footer from "@widgets/footer";
 
 import "./app-layout.css";
 
