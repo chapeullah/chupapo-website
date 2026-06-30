@@ -41,3 +41,8 @@
   block-size: 30px;
   border-inline-start: 1px solid var(--header-color-border);
 }
+
+.button-selected {
+  background-color: var(--subtle-fill-secondary);
+  color: var(--color-accent);
+}

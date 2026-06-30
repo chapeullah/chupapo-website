@@ -22,3 +22,8 @@
 .contact-button__icon {
   inline-size: 18px;
 }
+
+.contact-button.button-selected {
+  background-color: var(--subtle-fill-secondary);
+  color: var(--color-accent);
+}

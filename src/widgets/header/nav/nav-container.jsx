@@ -21,7 +21,7 @@ export default function NavContainer({onNavClick}) {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `nav-container__button ${isActive ? 'selected' : ''}`
+          `nav-container__button ${isActive ? 'button-selected' : ''}`
         }
         onClick={onNavClick}
       >
@@ -34,7 +34,7 @@ export default function NavContainer({onNavClick}) {
       <NavLink
         to="/about"
         className={({ isActive }) =>
-          `nav-container__button ${isActive ? 'selected' : ''}`
+          `nav-container__button ${isActive ? 'button-selected' : ''}`
         }
         onClick={onNavClick}
       >
