@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      '@layouts': fileURLToPath(new URL('./src/app/layouts', import.meta.url)),
       '@styles': fileURLToPath(new URL('./src/app/styles', import.meta.url)),
       '@ui': fileURLToPath(new URL('./src/shared/ui', import.meta.url)),
       '@logos': fileURLToPath(new URL('./src/shared/logos', import.meta.url)),
