@@ -9,12 +9,13 @@
 
   display: grid;
   align-items: center;
-  grid-template-columns: 250px minmax(0, 1fr) 250px;
+  grid-template-columns: 1fr 1fr;
 
   padding: 0 40px;
   box-sizing: border-box;
 
   position: fixed;
+
   top: 0;
   left: 0;
   right: 0;

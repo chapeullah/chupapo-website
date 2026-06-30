@@ -1,13 +1,15 @@
 .nav-container {
   display: flex;
-  height: 100%;
+
   align-items: center;
-  justify-content: center;
-  gap: 32px;
+  justify-content: start;
+  gap: 8px;
 }
 
 .nav-container__button {
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
   padding: 5px 11px 7px;
 
   border-radius: var(--control-corner-radius);
@@ -22,7 +24,20 @@
   background-color: var(--subtle-fill-secondary);
 }
 
+.nav-container__button-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
 .nav-container__button-text {
   position: relative;
   display: inline-block;
+  font-weight: 400;
+}
+
+.nav-divider {
+  margin-inline: 8px;
+  block-size: 30px;
+  border-inline-start: 1px solid var(--header-color-border);
 }

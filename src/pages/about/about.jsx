@@ -11,15 +11,15 @@ export default function About() {
   const aboutTexts = t.homepage.about;
 
   return (
-    <section id={"about"} className="about">
-      <div className="about__header">
-        <h1 className="about__header-label section-layout__header-label">{aboutTexts.headerLabel}</h1>
-        <h2 className="about__header-title section-layout__header-title">{aboutTexts.headerTitle}</h2>
+    <div  className="about-page">
+      <div className="about-page__header">
+        <h1 className="about-page__header-label section-layout__header-label">{aboutTexts.headerLabel}</h1>
+        <h2 className="about-page__header-title section-layout__header-title">{aboutTexts.headerTitle}</h2>
       </div>
 
       <Profile />
       <Technologies />
       <WorkExperience />
-    </section>
+    </div>
   );
 }

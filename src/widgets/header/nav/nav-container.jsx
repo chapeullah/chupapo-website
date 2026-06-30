@@ -2,61 +2,47 @@ import './nav-container.css'
 
 import { useLanguage } from "@i18n/use-language.js";
 
-export default function NavContainer({ onNavClick}) {
+import LogoContainer from './logo/logo-container.jsx';
+import HomeIcon from '@icons/home/home-icon.jsx';
+import { NavLink } from 'react-router-dom';
+import InfoIcon from '@icons/info/info-icon.jsx';
+
+export default function NavContainer({onNavClick}) {
   const { t } = useLanguage();
   const navContainerTexts = t.common.header.navigation;
 
   return (
     <nav className="nav-container">
-      <a
-        href="/#product"
-        className="nav-container__button"
-        onClick={onNavClick}
-      >
-        <span className="nav-container__button-text">
-          <span className="nav-container__button-label">{navContainerTexts.product}</span>
-        </span>
-      </a>
+      <LogoContainer />
 
-      <a
-        href="/#about"
-        className="nav-container__button"
-        onClick={onNavClick}
-      >
-        <span className="nav-container__button-text">
-          <span className="nav-container__button-label">{navContainerTexts.about}</span>
-        </span>
-      </a>
 
-      <a
-        href="/#contacts"
-        className="nav-container__button"
-        onClick={onNavClick}
-      >
-        <span className="nav-container__button-text">
-          <span className="nav-container__button-label">{navContainerTexts.contacts}</span>
-        </span>
-      </a>
+      <div className="nav-divider"/>
 
-      <a
-        href="/workspace"
-        className="nav-container__button"
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          `nav-container__button ${isActive ? 'selected' : ''}`
+        }
         onClick={onNavClick}
       >
+        <HomeIcon className="nav-container__button-icon" />
         <span className="nav-container__button-text">
-          <span className="nav-container__button-label">Stack</span>
+          <span className="nav-container__button-label">Home</span>
         </span>
-      </a>
+      </NavLink>
 
-      <a
-        href="/not-found"
-        className="nav-container__button"
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          `nav-container__button ${isActive ? 'selected' : ''}`
+        }
         onClick={onNavClick}
       >
+        <InfoIcon className="nav-container__button-icon" />
         <span className="nav-container__button-text">
-          <span className="nav-container__button-label">Not found</span>
+          <span className="nav-container__button-label">About</span>
         </span>
-      </a>
+      </NavLink>
     </nav>
   )
 }
