@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  height: var(--footer-height);
+  min-height: var(--footer-height);
 
   color: black;
   z-index: 1;

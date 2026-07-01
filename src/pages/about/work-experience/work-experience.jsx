@@ -1,6 +1,7 @@
 import './work-experience.css';
 
 import { useLanguage } from '@i18n/use-language.js';
+import Divider from '@ui/divider/divider.jsx';
 
 function ExperienceCard({ experience, technologiesTitle }) {
   return (
@@ -50,9 +51,15 @@ export default function WorkExperience() {
 
   return (
     <section className="work-experience">
-      <h3 className="work-experience__title section-layout__title">
-        {workExperienceTexts.title}
+      <span className="header-chip">Work experience</span>
+      <h3 className="section-layout__title">
+        Опыт работы.
       </h3>
+      <p className="section-layout__description">
+        Привет! Я Денис Шамко, разрабатываю прикладные системы, которые помогают переводить ручные процессы
+        в удобные цифровые решения.
+      </p>
+      <Divider className='work-experience__divider' />
       <div className="work-experience__content section-layout__split">
         <ol className="work-experience__list section-layout__split-right">
           {workExperienceTexts.items.map((experience) => (

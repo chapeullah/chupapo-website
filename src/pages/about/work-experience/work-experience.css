@@ -1,9 +1,11 @@
 .work-experience {
-  display: flex;
   flex-direction: column;
 
   padding: 40px;
-  gap: 40px;
+}
+
+.work-experience__divider {
+  margin-bottom: 24px;
 }
 
 .work-experience__icon {
