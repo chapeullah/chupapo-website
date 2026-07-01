@@ -1,5 +1,13 @@
 import './divider.css';
 
-export default function Divider({ className = '' }) {
-  return <div className={`divider ${className}`} />;
+import './variants/horizontal.css';
+import './variants/horizontal-p.css';
+
+export default function Divider({
+  variant = 'horizontal',
+  className = '',
+}) {
+  return (
+    <div className={`divider divider--${variant} ${className}`.trim()} />
+  );
 }

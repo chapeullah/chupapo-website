@@ -95,28 +95,21 @@
   list-style: none;
 }
 
-.technologies__item {
-  width: fit-content;
-
-  display: flex;
+.technologies__card {
+  flex-direction: row;
   align-items: center;
   gap: 12px;
 
   padding: 8px 16px 8px 8px;
 
   border-radius: 4px;
-
   background-color: var(--solid-background-tertiary);
+  box-shadow: 0 0 0 1px var(--card-stroke-default);
 
   cursor: default;
-  box-shadow: 0 0 0 1px var(--card-stroke-default);
 }
 
-.technologies__item:hover {
-  box-shadow: var(--card-shadow), 0 0 0 2px var(--accent-default);
-}
-
-.technologies__icon {
+.technologies__card-icon {
   width: 26px;
   height: 26px;
 
@@ -127,7 +120,7 @@
   pointer-events: none;
 }
 
-.technologies__item-label {
+.technologies__card-label {
   color: rgba(0, 0, 0, 0.72);
 
   font-size: 15px;
@@ -138,6 +131,6 @@
   transition: color 0.2s ease;
 }
 
-.technologies__item:hover .technologies__item-label {
+.technologies__card:hover .technologies__card-label {
   color: #000000;
 }

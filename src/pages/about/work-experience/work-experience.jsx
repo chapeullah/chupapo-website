@@ -4,7 +4,7 @@ import { useLanguage } from '@i18n/use-language.js';
 
 function ExperienceCard({ experience, technologiesTitle }) {
   return (
-    <article className="experience-card">
+    <article className="card experience-card">
       <div className="experience-card__body">
         <header className="experience-card__header">
           <div className="experience-card__main">

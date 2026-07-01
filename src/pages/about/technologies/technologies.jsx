@@ -21,9 +21,9 @@ export default function Technologies() {
 
                 <ul className="technologies__list">
                   {group.items.map(({ name, Icon }) => (
-                    <li className="technologies__item" key={name}>
-                      <Icon className="technologies__icon" />
-                      <span className="technologies__item-label">
+                    <li className="card technologies__card" key={name}>
+                      <Icon className="technologies__card-icon" />
+                      <span className="technologies__card-label">
                         {name}
                       </span>
                     </li>

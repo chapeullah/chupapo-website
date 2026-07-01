@@ -1,0 +1,5 @@
+.divider--horizontal-p {
+  border-block-start: 1px solid var(--header-color-border);
+
+  margin-inline: var(--spacing-default);
+}

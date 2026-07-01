@@ -1,0 +1,7 @@
+:root {
+  --button-border-radius: 4px;
+  --control-corner-radius: 4px;
+  --overlay-corner-radius: 8px;
+
+  --spacing-default: 40px;
+}

@@ -117,10 +117,6 @@
   --system-background-solid-attention: hsl(0, 0%, 97%);
   --system-background-solid-neutral: hsl(0, 0%, 95%);
 
-  /* RADIUS */
-  --control-corner-radius: 4px;
-  --overlay-corner-radius: 8px;
-
   /* SHADOWS */
   --card-shadow: 0 2px 4px hsla(0, 0%, 0%, 4%);
   --tooltip-shadow: 0 4px 8px hsla(0, 0%, 0%, 14%);
@@ -133,14 +129,4 @@
   --focus-stroke-outer: hsla(0, 0%, 0%, 89.56%);
   --focus-stroke: 0 0 0 1px hsl(0, 0%, 100%),
   0 0 0 3px hsla(0, 0%, 0%, 89.56%);
-
-  /* TRANSITIONS */
-  --control-slow-duration: 333ms;
-  --control-normal-duration: 250ms;
-  --control-fast-duration: 167ms;
-  --control-faster-duration: 83ms;
-  --control-fast-out-slow-in-easing: cubic-bezier(0, 0, 0, 1);
-
-  /* SIZES */
-  --button-border-radius: 4px;
 }

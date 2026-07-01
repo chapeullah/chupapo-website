@@ -1,5 +1,9 @@
 .work-process {
-  padding: 40px;
+  padding: var(--spacing-default);
+}
+
+.work-process__divider {
+  margin-bottom: 24px;
 }
 
 .work-process__content {
@@ -18,6 +22,9 @@
 }
 
 .work-process__step {
+  font-size: 24px;
+  font-weight: 600;
+
   counter-increment: workProcessCounter;
 
   display: flex;
@@ -31,29 +38,24 @@
 .work-process__step::before {
   content: counter(workProcessCounter, decimal-leading-zero);
 
-  font-size: 26px;
-  font-weight: 700;
-
   color: black;
+}
+
+.work-process__step-title {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .work-process__step-body {
   display: flex;
-  margin-left: 48px;
   flex-direction: column;
+
+  padding-left: 48px;
+
   gap: 12px;
 }
 
-.work-process__step-title {
-  margin: 0;
-
-  font-size: 26px;
-  font-weight: 700;
-}
-
 .work-process__step-description {
-  margin: 0;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;

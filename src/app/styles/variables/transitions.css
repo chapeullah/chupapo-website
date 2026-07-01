@@ -1,0 +1,7 @@
+:root {
+  --control-slow-duration: 333ms;
+  --control-normal-duration: 250ms;
+  --control-fast-duration: 167ms;
+  --control-faster-duration: 83ms;
+  --control-fast-out-slow-in-easing: cubic-bezier(0, 0, 0, 1);
+}
