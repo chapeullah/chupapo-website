@@ -4,4 +4,8 @@
   --overlay-corner-radius: 8px;
 
   --spacing-default: 40px;
+
+  --header-height: 56px;
+  --footer-height: 56px;
+  --technologies-column-count: 4;
 }

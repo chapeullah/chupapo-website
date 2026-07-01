@@ -58,13 +58,7 @@
 
   padding: 32px 0;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.14);
-
   list-style: none;
-}
-
-.technologies__group:last-child {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 .technologies__group-content {
@@ -93,6 +87,10 @@
   padding: 0;
 
   list-style: none;
+}
+
+.technologies__divider {
+  margin-bottom: 24px;
 }
 
 .technologies__card {

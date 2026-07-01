@@ -2,6 +2,7 @@ import './technologies.css';
 
 import { useLanguage } from "@i18n/use-language.js";
 import { technologyItems } from './technology-items.js';
+import Divider from '@ui/divider/divider.jsx';
 
 export default function Technologies() {
   const { t } = useLanguage();
@@ -9,7 +10,15 @@ export default function Technologies() {
 
   return (
     <section className="technologies">
-      <h3 className="technologies__title section-layout__title">{technologiesTexts.title}</h3>
+      <span className="header-chip">Technologies</span>
+      <h3 className="section-layout__title">
+        Стэк который я изучаю.
+      </h3>
+      <p className="section-layout__description">
+        Привет! Я Денис Шамко, разрабатываю прикладные системы, которые помогают переводить ручные процессы
+        в удобные цифровые решения.
+      </p>
+      <Divider className='technologies__divider' />
       <div className="technologies__content">
         <ol className="technologies__groups">
           {technologyItems.map((group) => (

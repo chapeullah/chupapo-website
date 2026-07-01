@@ -9,11 +9,9 @@
 .work-process__content {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
 }
 
 .work-process__steps {
-  width: 50%;
   margin: 0;
   padding: 0;
 
@@ -50,7 +48,7 @@
   display: flex;
   flex-direction: column;
 
-  padding-left: 48px;
+  margin-left: 48px;
 
   gap: 12px;
 }

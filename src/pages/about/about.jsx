@@ -17,6 +17,7 @@ export default function About() {
         <h2 className="about-page__header-title section-layout__header-title">{aboutTexts.headerTitle}</h2>
       </div>
 
+
       <Profile />
       <Technologies />
       <WorkExperience />

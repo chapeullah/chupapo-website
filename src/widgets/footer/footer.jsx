@@ -16,7 +16,7 @@
 
           <div className='footer__right'>
             <p className='footer__copyright'>
-              &copy; 2026 CHUPAPO SYSTEMS. Все права защищены.
+              &copy; 2026 Chupapo. Все права защищены.
             </p>
           </div>
         </footer>
