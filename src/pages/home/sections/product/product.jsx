@@ -22,15 +22,6 @@ export default function Product() {
 
       <ServiceCards />
 
-      <div className="product__description section-layout__split">
-        <h3 className="product__description-title section-layout__title section-layout__split-left">
-          {productTexts.descriptionTitle}
-        </h3>
-        <p className="product__description-text section-layout__split-right">
-          {productTexts.descriptionText}
-        </p>
-      </div>
-
       <WorkProcess />
     </section>
   );

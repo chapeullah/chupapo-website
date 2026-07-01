@@ -2,7 +2,7 @@ import Cube from './cube/cube.jsx';
 
 import './hero.css';
 
-import ContactFormButton from "./contact-form-button/contact-form-button.jsx";
+import ContactButton from "./contact-button/contact-button.jsx";
 import GitHubButton from "./github-button/github-button.jsx";
 
 export default function Hero() {
@@ -14,7 +14,7 @@ export default function Hero() {
           A software developer building reliable business tools, from backend services and APIs to clean web interfaces and automation.
         </p>
         <div className={'buttons-spacer'}>
-          <ContactFormButton />
+          <ContactButton />
           <GitHubButton />
         </div>
       </div>

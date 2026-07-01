@@ -6,7 +6,7 @@ export default function GitHubButton() {
   return (
     <Button
       href='https://github.com/chapeullah'
-      className='github-button'
+      className='hero__github-button'
       variant='default'
       target='_blank'
       rel='noopener noreferrer'

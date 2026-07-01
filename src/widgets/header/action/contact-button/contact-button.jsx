@@ -1,5 +1,5 @@
-import './contact-button.css';
-import ContactFormIcon from "@icons/contact-form/contact-form-icon.jsx";
+import ContactIcon from "@icons/contact/contact-icon.jsx";
+
 import { NavLink } from 'react-router-dom';
 
 export default function ContactButton({onNavClick}) {
@@ -7,11 +7,11 @@ export default function ContactButton({onNavClick}) {
     <NavLink
       to="/contact"
       className={({ isActive }) =>
-        `contact-button ${isActive ? 'button-selected' : ''}`
+        `action-button ${isActive ? 'button-selected' : ''}`
       }
       onClick={onNavClick}
     >
-      <ContactFormIcon className="contact-button__icon" />
+      <ContactIcon className="action-button__icon" />
     </NavLink>
   );
 }

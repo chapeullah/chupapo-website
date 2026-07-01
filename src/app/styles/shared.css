@@ -13,9 +13,18 @@
 
 .section-layout__title {
   font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.section-layout__description {
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: -1px;
-  line-height: 1;
+  line-height: 1.65;
+  max-inline-size: 560px;
+  margin-block: 12px 24px;
+  color: var(--color-text-secondary);
 }
 
 .section-layout__header {
@@ -25,12 +34,12 @@
 
 .section-layout__header-label {
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .section-layout__header-title {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 24px;
 }
 

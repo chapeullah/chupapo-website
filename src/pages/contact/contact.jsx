@@ -5,6 +5,7 @@ import MailIcon from '@icons/mail/mail-icon.jsx';
 import TelegramLogo from '@logos/telegram/telegram-logo.jsx';
 
 import { useLanguage } from "@i18n/use-language.js";
+import Button from '@ui/button/index.js';
 
 const MESSAGE_MAX_HEIGHT = 180;
 
@@ -69,7 +70,7 @@ export default function Contact() {
                   className="contact-page__link"
                   href={contact.href}
                   target={isExternalLink ? '_blank' : undefined}
-                  rel={isExternalLink ? 'noreferrer' : undefined}
+                  rel={isExternalLink ? 'noreferrer noopener' : undefined}
                 >
                   <span
                     className="contact-page__link-icon"
@@ -137,9 +138,9 @@ export default function Contact() {
             <div className="contact-page__underline"></div>
           </div>
 
-          <button className="contact-page__button" type="submit">
+          <Button className="contact-page__button" type="submit">
             {contactTexts.form.submitButtonText}
-          </button>
+          </Button>
         </form>
 
         <aside

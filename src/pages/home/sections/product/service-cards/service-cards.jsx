@@ -15,9 +15,21 @@ const listServices = services.map((service) => {
 });
 
 export default function ServiceCards() {
+
+
   return (
+    <div className='service-section'>
+      <span className='header-chip'>Services</span>
+        <h3 className="section-layout__title">
+          Решения для реальных задач.
+        </h3>
+        <p className="section-layout__description">
+          Разрабатываю рабочие инструменты: парсеры, автоматизация, учёт, заявки, клиенты, уведомленя и интеграции. Превращаю процессы в автоматизированные системы — от Telegram-ботов и парсеров до админ-панелей и внутренних сервисов.
+        </p>
       <div className='service-cards'>
         {listServices}
       </div>
+    </div>
+
   );
 }

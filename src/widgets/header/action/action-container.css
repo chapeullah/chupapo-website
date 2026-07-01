@@ -3,9 +3,39 @@
   height: 100%;
   align-items: center;
   justify-content: end;
+  gap: 8px;
 }
 
 .action-container__button-wrapper {
   grid-column: 2;
   height: 80%;
+}
+
+.action-button {
+  display: flex;
+
+  inline-size: 34px;
+  block-size: 34px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-clip: padding-box;
+  color: var(--color-text-secondary);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: var(--subtle-fill-secondary);
+}
+
+.action-button__icon {
+  inline-size: 18px;
+}
+
+.action-button.button-selected {
+  background-color: var(--subtle-fill-secondary);
+  color: var(--color-accent);
 }
