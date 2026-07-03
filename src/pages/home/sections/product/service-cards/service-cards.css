@@ -1,5 +1,5 @@
 .service-section {
-  padding: var(--spacing-default);
+  padding: var(--inline-spacing-default);
 }
 
 .header-chip {
@@ -45,4 +45,10 @@
 
 .service-cards__divider {
   margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .service-cards {
+    grid-template-columns: auto;
+  }
 }

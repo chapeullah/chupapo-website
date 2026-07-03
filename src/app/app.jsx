@@ -13,7 +13,7 @@ import './styles/variables/transitions.css';
 import LanguageProvider from "@i18n/language-provider.jsx";
 import ThemeProvider from "@theme/theme-provider.jsx";
 
-import Router from "./routing";
+import Router from "./router";
 
 export default function App() {
   return (

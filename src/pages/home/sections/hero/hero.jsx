@@ -7,7 +7,7 @@ import GitHubButton from "./github-button/github-button.jsx";
 
 export default function Hero() {
   return (
-    <section className="hero" data-cube-tracking-area>
+    <section className="hero section" data-cube-tracking-area>
       <div className="hero-left">
         <h1 className={'hero-left__label'}>Chupapo</h1>
         <p className={'hero-left__text'}>

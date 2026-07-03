@@ -130,3 +130,9 @@
   font-weight: 600;
   line-height: 1;
 }
+
+@media (max-width: 1280px) {
+  .work-experience__content {
+    display: flex;
+  }
+}

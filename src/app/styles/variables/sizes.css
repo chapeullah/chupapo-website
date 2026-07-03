@@ -3,9 +3,16 @@
   --control-corner-radius: 4px;
   --overlay-corner-radius: 8px;
 
-  --spacing-default: 40px;
+  --inline-spacing-default: 24px;
+  --block-spacing-default: 72px;
 
   --header-height: 56px;
   --footer-height: 56px;
   --technologies-column-count: 4;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --inline-spacing-default: 16px;
+  }
 }

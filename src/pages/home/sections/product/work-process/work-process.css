@@ -1,5 +1,6 @@
 .work-process {
-  padding: var(--spacing-default);
+  padding-inline: var(--inline-spacing-default);
+  padding-block: var(--block-spacing-default);
 }
 
 .work-process__divider {
@@ -8,10 +9,12 @@
 
 .work-process__content {
   display: flex;
+  justify-content: flex-end;
   width: 100%;
 }
 
 .work-process__steps {
+  width: 50%;
   margin: 0;
   padding: 0;
 
@@ -59,4 +62,14 @@
   line-height: 1.6;
 
   color: rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 1024px) {
+  .work-process__steps {
+    width: 100%;
+  }
+
+  .work-process__step-body {
+    margin-left: 24px;
+  }
 }

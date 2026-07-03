@@ -44,8 +44,6 @@
 }
 
 .technologies__groups {
-  width: 50%;
-  margin: 0 0 0 50%;
   padding: 0;
 
   counter-reset: technology-group;
@@ -72,9 +70,10 @@
   margin: 9px 0 0;
 
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
-  letter-spacing: -0.04em;
+
+  color: var(--color-text-secondary);
 }
 
 .technologies__list {
@@ -131,4 +130,11 @@
 
 .technologies__card:hover .technologies__card-label {
   color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .technologies__group-content {
+    display: flex;
+    flex-direction: column;
+  }
 }

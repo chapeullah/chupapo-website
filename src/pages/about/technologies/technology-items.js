@@ -16,7 +16,7 @@ import NginxLogo from "@logos/nginx/nginx-logo.jsx";
 
 export const technologyItems = [
   {
-    title: 'BACKEND',
+    title: 'Backend',
     items: [
       { name: 'Java', Icon: JavaLogo, href: 'https://www.java.com/'},
       { name: 'Spring Framework', Icon: SpringFrameworkLogo, href: 'https://spring.io/' },
@@ -25,7 +25,7 @@ export const technologyItems = [
     ],
   },
   {
-    title: 'FRONTEND',
+    title: 'Frontend',
     items: [
       { name: 'React', Icon: ReactLogo, href: 'https://react.dev/' },
       { name: 'JavaScript', Icon: JavaScriptLogo, href: 'https://tc39.es/ecma262/' },
@@ -34,7 +34,7 @@ export const technologyItems = [
     ],
   },
   {
-    title: 'DEVOPS',
+    title: 'DevOps',
     items: [
       { name: 'Docker', Icon: DockerLogo, href: 'https://www.docker.com/' },
       { name: 'Linux', Icon: LinuxLogo, href: 'https://www.linux.org/' },
@@ -43,7 +43,7 @@ export const technologyItems = [
     ],
   },
   {
-    title: 'DESKTOP',
+    title: 'Desktop',
     items: [
       { name: 'C++', Icon: CppLogo, href: 'https://isocpp.org/' },
       { name: 'Qt', Icon: QtLogo, href: 'https://www.qt.io/' },
