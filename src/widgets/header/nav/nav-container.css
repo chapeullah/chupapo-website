@@ -46,3 +46,13 @@
   background-color: var(--subtle-fill-secondary);
   color: var(--color-accent);
 }
+
+@media (max-width: 1024px) {
+  .nav-container__button {
+    display: none;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+}

@@ -1,9 +1,10 @@
 import GitHubLogo from '@logos/github/github-logo.jsx';
+import { githubLink } from '@widgets/header/links.js';
 
 export default function ContactButton() {
   return (
     <a
-      href="https://github.com/chapeullah"
+      href={githubLink.href}
       className="action-button"
       target="_blank"
       rel="noreferrer noopener"

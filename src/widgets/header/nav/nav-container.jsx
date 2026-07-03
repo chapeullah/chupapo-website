@@ -6,6 +6,7 @@ import LogoContainer from './logo/logo-container.jsx';
 import HomeIcon from '@icons/home/home-icon.jsx';
 import { NavLink } from 'react-router-dom';
 import InfoIcon from '@icons/info/info-icon.jsx';
+import { aboutLink, homeLink } from '@widgets/header/links.js';
 
 export default function NavContainer({onNavClick}) {
   const { t } = useLanguage();
@@ -19,7 +20,7 @@ export default function NavContainer({onNavClick}) {
       <div className="nav-divider"/>
 
       <NavLink
-        to="/"
+        to={homeLink.to}
         className={({ isActive }) =>
           `nav-container__button ${isActive ? 'button-selected' : ''}`
         }
@@ -32,7 +33,7 @@ export default function NavContainer({onNavClick}) {
       </NavLink>
 
       <NavLink
-        to="/about"
+        to={aboutLink.to}
         className={({ isActive }) =>
           `nav-container__button ${isActive ? 'button-selected' : ''}`
         }

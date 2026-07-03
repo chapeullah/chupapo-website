@@ -39,3 +39,14 @@
   background-color: var(--subtle-fill-secondary);
   color: var(--color-accent);
 }
+
+@media (max-width: 1024px) {
+  .action-container {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+
+  }
+}

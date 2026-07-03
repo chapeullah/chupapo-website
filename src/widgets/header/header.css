@@ -26,3 +26,7 @@
 .header > * {
   min-width: 0;
 }
+
+.mobile-menu {
+  display: none;
+}
