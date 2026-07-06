@@ -7,5 +7,5 @@ export const footer = {
     system: "Системная",
   },
 
-  copyright: `${site.copyrightSymbol} ${site.year} ${site.brand}. Все права защищены.`,
+  copyright: `${site.copyrightSymbol} ${site.year} ${site.chupapo.brand}. Все права защищены.`,
 };
