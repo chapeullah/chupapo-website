@@ -1,6 +1,6 @@
-# Chupapo
+# Chupapo Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal website, created to present custom software development services.
 
 Currently, two official plugins are available:
 
