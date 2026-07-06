@@ -69,15 +69,6 @@ export default function MobileMenu() {
 
         <Divider />
 
-        <NavLink
-          to="/contact"
-          className={getLinkClassName}
-          onClick={handleMenuClose}
-        >
-          <ContactIcon className="mobile-menu__link-icon" />
-          <span className="mobile-menu__link-label">{i18n.contact}</span>
-        </NavLink>
-
         <a
           href={site.contacts.github.link}
           className="mobile-menu__link"
@@ -90,6 +81,15 @@ export default function MobileMenu() {
             {site.contacts.github.label}
           </span>
         </a>
+
+        <NavLink
+          to="/contact"
+          className={getLinkClassName}
+          onClick={handleMenuClose}
+        >
+          <ContactIcon className="mobile-menu__link-icon" />
+          <span className="mobile-menu__link-label">{i18n.contact}</span>
+        </NavLink>
       </div>
     </div>
   );
