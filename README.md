@@ -7,27 +7,18 @@ This repository contains the source code for my personal website, created to pre
 
 ## Installation
 **1. Clone the repository:**
-
 ```bash
 git clone https://github.com/chapeullah/website.git
 ```
-
 **2. Go to the project directory:**
-
 ```bash
 cd website
 ```
-
 **3. Install dependencies:**
-
 ```bash
 npm install
 ```
-
 **4. Start the development server:**
-
 ```bash
 npm run dev
 ```
-
-## Expanding the ESLint configuration
