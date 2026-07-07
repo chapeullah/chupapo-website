@@ -18,7 +18,7 @@ This repository contains the source code for Chupapo website, created to present
 - Light & Dark theme support
 - Multi-language localization
 
-## Architecture
+### Architecture
 
 The project follows the Feature-Sliced Design methodology.
 
