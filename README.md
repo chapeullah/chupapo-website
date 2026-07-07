@@ -15,7 +15,7 @@ This repository contains the source code for Chupapo website, created to present
 
 - Multi-page layout
 - Responsive design
-- Light & Dark theme support
+- Light and Dark theme support
 - Multi-language localization
 - Feature-Sliced Design architecture
 
