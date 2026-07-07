@@ -11,6 +11,10 @@ This repository contains the source code for Chupapo website, created to present
 ## Preview
 ![website preview](./assets/preview.png)
 
+## Features
+
+- Multi-page layout
+
 ## Built With
 
 - React
