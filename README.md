@@ -8,6 +8,14 @@
 
 This repository contains the source code for my personal website, created to present my custom **software development services** and introduce myself.
 
+## Built With
+
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+
 ## Installation
 To run this project locally:
 
