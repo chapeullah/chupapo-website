@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://chupapo.com/">chupapo.com</a>
+  <a href="https://chupapo.com/">https://chupapo.com</a>
 </p>
 
 This repository contains the source code for my personal website, created to present my custom **software development services** and introduce myself.
