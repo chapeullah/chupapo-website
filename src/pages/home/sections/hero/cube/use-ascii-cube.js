@@ -53,7 +53,7 @@ export function useAsciiCube(canvasRef) {
       return;
     }
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
 
     if (!ctx) {
       return;
@@ -73,7 +73,7 @@ export function useAsciiCube(canvasRef) {
     let animationFrameId = null;
     let lastFrameTime = null;
 
-    const backgroundChar = '.';
+    const backgroundChar = ".";
     const distanceFromCam = 100;
     const incrementSpeed = 0.6;
 
@@ -117,7 +117,7 @@ export function useAsciiCube(canvasRef) {
     function applyFontSettings() {
       ctx.font = `${BaseFontSize}px "Courier New", monospace`;
 
-      charWidth = Math.ceil(ctx.measureText('M').width);
+      charWidth = Math.ceil(ctx.measureText("M").width);
       charHeight = Math.ceil(BaseFontSize * 1.25);
     }
 
@@ -138,7 +138,7 @@ export function useAsciiCube(canvasRef) {
     }
 
     function getMouseTrackingRect() {
-      const trackingArea = canvas.closest('[data-cube-tracking-area]');
+      const trackingArea = canvas.closest("[data-cube-tracking-area]");
 
       if (trackingArea) {
         return trackingArea.getBoundingClientRect();
@@ -526,7 +526,7 @@ export function useAsciiCube(canvasRef) {
             cubeX,
             cubeY,
             -cubeWidth,
-            '@',
+            "@",
             horizontalOffset,
             projectionPower
           );
@@ -535,7 +535,7 @@ export function useAsciiCube(canvasRef) {
             cubeWidth,
             cubeY,
             cubeX,
-            '$',
+            "$",
             horizontalOffset,
             projectionPower
           );
@@ -544,7 +544,7 @@ export function useAsciiCube(canvasRef) {
             -cubeWidth,
             cubeY,
             -cubeX,
-            '~',
+            "~",
             horizontalOffset,
             projectionPower
           );
@@ -553,7 +553,7 @@ export function useAsciiCube(canvasRef) {
             -cubeX,
             cubeY,
             cubeWidth,
-            '#',
+            "#",
             horizontalOffset,
             projectionPower
           );
@@ -562,7 +562,7 @@ export function useAsciiCube(canvasRef) {
             cubeX,
             -cubeWidth,
             -cubeY,
-            ';',
+            ";",
             horizontalOffset,
             projectionPower
           );
@@ -571,7 +571,7 @@ export function useAsciiCube(canvasRef) {
             cubeX,
             cubeWidth,
             cubeY,
-            '+',
+            "+",
             horizontalOffset,
             projectionPower
           );
@@ -600,7 +600,7 @@ export function useAsciiCube(canvasRef) {
 
       ctx.save();
 
-      ctx.textBaseline = 'top';
+      ctx.textBaseline = "top";
       ctx.fillStyle = getComputedStyle(canvas).color;
 
       const asciiWidth = columns * charWidth;
@@ -856,7 +856,7 @@ export function useAsciiCube(canvasRef) {
     function handleLogoRotationStep(event) {
       const deltaAngle = event.detail?.deltaAngle;
 
-      if (typeof deltaAngle !== 'number') {
+      if (typeof deltaAngle !== "number") {
         return;
       }
 
@@ -886,11 +886,11 @@ export function useAsciiCube(canvasRef) {
 
       const frameId = requestAnimationFrame(drawScreenshotFrame);
 
-      window.addEventListener('resize', drawScreenshotFrame);
+      window.addEventListener("resize", drawScreenshotFrame);
 
       return () => {
         cancelAnimationFrame(frameId);
-        window.removeEventListener('resize', drawScreenshotFrame);
+        window.removeEventListener("resize", drawScreenshotFrame);
         stopAnimation();
       };
     }
@@ -910,15 +910,15 @@ export function useAsciiCube(canvasRef) {
     window.visualViewport?.addEventListener("resize", resizeCanvas);
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('wheel', handleWheel);
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mouseout', handleMouseOut);
+      window.removeEventListener("resize", resizeCanvas);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mouseout", handleMouseOut);
       window.removeEventListener(LogoRotationEventName, handleLogoRotationStep);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
 
-      window.visualViewport?.removeEventListener('resize', resizeCanvas);
+      window.visualViewport?.removeEventListener("resize", resizeCanvas);
 
       stopAnimation();
     };

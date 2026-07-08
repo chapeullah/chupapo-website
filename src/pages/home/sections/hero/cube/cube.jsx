@@ -12,7 +12,7 @@ export default function Cube() {
 
   return (
     <canvas
-      className={`cube ${CubeScreenshotMode ? 'cube--screenshot' : ''}`}
+      className={`cube ${CubeScreenshotMode ? "cube--screenshot" : ""}`}
       ref={canvasRef}
     />
   );
