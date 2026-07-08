@@ -9,7 +9,12 @@
 This repository contains the source code for Chupapo website, created to present custom **software development services**.
 
 ## Preview
-![website preview](./assets/preview.png)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/preview-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/preview-light.png">
+  <img alt="Website preview" src="./assets/preview-light.png">
+</picture>
 
 ## Features
 
