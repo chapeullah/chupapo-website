@@ -39,4 +39,4 @@ export const ProjectionScale = 1;
 
 export const BaseFontSize = 12;
 
-export const CubeScreenshotMode = false
+export const CubeScreenshotMode = true;
