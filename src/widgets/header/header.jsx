@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import './header.css';
+import "./header.css";
 
-import NavContainer from './nav/nav-container.jsx';
-import ActionContainer from './action/action-container.jsx';
-import MobileMenu from '@widgets/header/action/mobile-menu/mobile-menu.jsx';
+import NavContainer from "./nav/nav-container.jsx";
+import ActionContainer from "./action/action-container.jsx";
+import MobileMenu from "@widgets/header/action/mobile-menu/mobile-menu.jsx";
 
-export default function Header({ className = '' }) {
+export default function Header({ className = "" }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMobileMenuClick = () => {
@@ -26,7 +26,7 @@ export default function Header({ className = '' }) {
 
       <div
         className={`header__mobile-menu ${
-          isMobileMenuOpen ? 'header__mobile-menu--open' : ''
+          isMobileMenuOpen ? "header__mobile-menu--open" : ""
         }`}
       >
       </div>

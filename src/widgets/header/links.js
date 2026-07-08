@@ -8,6 +8,11 @@ export const aboutLink = {
   to: "/about",
 };
 
+export const projectsLink = {
+  id: "projects",
+  to: "/projects",
+};
+
 export const contactLink = {
   id: "contact",
   to: "/contact",

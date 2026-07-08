@@ -1,0 +1,24 @@
+.projects-page {
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  max-width: 768px;
+  width: 100%;
+
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.project-card {
+  border-radius: 4px;
+
+  background-color: var(--solid-background-tertiary);
+}
+
+.project-card__body {
+  background-color: var(--color-bg);
+}
