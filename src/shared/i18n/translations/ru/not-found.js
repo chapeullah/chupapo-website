@@ -1,1 +1,1 @@
-export const notFound = "СТРАНИЦА НЕ НАЙДЕНА";
+export const notFound = "Страница не найдена.";

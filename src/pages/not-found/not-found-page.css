@@ -8,14 +8,16 @@
 
 .not-found-page__label {
   font-size: 70px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 0.7;
   text-align: center;
 }
 
 .not-found-page__title {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
+
+  color: var(--color-text-secondary);
 }
 
 .not-found-page__container {
@@ -24,4 +26,13 @@
   align-items: center;
 
   gap: 20px;
+}
+
+.go-home-button__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.go-home-button__title {
+  margin-inline-start: 8px;
 }
