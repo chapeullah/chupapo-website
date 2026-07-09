@@ -5,12 +5,12 @@ import './select-dropdown.css';
 import CaretIcon from '../icons/caret-icon.jsx';
 
 export default function SelectDropdown({
-                                         items,
-                                         selectedCode,
-                                         onChange,
-                                         icon,
-                                         ariaLabel,
-                                       }) {
+  items,
+  selectedCode,
+  onChange,
+  icon,
+  ariaLabel,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const currentItem =

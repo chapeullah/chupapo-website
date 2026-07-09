@@ -2,7 +2,6 @@
   position: relative;
 
   color: var(--color-text-tertiary);
-  z-index: 1;
 
   margin-top: auto;
   padding: 36px;
@@ -23,8 +22,8 @@
 
 .theme-icon,
 .language-icon {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
 
   color: var(--color-text-primary);
 }
@@ -38,7 +37,7 @@
   display: flex;
   margin: 0;
 
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
 
   justify-content: flex-end;

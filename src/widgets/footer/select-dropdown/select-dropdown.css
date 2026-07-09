@@ -1,148 +1,151 @@
 .select-dropdown {
-    position: relative;
-    display: inline-flex;
+  position: relative;
+  display: inline-flex;
 }
 
 .select-dropdown__button {
-    height: 40px;
-    padding: 0 14px;
+  height: 40px;
+  padding: 0 14px;
 
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
-    color: var(--color-text-primary);
-    background-color: transparent;
+  color: var(--color-text-primary);
+  background-color: transparent;
 
-    font-size: 13px;
-    font-weight: 500;
+  font-size: 12px;
+  font-weight: 500;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .select-dropdown__button:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .select-dropdown__icon {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .select-dropdown__title {
-    line-height: 1;
-    white-space: nowrap;
+  line-height: 1;
+  white-space: nowrap;
+}
 
+.select-dropdown__label {
+  font-size: 12px;
 }
 
 .select-dropdown__caret {
-    flex: 0 0 auto;
-    transition: transform 0.2s ease;
+  flex: 0 0 auto;
+  transition: transform 0.2s ease;
 }
 
 .select-dropdown__button[aria-expanded="true"] .select-dropdown__caret {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .select-dropdown__menu {
-    position: absolute;
-    bottom: calc(100% + 14px);
-    left: 50%;
+  position: absolute;
+  bottom: calc(100% + 14px);
+  left: 50%;
 
-    width: 180px;
-    padding: 14px;
+  width: 180px;
+  padding: 14px;
 
-    color: #fff;
-    background-color: var(--solid-background-tertiary);
+  color: #fff;
+  background-color: var(--solid-background-tertiary);
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    transform: translateX(-50%);
+  transform: translateX(-50%);
 
-    animation: select-dropdown-slide-up 0.22s ease forwards;
+  animation: select-dropdown-slide-up 0.22s ease forwards;
 }
 
 .select-dropdown__menu::before {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    left: 0;
-    right: 0;
-    bottom: -14px;
+  left: 0;
+  right: 0;
+  bottom: -14px;
 
-    height: 14px;
+  height: 14px;
 }
 
 .select-dropdown__menu-caret {
-    position: absolute;
-    bottom: -7px;
-    left: 50%;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
 
-    width: 14px;
-    height: 14px;
+  width: 14px;
+  height: 14px;
 
-    background-color: var(--solid-background-tertiary);
+  background-color: var(--solid-background-tertiary);
 
-    transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .select-dropdown__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .select-dropdown__item {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .select-dropdown__option {
-    width: 100%;
-    padding: 9px 10px;
+  width: 100%;
+  padding: 9px 10px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    border: none;
-    border-radius: 4px;
+  border: none;
+  border-radius: 4px;
 
-    color: var(--color-text-tertiary);
-    background-color: transparent;
+  color: var(--color-text-tertiary);
+  background-color: transparent;
 
-    font-size: 13px;
-    font-weight: 500;
-    text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-            color 0.2s ease,
-            background-color 0.2s ease;
+  transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
 }
 
 .select-dropdown__option:hover {
-    background-color: var(--subtle-fill-secondary);
+  background-color: var(--subtle-fill-secondary);
 }
 
 .select-dropdown__option--active {
-    color: var(--accent-text-primary);
-    background-color: var(--subtle-fill-secondary);
+  color: var(--accent-text-primary);
+  background-color: var(--subtle-fill-secondary);
 }
 
 .select-dropdown__option:disabled {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 @keyframes select-dropdown-slide-up {
-    from {
-        opacity: 0;
-        transform: translateX(-50%) translateY(10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }

@@ -146,7 +146,9 @@
 
   border-top: 1px solid var(--header-color-border);
   padding: 16px;
+}
 
+.project-card__release-date {
   font-size: 12px;
 }
 
@@ -155,6 +157,7 @@
 }
 
 .project-card__preview-image {
+  display: block;
   width: 100%;
   border: 1px solid var(--header-color-border);
 }

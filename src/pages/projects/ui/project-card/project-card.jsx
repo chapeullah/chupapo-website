@@ -1,7 +1,9 @@
 import './project-card.css';
 
 import { useState } from 'react';
+
 import DescriptionIcon from '@icons/description-icon/description-icon.jsx';
+import MonitorIcon from '@icons/monitor/monitor-icon.jsx';
 
 export default function ProjectCard({ project }) {
   const [selectedTab, setSelectedTab] = useState("description");
@@ -15,7 +17,7 @@ export default function ProjectCard({ project }) {
     {
       id: "preview",
       label: "Preview",
-      icon: null,
+      icon: MonitorIcon,
     },
   ];
 
@@ -84,7 +86,7 @@ export default function ProjectCard({ project }) {
           </div>
         )}
         <div className="project-card__meta">
-        <span>
+        <span className="project-card__release-date">
           Released on {new Intl.DateTimeFormat('en-US', {
           month: 'long',
           year: 'numeric',
