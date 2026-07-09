@@ -59,6 +59,15 @@ export default function MobileMenu() {
         </NavLink>
 
         <NavLink
+          to="/projects"
+          className={getLinkClassName}
+          onClick={handleMenuClose}
+        >
+          <InfoIcon className="mobile-menu__link-icon" />
+          <span className="mobile-menu__link-label">Projects</span>
+        </NavLink>
+
+        <NavLink
           to="/about"
           className={getLinkClassName}
           onClick={handleMenuClose}

@@ -52,6 +52,9 @@
 }
 
 .project-card__tab {
+  display: inline-flex;
+  align-items: center;
+
   background-color: transparent;
   padding-inline: 8px;
   padding-block: 4px;
@@ -69,6 +72,18 @@
   cursor: pointer;
 
   user-select: none;
+}
+
+.project-card__tab-icon {
+  height: 14px;
+  width: 14px;
+}
+
+.project-card__tab-title {
+  margin-inline-start: 8px;
+  font-weight: 500;
+
+  transform: translateY(-1px);
 }
 
 .project-card__tab:hover {

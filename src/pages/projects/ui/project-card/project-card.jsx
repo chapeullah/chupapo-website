@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
     {
       id: "description",
       label: "Description",
-      icon: <DescriptionIcon />,
+      icon: DescriptionIcon,
     },
     {
       id: "preview",
@@ -42,19 +42,24 @@ export default function ProjectCard({ project }) {
         </a>
       </div>
       <nav className="project-card__menu">
-        <ul className="project-card__tabs">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              className={`project-card__tab ${
-                selectedTab === tab.id ? "project-card__tab--selected" : ""
-              }`}
-              onClick={() => setSelectedTab(tab.id)}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </ul>
+        <div className="project-card__tabs">
+          {tabs.map((tab) => {
+            const Icon = tab.icon;
+
+            return (
+              <button
+                type="button"
+                className={`project-card__tab ${
+                  selectedTab === tab.id ? "project-card__tab--selected" : ""
+                }`}
+                onClick={() => setSelectedTab(tab.id)}
+              >
+                {Icon && <Icon className="project-card__tab-icon" />}
+                <span className="project-card__tab-title">{tab.label}</span>
+              </button>
+            );
+          })}
+        </div>
       </nav>
       <div className="project-card__body">
         {/* DESCRIPTION */}
