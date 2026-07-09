@@ -18,8 +18,8 @@ export const site = {
 
     telegram: {
       label: "Telegram",
-      username: "@chapeullah",
-      link: "https://t.me/chapeullah",
+      username: "@chupapodev",
+      link: "https://t.me/chupapodev",
     },
   },
 };
