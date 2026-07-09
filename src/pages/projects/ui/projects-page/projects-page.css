@@ -1,11 +1,11 @@
 .projects-page {
   min-height: 100svh;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .projects-container {
+  align-items: start;
+
   max-width: 768px;
   width: 100%;
 

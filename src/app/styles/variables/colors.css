@@ -30,6 +30,7 @@
   --accent-default: hsl(var(--accent-dark-1));
   --accent-secondary: hsl(var(--accent-dark-1) / 90%);
   --accent-tertiary: hsl(var(--accent-dark-1) / 80%);
+  --accent-muted: hsl(var(--accent-dark-1) / 10%);
   --accent-disabled: hsla(0, 0%, 0%, 21.69%);
 
   --accent-text-primary: hsl(var(--accent-dark-2));
@@ -165,6 +166,7 @@
   --accent-default: hsl(var(--accent-light-1));
   --accent-secondary: hsl(var(--accent-light-1) / 90%);
   --accent-tertiary: hsl(var(--accent-light-1) / 80%);
+  --accent-muted: hsl(var(--accent-light-1) / 10%);
   --accent-disabled: hsl(0 0% 100% / 15.81%);
 
   --accent-text-primary: hsl(var(--accent-light-2));
