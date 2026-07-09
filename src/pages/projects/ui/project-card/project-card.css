@@ -32,19 +32,37 @@
 }
 
 .project-card__menu {
-  height: 32px;
+  display: block;
+
   padding-inline: 16px;
   margin-top: 16px;
+  margin-bottom: -2px;
+}
+
+.project-card__tabs {
+  display: flex;
+}
+
+.project-card__tab {
+  background-color: var(--color-bg);
+  padding-inline: 8px;
+  padding-block: 4px;
+
+  border: 1px solid var(--header-color-border);
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+
+  font-size: 12px;
+  color: var(--color-text-secondary);
 }
 
 .project-card__body {
   background-color: var(--color-bg);
-
   border-top: 1px solid var(--header-color-border);
 }
 
 .project-card__description {
-  margin: 16px;
+  padding: 16px;
 
   color: var(--color-text-secondary);
 

@@ -1,9 +1,9 @@
 export const projects = [
   {
-    id: "chapeullah-website",
+    id: "chupapo-website",
 
     owner: {
-      name: "chapeullah",
+      name: "chupapo",
       link: "https://github.com/chapeullah",
     },
 

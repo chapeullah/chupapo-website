@@ -22,11 +22,22 @@ export default function ProjectCard({ project }) {
           {project.title}
         </a>
       </div>
-      <nav className="project-card__menu"></nav>
+      <nav className="project-card__menu">
+        <ul className="project-card__tabs">
+          <a className="project-card__tab">Description</a>
+        </ul>
+      </nav>
       <div className="project-card__body">
         <p className="project-card__description">{project.description}</p>
         <div className="project-card__meta">
-          <span className="">Released on {project.releaseDate}</span>
+          <span>
+            Released on {new Intl.DateTimeFormat('en-US', {
+            month: 'long',
+            year: 'numeric',
+            day: 'numeric',
+            timeZone: 'UTC',
+          }).format(new Date(project.releaseDate))}
+          </span>
         </div>
       </div>
     </article>
