@@ -1,4 +1,10 @@
+import ChatBotIcon from '@icons/chat-bot/chat-bot-icon.jsx';
+
 export const serviceItems = [
+  {
+    id: "chat-bots",
+    icon: ChatBotIcon,
+  },
   {
     id: "web-interfaces",
     icon: null,
@@ -17,10 +23,6 @@ export const serviceItems = [
   },
   {
     id: "crm",
-    icon: null,
-  },
-  {
-    id: "telegram-bots",
     icon: null,
   },
   {

@@ -10,8 +10,6 @@
   border-radius: 4px;
 
   box-shadow: 0 0 0 1px var(--card-stroke-default);
-
-  cursor: default;
 }
 
 .card:hover {

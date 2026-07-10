@@ -1,8 +1,8 @@
-import "./service-cards.css";
+import './service-cards.css';
 
-import Divider from "@ui/divider/divider.jsx";
-import { useLanguage } from "@i18n/use-language.js";
-import { serviceItems } from "./service-items.js";
+import Divider from '@ui/divider/divider.jsx';
+import { useLanguage } from '@i18n/use-language.js';
+import { serviceItems } from './service-items.js';
 
 export default function ServiceCards() {
   const { t } = useLanguage();
@@ -14,7 +14,7 @@ export default function ServiceCards() {
 
     return (
       <article className="card service-card" key={service.id}>
-        {Icon && <Icon className="icon service-card__icon" />}
+        {Icon && <Icon className="service-card__icon" />}
         <h3 className="service-card__name">{service.title}</h3>
         {service.description && (
           <p className="service-card__description">{service.description}</p>

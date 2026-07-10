@@ -23,10 +23,12 @@
 }
 
 .service-card {
-  min-height: 128px;
-
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
+}
+
+.service-card__icon {
+  color: var(--accent-default)
 }
 
 .service-card__name {

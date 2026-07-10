@@ -7,6 +7,11 @@ export const serviceSection = {
 
   services: [
     {
+      id: "chat-bots",
+      title: "Chat bots",
+      description: "Telegram, MAX, VK, WhatsApp, Discord, and more. Automation of customer support, lead collection, order processing, and notifications across popular messaging platforms.",
+    },
+    {
       id: "web-interfaces",
       title: "Web interfaces",
       description: null,
@@ -29,11 +34,6 @@ export const serviceSection = {
     {
       id: "crm",
       title: "CRM",
-      description: null,
-    },
-    {
-      id: "telegram-bots",
-      title: "Telegram bots",
       description: null,
     },
     {
