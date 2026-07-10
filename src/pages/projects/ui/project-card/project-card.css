@@ -121,7 +121,6 @@
 .project-card__body {
   background-color: var(--color-bg);
   border-top: 1px solid var(--header-color-border);
-  border-right: 1px solid var(--header-color-border);
 }
 
 .project-card__description {
