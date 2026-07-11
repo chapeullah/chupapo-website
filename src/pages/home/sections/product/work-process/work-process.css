@@ -11,63 +11,109 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  background-color: var(--solid-background-tertiary);
+
+  border-radius: 8px;
+
+  padding: 24px;
 }
 
 .work-process__steps {
-  width: 50%;
+  counter-reset: process-step;
   margin: 0;
   padding: 0;
 
   list-style: none;
-  counter-reset: workProcessCounter;
+
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .work-process__step {
-  font-size: 24px;
-  font-weight: 600;
-
-  counter-increment: workProcessCounter;
+  position: relative;
+  counter-increment: process-step;
 
   display: flex;
   align-items: flex-start;
+
+  background-color: var(--solid-background-tertiary);
+  border-radius: 8px;
+  border: 1px solid var(--header-color-border);
 }
 
-.work-process__step:not(:first-child) {
-  margin-top: 40px;
+.work-process__step::after {
+  content: counter(process-step);
+
+  position: absolute;
+  bottom: 10px;
+  inset-inline: 0;
+
+  width: max-content;
+  margin-inline: auto;
+
+  padding-inline: 6px;
+  padding-bottom: 1px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+
+  color: var(--accent-text-primary);
+  background-color: var(--accent-muted);
+
+  border-radius: 24px;
 }
 
-.work-process__step::before {
-  content: counter(workProcessCounter, decimal-leading-zero);
+.work-process__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 8px 8px 0 0;
+
+  padding: 16px;
+
+  cursor: default;
+}
+
+.work-process__step:hover::after {
+  background-color: var(--accent-default);
+  color: var(--text-on-accent-primary);
+}
+
+.work-process__step-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .work-process__step-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .work-process__step-body {
   display: flex;
   flex-direction: column;
-
-  margin-left: 48px;
-
-  gap: 12px;
 }
 
 .work-process__step-description {
-  font-size: 16px;
+  line-height: 1.65;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.6;
 
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
+
+  border-top: solid 1px var(--header-color-border);
+
+  padding: 16px;
+  margin-bottom: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .work-process__steps {
-    width: 100%;
-  }
-
-  .work-process__step-body {
-    margin-left: 24px;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }

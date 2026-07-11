@@ -1,7 +1,7 @@
 export default function ContactIcon({ className = '' }) {
   return (
     <svg
-      className={`icon contact-form-icon ${className}`}
+      className={`icon contact-icon ${className}`}
       viewBox="0 0 24 24"
       aria-hidden="true"
     >
