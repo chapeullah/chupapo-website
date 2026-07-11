@@ -1,33 +1,33 @@
-import JavaLogo from "@logos/java/java-logo.jsx";
-import CppLogo from "@logos/cpp/cpp-logo.jsx";
-import QtLogo from "@logos/qt/qt-logo.jsx";
-import KafkaLogo from "@logos/kafka/kafka-logo.jsx";
-import PostgreSqlLogo from "@logos/postgresql/postgresql-logo.jsx";
-import ReactLogo from "@logos/react/react-logo.jsx";
-import JavaScriptLogo from "@logos/java-script/java-script-logo.jsx";
-import HtmlLogo from "@logos/html/html-logo.jsx";
-import CssLogo from "@logos/css/css-logo.jsx";
-import DockerLogo from "@logos/docker/docker-logo.jsx";
-import GitLogo from "@logos/git/git-logo.jsx";
-import CmakeLogo from "@logos/cmake/cmake-logo.jsx";
-import SpringFrameworkLogo from "@logos/spring-framework/spring-framework-logo.jsx";
-import LinuxLogo from "@logos/linux/linux-logo.jsx";
-import NginxLogo from "@logos/nginx/nginx-logo.jsx";
+import CppLogo from '@logos/cpp/cpp-logo.jsx';
+import QtLogo from '@logos/qt/qt-logo.jsx';
+import JavaScriptLogo from '@logos/java-script/java-script-logo.jsx';
+import HtmlLogo from '@logos/html/html-logo.jsx';
+import CssLogo from '@logos/css/css-logo.jsx';
+import DockerLogo from '@logos/docker/docker-logo.jsx';
+import GitLogo from '@logos/git/git-logo.jsx';
+import CmakeLogo from '@logos/cmake/cmake-logo.jsx';
+import LinuxLogo from '@logos/linux/linux-logo.jsx';
+import NginxLogo from '@logos/nginx/nginx-logo.jsx';
+import CoffeeIcon from '@icons/coffee/coffee-icon.jsx';
+import SpringIcon from '@icons/spring/spring-icon.jsx';
+import PostgreSqlIcon from '@icons/postgresql/postgresql-icon.jsx';
+import KafkaIcon from '@icons/kafka/kafka-icon.jsx';
+import ReactIcon from '@icons/react/react-icon.jsx';
 
 export const technologyItems = [
   {
     id: "backend",
     items: [
-      { name: "Java", Icon: JavaLogo, href: "https://www.java.com/" },
-      { name: "Spring Framework", Icon: SpringFrameworkLogo, href: "https://spring.io/" },
-      { name: "PostgreSQL", Icon: PostgreSqlLogo, href: "https://www.postgresql.org/" },
-      { name: "Apache Kafka", Icon: KafkaLogo, href: "https://kafka.apache.org/" },
+      { name: "Java", Icon: CoffeeIcon, href: "https://www.java.com/" },
+      { name: "Spring Framework", Icon: SpringIcon, href: "https://spring.io/" },
+      { name: "PostgreSQL", Icon: PostgreSqlIcon, href: "https://www.postgresql.org/" },
+      { name: "Apache Kafka", Icon: KafkaIcon, href: "https://kafka.apache.org/" },
     ],
   },
   {
     id: "frontend",
     items: [
-      { name: "React", Icon: ReactLogo, href: "https://react.dev/" },
+      { name: "React", Icon: ReactIcon, href: "https://react.dev/" },
       { name: "JavaScript", Icon: JavaScriptLogo, href: "https://tc39.es/ecma262/" },
       { name: "HTML", Icon: HtmlLogo, href: "https://developer.mozilla.org/docs/Web/HTML" },
       { name: "CSS", Icon: CssLogo, href: "https://www.w3.org/Style/CSS/" },

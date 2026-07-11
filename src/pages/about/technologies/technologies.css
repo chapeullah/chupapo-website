@@ -2,53 +2,51 @@
   padding: 40px;
 }
 
-.technologies__container {
-  display: flex;
-  align-items: center;
-
-  gap: 10px;
-
-  font-size: 50px;
-  font-weight: 500;
+.technologies__divider {
+  margin-bottom: 24px;
 }
 
 .technologies__groups {
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 
-  counter-reset: technology-group;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
 
 .technologies__group {
-  counter-increment: technology-group;
-
-  padding: 32px 0;
+  min-width: 0;
+  padding: 24px;
 
   list-style: none;
+
+  background-color: var(--solid-background-tertiary);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--card-stroke-default);
 }
 
 .technologies__group-content {
-  display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 34px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .technologies__group-title {
-  margin: 9px 0 0;
+  margin: 0;
 
   font-size: 22px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.2;
 
   color: var(--color-text-secondary);
 }
 
 .technologies__list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
 
   margin: 0;
@@ -57,11 +55,9 @@
   list-style: none;
 }
 
-.technologies__divider {
-  margin-bottom: 24px;
-}
-
 .technologies__card {
+  width: 100%;
+
   flex-direction: row;
   align-items: center;
   gap: 12px;
@@ -76,16 +72,16 @@
 }
 
 .technologies__card-icon {
-  width: 26px;
-  height: 26px;
-
   display: block;
   flex: 0 0 auto;
 
-  user-select: none;
-  pointer-events: none;
+  width: 26px;
+  height: 26px;
 
   color: var(--color-text-primary);
+
+  user-select: none;
+  pointer-events: none;
 }
 
 .technologies__card-label {
@@ -95,13 +91,20 @@
   font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
-
-  transition: color 0.2s ease;
 }
 
-@media (max-width: 1024px) {
-  .technologies__group-content {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .technologies__groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .technologies {
+    padding: 24px;
+  }
+
+  .technologies__groups {
+    grid-template-columns: 1fr;
   }
 }
