@@ -10,6 +10,7 @@ import { getExperienceYears } from '@pages/about/profile/get-experience-years.js
 import { formatYears } from '@pages/about/profile/format-years.js';
 
 import profilePhoto from '@assets/photo.jpg';
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const { t, language } = useLanguage();
@@ -35,14 +36,12 @@ export default function Profile() {
               <h2 className="profile__title">
                 {i18n.name}
                 {" / "}
-                <a
-                  href={site.contacts.github.link}
+                <Link
+                  to="/"
                   className="profile__brand"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   {site.chupapo.brand}
-                </a>
+                </Link>
               </h2>
 
               <p className="profile__role">{i18n.role}</p>
