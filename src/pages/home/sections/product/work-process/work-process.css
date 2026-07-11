@@ -277,7 +277,10 @@
 
 .work-process__step-body {
   display: flex;
+  flex: 1;
   flex-direction: column;
+
+  min-width: 0;
 }
 
 .work-process__step-description {
