@@ -1,11 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { LanguageContext } from './language-context.jsx';
-import {
-  AvailableLanguageCodes,
-  DefaultLanguageCode,
-  LanguageStorageKey,
-} from './languages.js';
+import { AvailableLanguageCodes, DefaultLanguageCode, LanguageStorageKey, } from './languages.js';
 import { translations } from './translations/index.js';
 
 function getBrowserLanguage() {
@@ -28,6 +24,10 @@ function getInitialLanguage() {
 
 export default function LanguageProvider({ children }) {
   const [language, setLanguageState] = useState(getInitialLanguage);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   const setLanguage = (nextLanguage) => {
     if (!AvailableLanguageCodes.includes(nextLanguage)) {
