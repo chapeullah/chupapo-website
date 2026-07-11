@@ -1,4 +1,4 @@
-export const aboutSection = {
+export const about = {
   header: {
     label: "ABOUT ME",
     title: "Who am I?",

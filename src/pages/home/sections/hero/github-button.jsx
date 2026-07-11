@@ -6,7 +6,7 @@ import { site } from '@i18n/site.js';
 
 export default function GitHubButton() {
   const { t } = useLanguage();
-  const i18n = t.heroSection.buttons;
+  const i18n = t.hero.buttons;
 
   return (
     <Button

@@ -1,4 +1,4 @@
-export const workExperienceSection = {
+export const workExperience = {
   header: {
     chip: "Work Experience",
     title: "Work Experience",

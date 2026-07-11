@@ -5,26 +5,43 @@ import { useState } from 'react';
 import DescriptionIcon from '@icons/description-icon/description-icon.jsx';
 import MonitorIcon from '@icons/monitor/monitor-icon.jsx';
 import WebsiteIcon from '@icons/website/website-icon.jsx';
+import { useLanguage } from '@i18n/use-language.js';
+
+const locales = {
+  ru: 'ru-RU',
+  en: 'en-US',
+};
 
 export default function ProjectCard({ project }) {
+  const { t, language  } = useLanguage();
+  const i18n = t.projects;
+  const projectI18n = i18n.items[project.id];
+
+  const releaseDate = new Intl.DateTimeFormat(locales[language], {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(project.releaseDate));
+
   const [selectedTab, setSelectedTab] = useState("description");
 
   const tabs = [
     {
       id: "description",
-      label: "Description",
+      label: i18n.description,
       icon: DescriptionIcon,
     },
     {
       id: "preview",
-      label: "Preview",
+      label: i18n.preview,
       icon: MonitorIcon,
     },
   ];
 
   return (
     <article className="project-card">
-      <p className="project-card__eyebrow">{project.eyebrow}</p>
+      <p className="project-card__eyebrow">{projectI18n.eyebrow}</p>
       <div className="project-card__header">
         <WebsiteIcon className="project-card__icon" />
         <div className="project-card__title">
@@ -43,7 +60,7 @@ export default function ProjectCard({ project }) {
             target="_blank"
             rel="noreferrer noopener"
           >
-            {project.name}
+            {projectI18n.name}
           </a>
         </div>
       </div>
@@ -72,7 +89,7 @@ export default function ProjectCard({ project }) {
         {/* DESCRIPTION */}
         {selectedTab === "description" && (
           <>
-            <p className="project-card__description">{project.description}</p>
+            <p className="project-card__description">{projectI18n.description}</p>
             <div className="project-card__tags">
               {project.tags.map((tag) => (
                 <article key={tag.id} className="project-card__tag">{tag.name}</article>
@@ -92,12 +109,7 @@ export default function ProjectCard({ project }) {
         )}
         <div className="project-card__meta">
           <span className="project-card__release-date">
-            Released on {new Intl.DateTimeFormat('en-US', {
-              month: 'long',
-              year: 'numeric',
-              day: 'numeric',
-              timeZone: 'UTC',
-            }).format(new Date(project.releaseDate))}
+            {i18n.released} {releaseDate}
           </span>
         </div>
       </div>

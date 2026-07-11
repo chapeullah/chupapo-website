@@ -5,7 +5,7 @@ import { useLanguage } from '@i18n/use-language.js';
 
 export default function ContactButton() {
   const { t } = useLanguage();
-  const i18n = t.heroSection.buttons;
+  const i18n = t.hero.buttons;
 
   return (
     <Button

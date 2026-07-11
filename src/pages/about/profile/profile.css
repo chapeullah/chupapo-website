@@ -118,7 +118,7 @@
 }
 
 .profile__description {
-  margin-top: 40px;
+  margin-top: 24px;
 
   font-size: 14px;
   line-height: 1.65;
@@ -131,7 +131,7 @@
   flex-wrap: wrap;
   gap: 12px 24px;
 
-  margin-top: 32px;
+  margin-top: 24px;
 
   font-size: 14px;
   color: var(--color-text-secondary);

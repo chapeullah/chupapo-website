@@ -1,4 +1,4 @@
-export const technologiesSection = {
+export const technologies = {
   header: {
     chip: "Технологии",
     title: "Технологии, с которыми я работаю.",

@@ -6,7 +6,7 @@ import { serviceItems } from './service-items.js';
 
 export default function ServiceCards() {
   const { t } = useLanguage();
-  const i18n = t.serviceSection;
+  const i18n = t.service;
 
   const listServices = i18n.services.map((service) => {
     const serviceMeta = serviceItems.find((item) => item.id === service.id);

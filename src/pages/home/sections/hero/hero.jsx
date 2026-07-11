@@ -2,15 +2,15 @@ import Cube from './cube/cube.jsx';
 
 import './hero.css';
 
-import ContactButton from "./contact-button.jsx";
-import GitHubButton from "./github-button.jsx";
+import ContactButton from './contact-button.jsx';
+import GitHubButton from './github-button.jsx';
 import { useLanguage } from '@i18n/use-language.js';
 
 import { site } from '@i18n/site.js';
 
 export default function Hero() {
   const { t } = useLanguage();
-  const i18n = t.heroSection;
+  const i18n = t.hero;
 
   return (
     <section className="hero section" data-cube-tracking-area>

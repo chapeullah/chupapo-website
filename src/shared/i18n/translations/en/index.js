@@ -1,25 +1,25 @@
-import { aboutSection } from './about-section.js';
+import { about } from './about.js';
 import { footer } from './footer.js';
 import { header } from './header.js';
-import { heroSection } from './hero-section.js';
-import { productSection } from './product-section.js';
-import { serviceSection } from './service-section.js';
-import { technologiesSection } from './technologies-section.js';
-import { workExperienceSection } from './work-experience-section.js';
-import { workProcessSection } from './work-process-section.js';
+import { hero } from './hero.js';
+import { product } from './product.js';
+import { service } from './service.js';
+import { technologies } from './technologies.js';
+import { workExperience } from './work-experience.js';
+import { workProcess } from './work-process.js';
 import { notFound } from './not-found.js';
 import { contact } from './contact.js';
 
 export const en = {
-  aboutSection,
+  about,
   contact,
   footer,
   header,
-  heroSection,
+  hero,
   notFound,
-  productSection,
-  serviceSection,
-  technologiesSection,
-  workExperienceSection,
-  workProcessSection,
+  product,
+  service,
+  technologies,
+  workExperience,
+  workProcess,
 };

@@ -1,4 +1,4 @@
-export const heroSection = {
+export const hero = {
   description: "A software developer building reliable business tools, from backend serviceItems and APIs to clean web interfaces and automation.",
 
   buttons: {

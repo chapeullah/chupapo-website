@@ -8,15 +8,200 @@
 }
 
 .work-process__content {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+
   width: 100%;
+  padding: 64px 24px;
 
   background-color: var(--solid-background-tertiary);
-
   border-radius: 8px;
+}
 
-  padding: 24px;
+.work-process__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  margin-bottom: 64px;
+}
+
+.work-process__intro .section-layout__description {
+  max-width: 640px;
+}
+
+:root {
+  --work-gradient-base: hsl(30 45% 90%);
+
+  --work-gradient-1: hsl(28 70% 78%);
+  --work-gradient-2: hsl(42 65% 82%);
+  --work-gradient-3: hsl(12 60% 80%);
+  --work-gradient-4: hsl(350 48% 82%);
+  --work-gradient-5: hsl(24 55% 84%);
+  --work-gradient-6: hsl(45 58% 84%);
+  --work-gradient-7: hsl(8 52% 84%);
+  --work-gradient-8: hsl(325 34% 84%);
+}
+
+[data-theme="dark"] {
+  --work-gradient-base: hsl(255 18% 12%);
+
+  --work-gradient-1: hsl(280 32% 24%);
+  --work-gradient-2: hsl(330 34% 25%);
+  --work-gradient-3: hsl(350 38% 24%);
+  --work-gradient-4: hsl(15 32% 24%);
+  --work-gradient-5: hsl(300 25% 22%);
+  --work-gradient-6: hsl(25 28% 25%);
+  --work-gradient-7: hsl(345 30% 23%);
+  --work-gradient-8: hsl(265 28% 23%);
+}
+
+.work-process__gradient {
+  opacity: 0.85;
+
+  position: absolute;
+  inset: -15%;
+  z-index: -1;
+
+  pointer-events: none;
+
+  background-color: var(--work-gradient-base);
+  background-image:
+      radial-gradient(
+          at 68% 34%,
+          var(--work-gradient-1) 0,
+          transparent 43%
+      ),
+      radial-gradient(
+          at 51% 0%,
+          var(--work-gradient-2) 0,
+          transparent 57%
+      ),
+      radial-gradient(
+          at 80% 2%,
+          var(--work-gradient-3) 0,
+          transparent 41%
+      ),
+      radial-gradient(
+          at 96% 100%,
+          var(--work-gradient-4) 0,
+          transparent 47%
+      ),
+      radial-gradient(
+          at 1% 84%,
+          var(--work-gradient-5) 0,
+          transparent 41%
+      ),
+      radial-gradient(
+          at 19% 100%,
+          var(--work-gradient-6) 0,
+          transparent 44%
+      ),
+      radial-gradient(
+          at 46% 100%,
+          var(--work-gradient-7) 0,
+          transparent 49%
+      ),
+      radial-gradient(
+          at 92% 72%,
+          var(--work-gradient-8) 0,
+          transparent 43%
+      );
+
+  background-repeat: no-repeat;
+
+  background-size:
+      145% 155%,
+      165% 140%,
+      150% 165%,
+      170% 145%,
+      140% 160%,
+      160% 150%,
+      155% 170%,
+      175% 145%;
+
+  animation: work-process-gradient-movement 60s infinite ease-in-out alternate;
+
+  will-change: background-position, transform;
+}
+
+@keyframes work-process-gradient-movement {
+  0% {
+    background-position:
+        0% 40%,
+        30% 0%,
+        80% 10%,
+        100% 80%,
+        0% 90%,
+        20% 100%,
+        60% 90%,
+        90% 60%;
+
+    transform: translate3d(-2%, 1%, 0) scale(1.02);
+  }
+
+  23% {
+    background-position:
+        28% 12%,
+        68% 32%,
+        100% 48%,
+        72% 100%,
+        12% 58%,
+        48% 82%,
+        30% 100%,
+        78% 25%;
+
+    transform: translate3d(3%, -2%, 0) scale(1.05);
+  }
+
+  47% {
+    background-position:
+        74% 28%,
+        18% 54%,
+        62% 0%,
+        94% 58%,
+        38% 100%,
+        0% 72%,
+        82% 86%,
+        46% 42%;
+
+    transform: translate3d(-1%, 3%, 0) scale(1.03);
+  }
+
+  71% {
+    background-position:
+        92% 68%,
+        42% 8%,
+        26% 46%,
+        76% 92%,
+        0% 32%,
+        58% 100%,
+        100% 66%,
+        22% 84%;
+
+    transform: translate3d(2%, 1%, 0) scale(1.06);
+  }
+
+  100% {
+    background-position:
+        16% 58%,
+        56% 0%,
+        88% 22%,
+        64% 100%,
+        4% 82%,
+        34% 64%,
+        76% 100%,
+        96% 48%;
+
+    transform: translate3d(1%, -3%, 0) scale(1.04);
+  }
 }
 
 .work-process__steps {
@@ -38,9 +223,12 @@
   display: flex;
   align-items: flex-start;
 
-  background-color: var(--solid-background-tertiary);
+  background-color: color-mix(
+      in srgb,
+      var(--solid-background-tertiary) 70%,
+      transparent
+  );
   border-radius: 8px;
-  border: 1px solid var(--header-color-border);
 }
 
 .work-process__step::after {
@@ -107,6 +295,16 @@
 
   padding: 16px;
   margin-bottom: 24px;
+}
+
+.section-layout__description {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1920px) {
+  .work-process__steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 1280px) {

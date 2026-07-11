@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const { t, language } = useLanguage();
-  const i18n = t.aboutSection;
+  const i18n = t.about;
 
   const age = getAge(site.chupapo.birthDate);
   const ageText = formatYears(age, language);

@@ -6,7 +6,7 @@ import ExperienceCard from '@pages/about/work-experience/experience-card.jsx';
 
 export default function WorkExperience() {
   const { t } = useLanguage();
-  const i18n = t.workExperienceSection;
+  const i18n = t.workExperience;
 
   const listWorkExperience = i18n.items.map((experience) => (
     <li

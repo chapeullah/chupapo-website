@@ -1,4 +1,4 @@
-export const serviceSection = {
+export const service = {
   header: {
     chip: "Services",
     title: "Process automation",

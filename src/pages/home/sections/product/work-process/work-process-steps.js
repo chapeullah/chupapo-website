@@ -7,11 +7,11 @@ import LifeBuoyIcon from '@icons/life-buoy/life-buoy-icon.jsx';
 
 export const workProcessSteps = [
   {
-    id: "getting-started",
+    id: "request",
     icon: ContactIcon,
   },
   {
-    id: "task-definition",
+    id: "design",
     icon: FolderIcon,
   },
   {
@@ -19,7 +19,7 @@ export const workProcessSteps = [
     icon: CodeIcon,
   },
   {
-    id: "final-setup",
+    id: "approval",
     icon: SlidersIcon,
   },
   {
