@@ -41,6 +41,8 @@
   font-weight: 600;
   line-height: 1.2;
 
+  text-align: center;
+
   color: var(--color-text-secondary);
 }
 
@@ -65,10 +67,12 @@
   padding: 8px 16px 8px 8px;
 
   border-radius: 4px;
-  background-color: var(--solid-background-tertiary);
+  background-color: var(--color-bg);
   box-shadow: 0 0 0 1px var(--card-stroke-default);
 
   cursor: default;
+
+  overflow: hidden;
 }
 
 .technologies__card-icon {

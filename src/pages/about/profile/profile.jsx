@@ -34,7 +34,7 @@ export default function Profile() {
           <div className="profile__content">
             <header className="profile__header">
               <h2 className="profile__title">
-                <spanp className="profile__name">{i18n.name}</spanp>
+                <span className="profile__name">{i18n.name}</span>
                 {" / "}
                 <Link
                   to="/"

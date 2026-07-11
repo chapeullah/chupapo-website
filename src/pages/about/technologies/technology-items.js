@@ -1,18 +1,18 @@
-import CppLogo from '@logos/cpp/cpp-logo.jsx';
-import QtLogo from '@logos/qt/qt-logo.jsx';
-import JavaScriptLogo from '@logos/java-script/java-script-logo.jsx';
-import HtmlLogo from '@logos/html/html-logo.jsx';
-import CssLogo from '@logos/css/css-logo.jsx';
-import DockerLogo from '@logos/docker/docker-logo.jsx';
-import GitLogo from '@logos/git/git-logo.jsx';
-import CmakeLogo from '@logos/cmake/cmake-logo.jsx';
-import LinuxLogo from '@logos/linux/linux-logo.jsx';
-import NginxLogo from '@logos/nginx/nginx-logo.jsx';
 import CoffeeIcon from '@icons/coffee/coffee-icon.jsx';
 import SpringIcon from '@icons/spring/spring-icon.jsx';
 import PostgreSqlIcon from '@icons/postgresql/postgresql-icon.jsx';
 import KafkaIcon from '@icons/kafka/kafka-icon.jsx';
 import ReactIcon from '@icons/react/react-icon.jsx';
+import JavaScriptIcon from '@icons/javascript/javascript-icon.jsx';
+import HtmlIcon from '@icons/html/html-icon.jsx';
+import CssIcon from '@icons/css/css-icon.jsx';
+import DockerIcon from '@icons/docker/docker-icon.jsx';
+import LinuxIcon from '@icons/linux/linux-icon.jsx';
+import NginxIcon from '@icons/nginx/nginx-icon.jsx';
+import GitIcon from '@icons/git/git-icon.jsx';
+import CppIcon from '@icons/cpp/cpp-icon.jsx';
+import QtIcon from '@icons/qt/qt-icon.jsx';
+import CmakeIcon from '@icons/cmake/cmake-icon.jsx';
 
 export const technologyItems = [
   {
@@ -28,26 +28,26 @@ export const technologyItems = [
     id: "frontend",
     items: [
       { name: "React", Icon: ReactIcon, href: "https://react.dev/" },
-      { name: "JavaScript", Icon: JavaScriptLogo, href: "https://tc39.es/ecma262/" },
-      { name: "HTML", Icon: HtmlLogo, href: "https://developer.mozilla.org/docs/Web/HTML" },
-      { name: "CSS", Icon: CssLogo, href: "https://www.w3.org/Style/CSS/" },
+      { name: "JavaScript", Icon: JavaScriptIcon, href: "https://tc39.es/ecma262/" },
+      { name: "HTML", Icon: HtmlIcon, href: "https://developer.mozilla.org/docs/Web/HTML" },
+      { name: "CSS", Icon: CssIcon, href: "https://www.w3.org/Style/CSS/" },
     ],
   },
   {
     id: "devops",
     items: [
-      { name: "Docker", Icon: DockerLogo, href: "https://www.docker.com/" },
-      { name: "Linux", Icon: LinuxLogo, href: "https://www.linux.org/" },
-      { name: "Nginx", Icon: NginxLogo, href: "https://nginx.org/" },
-      { name: "Git", Icon: GitLogo, href: "https://git-scm.com/" },
+      { name: "Docker", Icon: DockerIcon, href: "https://www.docker.com/" },
+      { name: "Linux", Icon: LinuxIcon, href: "https://www.linux.org/" },
+      { name: "Nginx", Icon: NginxIcon, href: "https://nginx.org/" },
+      { name: "Git", Icon: GitIcon, href: "https://git-scm.com/" },
     ],
   },
   {
     id: "desktop",
     items: [
-      { name: "C++", Icon: CppLogo, href: "https://isocpp.org/" },
-      { name: "Qt", Icon: QtLogo, href: "https://www.qt.io/" },
-      { name: "CMake", Icon: CmakeLogo, href: "https://cmake.org/" },
+      { name: "C++", Icon: CppIcon, href: "https://isocpp.org/" },
+      { name: "Qt", Icon: QtIcon, href: "https://www.qt.io/" },
+      { name: "CMake", Icon: CmakeIcon, href: "https://cmake.org/" },
     ],
   },
 ];
