@@ -11,8 +11,8 @@ This repository contains the source code for Chupapo website, created to present
 ## Preview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/preview-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/preview-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./src/assets/projects/chupapo-website/preview-en-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="./src/assets/projects/chupapo-website/preview-en-light.png">
   <img alt="Website preview" src="./assets/preview-light.png">
 </picture>
 
