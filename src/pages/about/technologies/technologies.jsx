@@ -11,13 +11,11 @@ export default function Technologies() {
   const listTechnologies = technologyItems.map((group) => (
     <li className="technologies__group" key={group.id}>
       <div className="technologies__group-content">
-        <h3 className="technologies__group-title">
-          {i18n.groups[group.id]}
-        </h3>
+        <h3 className="technologies__group-title">{i18n.groups[group.id]}</h3>
 
         <ul className="technologies__list">
           {group.items.map(({ name, Icon, href }) => (
-            <li className="card technologies__card" key={name}>
+            <li className="technologies__card" key={name}>
               <a
                 className="technologies__card-link"
                 href={href}
@@ -25,10 +23,7 @@ export default function Technologies() {
                 rel="noopener noreferrer"
               >
                 {Icon && <Icon className="technologies__card-icon" />}
-
-                <span className="technologies__card-label">
-                  {name}
-                </span>
+                <span className="technologies__card-label">{name}</span>
               </a>
             </li>
           ))}
@@ -39,17 +34,11 @@ export default function Technologies() {
 
   return (
     <section className="technologies">
-      <span className="header-chip">
-        {i18n.header.chip}
-      </span>
-
-      <h2 className="section-layout__title">
-        {i18n.header.title}
-      </h2>
-
-      <p className="section-layout__description">
-        {i18n.header.description}
-      </p>
+      <header className={"section-layout__header-center"}>
+        <span className="header-chip">{i18n.header.chip}</span>
+        <h2 className="section-layout__title">{i18n.header.title}</h2>
+        <p className="section-layout__description">{i18n.header.description}</p>
+      </header>
 
       <Divider className="technologies__divider" />
 

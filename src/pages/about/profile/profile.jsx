@@ -46,32 +46,20 @@ export default function Profile() {
 
               <p className="profile__role">{i18n.role}</p>
             </header>
-
-            <p className="profile__description">
-              {i18n.description}
-            </p>
-
+            <p className="profile__description">{i18n.description}</p>
             <div className="profile__identity">
               <span className="profile__identity-item">
                 <MapPinIcon />
                 {i18n.location}
               </span>
-
-              <span className="profile__identity-item">
-                {ageText}
-              </span>
-
-              <span className="profile__identity-item">
-                {experienceText} {i18n.experience.label}
-              </span>
+              <span className="profile__identity-item">{ageText}</span>
+              <span className="profile__identity-item">{i18n.experience.label} {experienceText}</span>
             </div>
-
             <dl className="profile__details">
               <div className="profile__detail">
                 <dt>{i18n.focus.label}</dt>
                 <dd>{i18n.focus.value}</dd>
               </div>
-
               <div className="profile__detail">
                 <dt>{i18n.languages.label}</dt>
                 <dd>{i18n.languages.value}</dd>

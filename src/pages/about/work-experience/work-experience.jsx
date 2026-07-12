@@ -19,20 +19,16 @@ export default function WorkExperience() {
 
   return (
     <section className="work-experience">
-      <span className="header-chip">{i18n.header.chip}</span>
-
-      <h3 className="section-layout__title">
-        {i18n.header.title}
-      </h3>
-
-      <p className="section-layout__description">
-        {i18n.header.description}
-      </p>
+      <div className="section-layout__header-center">
+        <span className="header-chip">{i18n.header.chip}</span>
+        <h3 className="section-layout__title">{i18n.header.title}</h3>
+        <p className="section-layout__description">{i18n.header.description}</p>
+      </div>
 
       <Divider className="work-experience__divider" />
 
-      <div className="work-experience__content section-layout__split">
-        <ul className="work-experience__list section-layout__split-right">
+      <div className="work-experience__content">
+        <ul className="work-experience__list">
           {listWorkExperience}
         </ul>
       </div>

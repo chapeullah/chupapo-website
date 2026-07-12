@@ -23,12 +23,7 @@ export const about = {
   },
 
   languages: {
-    label: "Programming Languages",
+    label: "Languages",
     value: "Java, C++",
   },
-
-  contacts: {
-    title: "Contact info",
-    email: "Email",
-  }
 };

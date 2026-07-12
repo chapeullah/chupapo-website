@@ -1,3 +1,7 @@
+.about-page {
+  margin-top: var(--header-height);
+}
+
 .about-page__header-label {
   margin: 0;
   text-align: center;
@@ -6,4 +10,9 @@
 .about-page__header {
   text-align: center;
   padding: 120px 40px;
+}
+
+.about-page__content {
+  max-width: 1024px;
+  margin: auto;
 }

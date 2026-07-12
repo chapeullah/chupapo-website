@@ -1,1 +1,4 @@
-export const notFound = "Страница не найдена.";
+export const notFound = {
+  title: "Страница не найдена.",
+  button: "Главная",
+};

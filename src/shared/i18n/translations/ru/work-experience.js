@@ -7,7 +7,7 @@ export const workExperience = {
 
   items: [
     {
-      id: "ifellow-load-testing-engineer",
+      id: "ifellow-performance-testing-engineer",
       position: "Инженер нагрузочного тестирования",
       company: "iFellow",
       period: "Март 2026 — настоящее время",

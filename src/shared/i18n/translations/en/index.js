@@ -9,6 +9,7 @@ import { workExperience } from './work-experience.js';
 import { workProcess } from './work-process.js';
 import { notFound } from './not-found.js';
 import { contact } from './contact.js';
+import { projects } from '@i18n/translations/en/projects.js';
 
 export const en = {
   about,
@@ -18,6 +19,7 @@ export const en = {
   hero,
   notFound,
   product,
+  projects,
   service,
   technologies,
   workExperience,

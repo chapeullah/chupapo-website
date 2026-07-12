@@ -8,11 +8,11 @@ export const workExperience = {
   items: [
     {
       id: "ifellow-performance-testing-engineer",
-      position: "Performance Testing Engineer",
+      position: "Performance testing engineer",
       company: "iFellow",
-      period: "March 2026 — Present",
+      period: "March 2026 — present",
       description: "Load testing of backend services, performance metrics analysis, and identification of system bottlenecks.",
-      technologiesTitle: "TECHNOLOGIES",
+      technologiesTitle: "Technologies",
       technologies: [
         "Java",
         "Spring Boot",

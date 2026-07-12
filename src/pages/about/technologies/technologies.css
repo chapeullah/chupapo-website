@@ -1,5 +1,6 @@
 .technologies {
-  padding: 40px;
+  padding-inline: var(--inline-spacing-default);
+  margin-block: var(--block-spacing-default);
 }
 
 .technologies__divider {
@@ -9,7 +10,7 @@
 .technologies__groups {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  gap: 8px;
 
   margin: 0;
   padding: 0;
@@ -19,19 +20,18 @@
 
 .technologies__group {
   min-width: 0;
-  padding: 24px;
+  padding: 8px;
 
   list-style: none;
 
   background-color: var(--solid-background-tertiary);
   border-radius: 8px;
-  box-shadow: 0 0 0 1px var(--card-stroke-default);
 }
 
 .technologies__group-content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .technologies__group-title {
@@ -49,10 +49,7 @@
 .technologies__list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-
-  margin: 0;
-  padding: 0;
+  gap: 8px;
 
   list-style: none;
 }
@@ -62,22 +59,26 @@
 
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 
   padding: 0;
 
   border-radius: 4px;
-  background-color: var(--color-bg);
-  box-shadow: 0 0 0 1px var(--card-stroke-default);
 
-  cursor: default;
+  background-color: var(--accent-muted);
+  color: var(--accent-text-primary);
 
   overflow: hidden;
 }
 
+.technologies__card:hover {
+  background-color: var(--accent-default);
+  color: var(--text-on-accent-primary);
+}
+
 .technologies__card-link {
   padding: 8px 16px 8px 8px;
-  
+
   display: flex;
   align-items: center;
   gap: 8px;
@@ -96,19 +97,18 @@
   width: 24px;
   height: 24px;
 
-  color: var(--color-text-primary);
+  color: inherit;
 
   user-select: none;
   pointer-events: none;
 }
 
 .technologies__card-label {
-  color: var(--color-text-primary);
-
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
+  color: inherit;
 }
 
 @media (max-width: 1200px) {

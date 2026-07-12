@@ -1,7 +1,8 @@
 .work-experience {
   flex-direction: column;
 
-  padding: 40px;
+  padding-inline: var(--inline-spacing-default);
+  margin-block: var(--block-spacing-default);
 }
 
 .work-experience__divider {

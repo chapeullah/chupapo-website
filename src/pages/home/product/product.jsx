@@ -1,7 +1,7 @@
 import './product.css';
 
-import WorkProcess from './work-process/work-process.jsx';
-import ServiceCards from './service-cards';
+import WorkProcess from '../work-process/work-process.jsx';
+import ServiceCards from '../service-cards/index.js';
 
 import { useLanguage } from '@i18n/use-language.js';
 
@@ -21,7 +21,6 @@ export default function Product() {
       </div>
 
       <ServiceCards />
-
       <WorkProcess />
     </section>
   );

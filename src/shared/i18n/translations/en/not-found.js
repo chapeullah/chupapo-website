@@ -1,1 +1,4 @@
-export const notFound = "Page not found.";
+export const notFound = {
+  title: "Page not found.",
+  button: "Home",
+};

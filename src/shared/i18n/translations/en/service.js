@@ -7,84 +7,39 @@ export const service = {
 
   services: [
     {
-      id: "chat-bots",
-      title: "Chat bots",
-      description: "Telegram, MAX, VK, WhatsApp, Discord, and more. Automation of customer support, lead collection, order processing, and notifications across popular messaging platforms.",
+      id: "chatbots",
+      title: "Chatbots",
+      description: "Bots for Telegram, MAX, VK, WhatsApp, Discord, and other platforms. Automate support, lead collection, order processing, and notifications.",
     },
     {
-      id: "web-interfaces",
-      title: "Web interfaces",
-      description: null,
-    },
-    {
-      id: "desktop-apps",
-      title: "Desktop apps",
-      description: null,
-    },
-    {
-      id: "server-side-logic",
-      title: "Server-side logic",
-      description: null,
+      id: "crm-and-management-systems",
+      title: "CRM and management systems",
+      description: "Systems for managing customers, orders, payments, inventory, and other business processes in one place.",
     },
     {
       id: "admin-panels",
       title: "Admin panels",
-      description: null,
-    },
-    {
-      id: "crm",
-      title: "CRM",
-      description: null,
+      description: "Interfaces for managing users, content, orders, settings, and system data.",
     },
     {
       id: "client-portals",
       title: "Client portals",
-      description: null,
-    },
-    {
-      id: "tracking-systems",
-      title: "Tracking systems",
-      description: null,
+      description: "Secure portals where clients can manage requests, documents, payments, and account information.",
     },
     {
       id: "api-integrations",
       title: "API integrations",
-      description: null,
+      description: "Connections between external services, payment systems, CRMs, marketplaces, and internal tools.",
     },
     {
-      id: "data-scrapers",
-      title: "Data scrapers",
-      description: null,
+      id: "data-collection-and-monitoring",
+      title: "Data collection and monitoring",
+      description: "Automated data collection, scheduled checks, change tracking, and alerts from websites and external services.",
     },
     {
-      id: "dashboards",
-      title: "Dashboards",
-      description: null,
-    },
-    {
-      id: "process-automations",
-      title: "Process automations",
-      description: null,
-    },
-    {
-      id: "management-systems",
-      title: "Management systems",
-      description: null,
-    },
-    {
-      id: "notification-systems",
-      title: "Notification systems",
-      description: null,
-    },
-    {
-      id: "internal-serviceItems",
-      title: "Internal serviceItems",
-      description: null,
-    },
-    {
-      id: "monitoring-systems",
-      title: "Monitoring systems",
-      description: null,
+      id: "dashboards-and-reports",
+      title: "Dashboards and reports",
+      description: "Clear dashboards and automated Excel or PDF reports for tracking key metrics and results.",
     },
   ],
 };

@@ -3,8 +3,9 @@
   --control-corner-radius: 4px;
   --overlay-corner-radius: 8px;
 
+  --spacing-default: 24px;
   --inline-spacing-default: 24px;
-  --block-spacing-default: 72px;
+  --block-spacing-default: 64px;
 
   --header-height: 56px;
   --footer-height: 56px;

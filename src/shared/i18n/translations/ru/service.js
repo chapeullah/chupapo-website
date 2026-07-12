@@ -2,90 +2,44 @@ export const service = {
   header: {
     chip: "Услуги",
     title: "Автоматизация процессов",
-    description:
-      "Создаю системы на заказ, которые превращают ручные процессы в эффективные цифровые решения. Помогаю убрать рутину, связать отдельные задачи в единый рабочий процесс и сделать работу быстрее.",
+    description: "Разрабатываю системы под конкретные задачи. Помогаю убрать рутину, связать отдельные задачи в единый рабочий процесс.",
   },
 
   services: [
     {
-      id: "web-interfaces",
-      title: "Веб-интерфейсы",
-      description: null,
+      id: "chatbots",
+      title: "Чат-боты",
+      description: "Боты для Telegram, MAX, VK, WhatsApp, Discord и других платформ. Автоматизируют поддержку клиентов, сбор заявок, обработку заказов и отправку уведомлений.",
     },
     {
-      id: "desktop-apps",
-      title: "Десктопные приложения",
-      description: null,
-    },
-    {
-      id: "server-side-logic",
-      title: "Бэкенд-разработка",
-      description: null,
+      id: "crm-and-management-systems",
+      title: "CRM и системы учёта",
+      description: "Системы для работы с клиентами, заказами, оплатами, товарами и другими бизнес-процессами в одном месте.",
     },
     {
       id: "admin-panels",
       title: "Админ-панели",
-      description: null,
-    },
-    {
-      id: "crm",
-      title: "CRM-системы",
-      description: null,
-    },
-    {
-      id: "telegram-bots",
-      title: "Telegram-боты",
-      description: null,
+      description: "Интерфейсы для управления пользователями, контентом, заказами, настройками и данными системы.",
     },
     {
       id: "client-portals",
-      title: "Клиентские порталы",
-      description: null,
-    },
-    {
-      id: "tracking-systems",
-      title: "Системы учёта",
-      description: null,
+      title: "Личные кабинеты",
+      description: "Защищённые личные кабинеты для управления заявками, документами, оплатами и данными профиля.",
     },
     {
       id: "api-integrations",
-      title: "API-интеграции",
-      description: null,
+      title: "Интеграции с API",
+      description: "Обмен данными между внешними сервисами, платёжными системами, CRM, маркетплейсами и внутренними инструментами.",
     },
     {
-      id: "data-scrapers",
-      title: "Парсеры данных",
-      description: null,
+      id: "data-collection-and-monitoring",
+      title: "Сбор данных и мониторинг",
+      description: "Автоматический сбор данных с сайтов и внешних сервисов, проверки по расписанию, отслеживание изменений и отправка уведомлений.",
     },
     {
-      id: "dashboards",
-      title: "Дашборды",
-      description: null,
-    },
-    {
-      id: "process-automations",
-      title: "Автоматизация процессов",
-      description: null,
-    },
-    {
-      id: "management-systems",
-      title: "Системы управления",
-      description: null,
-    },
-    {
-      id: "notification-systems",
-      title: "Системы уведомлений",
-      description: null,
-    },
-    {
-      id: "internal-serviceItems",
-      title: "Внутренние сервисы",
-      description: null,
-    },
-    {
-      id: "monitoring-systems",
-      title: "Системы мониторинга",
-      description: null,
+      id: "dashboards-and-reports",
+      title: "Дашборды и отчёты",
+      description: "Наглядные дашборды и автоматические отчёты в Excel или PDF для контроля ключевых показателей и результатов.",
     },
   ],
 };

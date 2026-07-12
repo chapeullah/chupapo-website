@@ -34,5 +34,8 @@
 }
 
 .go-home-button__title {
+  font-size: 14px;
+  font-weight: 400;
   margin-inline-start: 8px;
 }
+

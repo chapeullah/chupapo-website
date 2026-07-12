@@ -6,6 +6,7 @@ import DescriptionIcon from '@icons/description-icon/description-icon.jsx';
 import MonitorIcon from '@icons/monitor/monitor-icon.jsx';
 import WebsiteIcon from '@icons/website/website-icon.jsx';
 import { useLanguage } from '@i18n/use-language.js';
+import { useTheme } from '@theme/use-theme.js';
 
 const locales = {
   ru: 'ru-RU',
@@ -13,7 +14,11 @@ const locales = {
 };
 
 export default function ProjectCard({ project }) {
-  const { t, language  } = useLanguage();
+  const { t, language } = useLanguage();
+  const { appliedTheme } = useTheme();
+
+  const preview = project.previews[language][appliedTheme];
+
   const i18n = t.projects;
   const projectI18n = i18n.items[project.id];
 
@@ -102,8 +107,8 @@ export default function ProjectCard({ project }) {
           <div className="project-card__preview">
             <img
               className="project-card__preview-image"
-              src={project.preview}
-              alt={`${project.title} preview`}
+              src={preview}
+              alt={`${projectI18n.name} preview`}
             />
           </div>
         )}

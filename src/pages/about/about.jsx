@@ -12,14 +12,11 @@ export default function About() {
 
   return (
     <div  className="about-page">
-      <div className="about-page__header">
-        <h1 className="about-page__header-label section-layout__header-label">{i18n.header.label}</h1>
-        <h2 className="about-page__header-title section-layout__header-title">{i18n.header.title}</h2>
+      <div className="about-page__content">
+        <Profile />
+        <Technologies />
+        <WorkExperience />
       </div>
-
-      <Profile />
-      <Technologies />
-      <WorkExperience />
     </div>
   );
 }
