@@ -13,6 +13,7 @@ export const site = {
 
     github: {
       label: "GitHub",
+      username: "chapeullah",
       link: "https://github.com/chapeullah",
     },
 

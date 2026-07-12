@@ -9,11 +9,13 @@ import { workExperience } from './work-experience.js';
 import { workProcess } from './work-process.js';
 import { notFound } from './not-found.js';
 import { contact } from './contact.js';
-import { projects } from '@i18n/translations/en/projects.js';
+import { projects } from './projects.js';
+import { contacts } from './contacts.js';
 
 export const en = {
   about,
   contact,
+  contacts,
   footer,
   header,
   hero,
