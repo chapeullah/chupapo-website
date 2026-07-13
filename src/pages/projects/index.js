@@ -1,1 +1,1 @@
-export { default } from './ui/projects-page/projects-page.jsx';
+export { default } from "./ui/projects-page/projects-page.jsx";

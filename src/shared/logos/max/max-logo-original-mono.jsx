@@ -1,4 +1,4 @@
-import './max-logo-original-mono.css';
+import "./max-logo-original-mono.css";
 
 export default function MaxLogoOriginalMono({ className = "" }) {
   return (

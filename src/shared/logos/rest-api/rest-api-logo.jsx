@@ -1,6 +1,6 @@
-import './rest-api-logo.css';
+import "./rest-api-logo.css";
 
-export default function RestApiLogo({ className = '' }) {
+export default function RestApiLogo({ className = "" }) {
   return (
     <svg
       className={`logo rest-api-logo ${className}`}

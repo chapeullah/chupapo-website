@@ -1,9 +1,9 @@
-import './contacts-page.css';
+import "./contacts-page.css";
 
-import { useLanguage } from '@i18n/use-language.js';
+import { useLanguage } from "@i18n/use-language.js";
 
-import ContactCard from '@pages/contacts/contact-card.jsx';
-import { getContacts } from '@pages/contacts/get-contacts.js';
+import ContactCard from "@pages/contacts/contact-card.jsx";
+import { getContacts } from "@pages/contacts/get-contacts.js";
 
 export default function ContactsPage() {
   const { t } = useLanguage();
@@ -12,11 +12,11 @@ export default function ContactsPage() {
   const contacts = getContacts(i18n);
 
   return (
-    <main className="contacts-page">
+    <div className="contacts-page">
       <h1 className={"contacts-page__title"}>{i18n.header}</h1>
       <section className={"contacts-page__contacts"}>
         {contacts.map((contact) => (<ContactCard key={contact.id} contact={contact} />))}
       </section>
-    </main>
+    </div>
   );
 }

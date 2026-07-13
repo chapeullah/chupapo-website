@@ -1,4 +1,4 @@
-export default function BriefcaseIcon({ className = '' }) {
+export default function BriefcaseIcon({ className = "" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

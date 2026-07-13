@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-import './select-dropdown.css';
+import "./select-dropdown.css";
 
-import CaretIcon from '../icons/caret-icon.jsx';
+import CaretIcon from "../icons/caret-icon.jsx";
 
 export default function SelectDropdown({
   items,
@@ -26,17 +26,17 @@ export default function SelectDropdown({
     }
 
     function handleEscape(event) {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         setIsOpen(false);
       }
     }
 
-    document.addEventListener('pointerdown', handlePointerDown);
-    document.addEventListener('keydown', handleEscape);
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleEscape);
 
     return () => {
-      document.removeEventListener('pointerdown', handlePointerDown);
-      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleEscape);
     };
   }, []);
 
@@ -84,8 +84,8 @@ export default function SelectDropdown({
                   type="button"
                   className={
                     item.code === selectedCode
-                      ? 'select-dropdown__option select-dropdown__option--active'
-                      : 'select-dropdown__option'
+                      ? "select-dropdown__option select-dropdown__option--active"
+                      : "select-dropdown__option"
                   }
                   disabled={item.code === selectedCode}
                   onClick={() => handleItemClick(item.code)}

@@ -1,4 +1,4 @@
-export default function ArrowLeftIcon({ className = '' }) {
+export default function ArrowLeftIcon({ className = "" }) {
   return (
     <svg
       className={`icon arrow-left-icon ${className}`}

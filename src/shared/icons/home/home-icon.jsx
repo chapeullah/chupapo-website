@@ -1,4 +1,4 @@
-export default function HomeIcon({ className = '' }) {
+export default function HomeIcon({ className = "" }) {
   return (
     <svg
       className={`icon home-icon ${className}`}

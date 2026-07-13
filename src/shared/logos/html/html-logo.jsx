@@ -1,4 +1,4 @@
-export default function HtmlLogo({ className = '' }) {
+export default function HtmlLogo({ className = "" }) {
   return (
     <svg
       className={`logo html-logo ${className}`}

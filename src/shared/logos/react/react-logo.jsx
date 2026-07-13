@@ -1,4 +1,4 @@
-export default function ReactLogo({ className = '' }) {
+export default function ReactLogo({ className = "" }) {
   return (
     <svg
       className={`logo react-logo ${className}`}

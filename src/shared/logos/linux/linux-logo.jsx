@@ -1,6 +1,6 @@
-import Tux from './tux.svg';
+import Tux from "./tux.svg";
 
-export default function LinuxLogo({ className = '' }) {
+export default function LinuxLogo({ className = "" }) {
   return (
     <img
       className={`logo linux-logo ${className}`}

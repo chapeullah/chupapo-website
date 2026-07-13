@@ -1,4 +1,4 @@
-export default function TelegramLogo({ className = '' }) {
+export default function TelegramLogo({ className = "" }) {
   return (
     <svg
       className={`logo telegram-logo ${className}`}

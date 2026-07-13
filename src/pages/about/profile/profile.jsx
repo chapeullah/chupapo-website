@@ -1,16 +1,16 @@
-import './profile.css';
+import "./profile.css";
 
-import { useLanguage } from '@i18n/use-language.js';
-import { site } from '@i18n/site.js';
+import { useLanguage } from "@i18n/use-language.js";
+import { site } from "@config/site.js";
 
-import MapPinIcon from '@icons/map-pin/map-pin-icon.jsx';
+import MapPinIcon from "@icons/map-pin/map-pin-icon.jsx";
 
-import { getAge } from '@pages/about/profile/get-age.js';
-import { getExperienceYears } from '@pages/about/profile/get-experience-years.js';
-import { formatYears } from '@pages/about/profile/format-years.js';
+import { getAge } from "@pages/about/profile/get-age.js";
+import { getExperienceYears } from "@pages/about/profile/get-experience-years.js";
+import { formatYears } from "@pages/about/profile/format-years.js";
 
-import profilePhoto from '@assets/photo.jpg';
-import { Link } from 'react-router-dom';
+import profilePhoto from "@assets/photo.jpg";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
   const { t, language } = useLanguage();

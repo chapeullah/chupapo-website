@@ -1,7 +1,7 @@
-import './projects-page.css';
+import "./projects-page.css";
 
-import { projects } from './projects.js';
-import ProjectCard from '../project-card/project-card.jsx';
+import { projects } from "./projects.js";
+import ProjectCard from "../project-card/project-card.jsx";
 
 
 const listProjects = projects.map((project) => (
@@ -10,8 +10,8 @@ const listProjects = projects.map((project) => (
 
 export default function ProjectsPage() {
   return (
-    <main className="projects-page">
+    <div className="projects-page">
       <div className="projects-container">{listProjects}</div>
-    </main>
+    </div>
   );
 }

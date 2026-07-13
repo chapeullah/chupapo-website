@@ -1,4 +1,4 @@
-export default function GaugeIcon({ className = '' }) {
+export default function GaugeIcon({ className = "" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

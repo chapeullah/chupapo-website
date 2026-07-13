@@ -1,4 +1,4 @@
-export default function DockerLogo({ className = '' }) {
+export default function DockerLogo({ className = "" }) {
   return (
     <svg
       className={`logo docker-logo ${className}`}

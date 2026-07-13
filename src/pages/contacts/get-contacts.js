@@ -1,8 +1,8 @@
-import { site } from '@i18n/site.js';
+import { site } from "@config/site.js";
 
-import TelegramLogoOriginal from '@logos/telegram/telegram-logo-original.jsx';
-import GmailLogo from '@logos/gmail/gmail-logo.jsx';
-import MaxLogoOriginal from '@logos/max/max-logo-original.jsx';
+import TelegramLogoOriginal from "@logos/telegram/telegram-logo-original.jsx";
+import GmailLogo from "@logos/gmail/gmail-logo.jsx";
+import MaxLogoOriginal from "@logos/max/max-logo-original.jsx";
 
 export function getContacts(i18n) {
   return [
@@ -11,7 +11,7 @@ export function getContacts(i18n) {
       name: site.contacts.email.label,
       value: site.contacts.email.value,
       description: i18n.items.gmail.description,
-      href: `mailto:${site.contacts.email}`,
+      href: `mailto:${site.contacts.email.value}`,
       Icon: GmailLogo,
     },
     {

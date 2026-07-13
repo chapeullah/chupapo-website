@@ -1,4 +1,4 @@
-export default function LanguageIcon({ className = '' }) {
+export default function LanguageIcon({ className = "" }) {
   return (
     <svg
       className={`icon language-icon ${className}`}

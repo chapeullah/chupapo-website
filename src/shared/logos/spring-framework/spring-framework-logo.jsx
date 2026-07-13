@@ -1,4 +1,4 @@
-export default function SpringFrameworkLogo({ className = '' }) {
+export default function SpringFrameworkLogo({ className = "" }) {
   return (
     <svg
       className={`logo spring-framework-logo ${className}`}

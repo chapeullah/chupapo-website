@@ -1,9 +1,9 @@
-import './product.css';
+import "./product.css";
 
-import WorkProcess from '../work-process/work-process.jsx';
-import ServiceCards from '../service-cards/index.js';
+import WorkProcess from "../work-process/work-process.jsx";
+import ServiceCards from "../service-cards/index.js";
 
-import { useLanguage } from '@i18n/use-language.js';
+import { useLanguage } from "@i18n/use-language.js";
 
 export default function Product() {
   const { t } = useLanguage();

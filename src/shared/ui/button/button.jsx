@@ -1,11 +1,11 @@
-import './button.css';
+import "./button.css";
 
-import './variants/default.css';
-import './variants/accent.css';
-import './variants/ghost.css';
-import './variants/unstyled.css';
+import "./variants/default.css";
+import "./variants/accent.css";
+import "./variants/ghost.css";
+import "./variants/unstyled.css";
 
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 export default function Button({
   to,

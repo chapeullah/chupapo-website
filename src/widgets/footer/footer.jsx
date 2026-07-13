@@ -1,14 +1,14 @@
-import './footer.css';
-import LanguageSelector from './language-selector/language-selector.jsx';
-import ThemeSelector from './theme-selector/theme-selector.jsx';
-import { useLanguage } from '@i18n/use-language.js';
-import ChupapoLogo from '@logos/chupapo/chupapo-logo.jsx';
-import { site } from '@i18n/site.js';
-import GitHubLogoOriginal from '@logos/github/github-logo-original.jsx';
-import Button from '@ui/button/index.js';
-import TelegramLogoOriginalMono from '@logos/telegram/telegram-logo-original-mono.jsx';
-import MaxLogoOriginalMono from '@logos/max/max-logo-original-mono.jsx';
-import { getPages } from '@widgets/footer/get-pages.jsx';
+import "./footer.css";
+import LanguageSelector from "./language-selector/language-selector.jsx";
+import ThemeSelector from "./theme-selector/theme-selector.jsx";
+import { useLanguage } from "@i18n/use-language.js";
+import ChupapoLogo from "@logos/chupapo/chupapo-logo.jsx";
+import { site } from "@config/site.js";
+import GitHubLogoOriginal from "@logos/github/github-logo-original.jsx";
+import Button from "@ui/button/index.js";
+import TelegramLogoOriginalMono from "@logos/telegram/telegram-logo-original-mono.jsx";
+import MaxLogoOriginalMono from "@logos/max/max-logo-original-mono.jsx";
+import { getPages } from "@widgets/footer/get-pages.jsx";
 
 export default function Footer() {
     const { t } = useLanguage();
@@ -57,7 +57,7 @@ export default function Footer() {
               <LanguageSelector />
               <ThemeSelector />
             </div>
-            <p className='footer__copyright'>{i18n.copyright}</p>
+            <p className="footer__copyright">{i18n.copyright}</p>
           </div>
           <div className={"footer__column"}>
             <span className="footer__pages-title">{i18n.pages.title}</span>

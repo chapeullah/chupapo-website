@@ -3,6 +3,7 @@ import "./logo-container.css";
 import { useEffect, useRef } from "react";
 
 import ChupapoLogo from "@logos/chupapo/chupapo-logo.jsx";
+import { LogoRotationEventName } from "@lib/brand-motion/events.js";
 
 const MaxSpeed = 180;
 const Acceleration = 90;
@@ -11,8 +12,6 @@ const MinFinishSpeed = 90;
 const HoverImpulseSpeed = 90;
 
 const SymmetryAngle = 180;
-
-const LogoRotationEventName = "logo-rotation-step";
 
 export default function LogoContainer() {
   const logoWrapperRef = useRef(null);

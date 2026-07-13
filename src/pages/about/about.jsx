@@ -1,15 +1,10 @@
-import './about.css';
+import "./about.css";
 
-import Profile from './profile/profile.jsx';
-import Technologies from './technologies/technologies.jsx';
-import WorkExperience from './work-experience/work-experience.jsx';
-
-import { useLanguage } from '@i18n/use-language.js';
+import Profile from "./profile/profile.jsx";
+import Technologies from "./technologies/technologies.jsx";
+import WorkExperience from "./work-experience/work-experience.jsx";
 
 export default function About() {
-  const { t } = useLanguage();
-  const i18n = t.about;
-
   return (
     <div  className="about-page">
       <div className="about-page__content">

@@ -1,4 +1,4 @@
-export default function LifeBuoyIcon({ className = '' }) {
+export default function LifeBuoyIcon({ className = "" }) {
   return (
     <svg
       className={`icon life-buoy-icon ${className}`}

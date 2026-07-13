@@ -1,7 +1,7 @@
 .button--accent {
   background-color: var(--accent-default);
-  border-color: var(--button-border-on-accent);
-  border-bottom-color: var(--button-border-bottom);
+  border-color: var(--control-stroke-on-accent-default);
+  border-bottom-color: var(--control-stroke-on-accent-secondary);
   color: var(--text-on-accent-primary);
 }
 

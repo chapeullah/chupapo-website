@@ -1,4 +1,4 @@
-export default function FileIcon({ className = '' }) {
+export default function FileIcon({ className = "" }) {
   return (
     <svg
       className={`icon file-icon ${className}`}

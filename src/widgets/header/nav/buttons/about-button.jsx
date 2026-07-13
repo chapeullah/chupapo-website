@@ -1,7 +1,7 @@
-import { aboutLink } from '@widgets/header/links.js';
-import { NavLink } from 'react-router-dom';
-import { useLanguage } from '@i18n/use-language.js';
-import IdCardIcon from '@icons/id-card/id-card-icon.jsx';
+import { aboutLink } from "@widgets/header/links.js";
+import { NavLink } from "react-router-dom";
+import { useLanguage } from "@i18n/use-language.js";
+import IdCardIcon from "@icons/id-card/id-card-icon.jsx";
 
 export default function AboutButton({onNavClick}) {
   const { t } = useLanguage();

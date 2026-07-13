@@ -1,4 +1,4 @@
-export default function CaretIcon({ className = '' }) {
+export default function CaretIcon({ className = "" }) {
   return (
     <svg
       className={className}

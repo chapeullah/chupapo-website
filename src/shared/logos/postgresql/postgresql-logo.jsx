@@ -1,4 +1,4 @@
-export default function PostgresqlLogo({ className = '' }) {
+export default function PostgresqlLogo({ className = "" }) {
   return (
     <svg
       className={className}

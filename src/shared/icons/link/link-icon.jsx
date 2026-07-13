@@ -1,4 +1,4 @@
-export default function LinkIcon({ className = '' }) {
+export default function LinkIcon({ className = "" }) {
   return (
     <svg
       className={`icon link-icon ${className}`}

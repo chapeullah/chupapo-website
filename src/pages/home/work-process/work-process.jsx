@@ -1,7 +1,7 @@
-import './work-process.css';
+import "./work-process.css";
 
-import { useLanguage } from '@i18n/use-language.js';
-import { workProcessSteps } from '@pages/home/work-process/work-process-steps.js';
+import { useLanguage } from "@i18n/use-language.js";
+import { workProcessSteps } from "@pages/home/work-process/work-process-steps.js";
 
 export default function WorkProcess() {
   const { t } = useLanguage();
@@ -39,7 +39,7 @@ export default function WorkProcess() {
         />
 
         <header className="section-layout__header-center">
-          <span className="header-chip">{i18n.header.chip}</span>
+          <span className="section-layout__chip">{i18n.header.chip}</span>
           <h3 className="section-layout__title">{i18n.header.title}</h3>
           <p className="section-layout__description">{i18n.header.description}</p>
         </header>

@@ -2,20 +2,6 @@
   padding: var(--inline-spacing-default);
 }
 
-.header-chip {
-  display: inline-flex;
-  margin-block-end: 8px;
-  padding: 4px 16px;
-
-  background-color: var(--subtle-fill-secondary);
-  color: var(--color-text-secondary);
-
-  border-radius: 50px;
-  font-weight: 600;
-  line-height: 18px;
-  user-select: none;
-}
-
 .service-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

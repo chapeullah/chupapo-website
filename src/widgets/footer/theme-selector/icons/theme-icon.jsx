@@ -1,4 +1,4 @@
-export default function ThemeIcon({ className = '' }) {
+export default function ThemeIcon({ className = "" }) {
   return (
     <svg
       className={`icon theme-icon ${className}`}

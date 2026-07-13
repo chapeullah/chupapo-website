@@ -1,4 +1,4 @@
-export default function ChupapoLogo({ className = '' }) {
+export default function ChupapoLogo({ className = "" }) {
   return (
     <svg
       className={`logo chupapo-logo ${className}`}

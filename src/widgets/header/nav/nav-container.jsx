@@ -1,10 +1,10 @@
-import './nav-container.css'
+import "./nav-container.css"
 
-import AboutButton from '@widgets/header/nav/buttons/about-button.jsx';
-import HomeButton from '@widgets/header/nav/buttons/home-button.jsx';
-import ProjectsButton from '@widgets/header/nav/buttons/projects-button.jsx';
+import AboutButton from "@widgets/header/nav/buttons/about-button.jsx";
+import HomeButton from "@widgets/header/nav/buttons/home-button.jsx";
+import ProjectsButton from "@widgets/header/nav/buttons/projects-button.jsx";
 
-import LogoContainer from './logo/logo-container.jsx';
+import LogoContainer from "./logo/logo-container.jsx";
 
 export default function NavContainer({onNavClick}) {
   return (

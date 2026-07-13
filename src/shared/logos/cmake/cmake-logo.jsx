@@ -1,4 +1,4 @@
-export default function CmakeLogo({ className = '' }) {
+export default function CmakeLogo({ className = "" }) {
   return (
     <svg
       className={`logo cmake-logo ${className}`}

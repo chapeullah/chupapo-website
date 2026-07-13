@@ -1,4 +1,4 @@
-export default function JavaLogo({ className = '' }) {
+export default function JavaLogo({ className = "" }) {
   return (
     <svg
       className={`logo java-logo ${className}`}

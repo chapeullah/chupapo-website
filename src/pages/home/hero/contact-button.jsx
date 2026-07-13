@@ -1,7 +1,7 @@
-import Button from '@ui/button/index.js';
+import Button from "@ui/button/index.js";
 
-import ContactIcon from '@icons/contact/contact-icon.jsx';
-import { useLanguage } from '@i18n/use-language.js';
+import ContactIcon from "@icons/contact/contact-icon.jsx";
+import { useLanguage } from "@i18n/use-language.js";
 
 export default function ContactButton() {
   const { t } = useLanguage();

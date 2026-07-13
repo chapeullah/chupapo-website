@@ -1,4 +1,4 @@
-export default function ContactIcon({ className = '' }) {
+export default function ContactIcon({ className = "" }) {
   return (
     <svg
       className={`icon contact-icon ${className}`}

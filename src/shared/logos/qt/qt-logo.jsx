@@ -1,4 +1,4 @@
-export default function QtLogo({ className = '' }) {
+export default function QtLogo({ className = "" }) {
   return (
     <svg
       className={`logo qt-logo ${className}`}

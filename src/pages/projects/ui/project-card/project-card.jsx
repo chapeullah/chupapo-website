@@ -1,16 +1,16 @@
-import './project-card.css';
+import "./project-card.css";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-import DescriptionIcon from '@icons/description-icon/description-icon.jsx';
-import MonitorIcon from '@icons/monitor/monitor-icon.jsx';
-import WebsiteIcon from '@icons/website/website-icon.jsx';
-import { useLanguage } from '@i18n/use-language.js';
-import { useTheme } from '@theme/use-theme.js';
+import DescriptionIcon from "@icons/description-icon/description-icon.jsx";
+import MonitorIcon from "@icons/monitor/monitor-icon.jsx";
+import WebsiteIcon from "@icons/website/website-icon.jsx";
+import { useLanguage } from "@i18n/use-language.js";
+import { useTheme } from "@theme/use-theme.js";
 
 const locales = {
-  ru: 'ru-RU',
-  en: 'en-US',
+  ru: "ru-RU",
+  en: "en-US",
 };
 
 export default function ProjectCard({ project }) {
@@ -23,10 +23,10 @@ export default function ProjectCard({ project }) {
   const projectI18n = i18n.items[project.id];
 
   const releaseDate = new Intl.DateTimeFormat(locales[language], {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    timeZone: 'UTC',
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
   }).format(new Date(project.releaseDate));
 
   const [selectedTab, setSelectedTab] = useState("description");

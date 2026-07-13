@@ -1,8 +1,8 @@
-import './work-experience.css';
+import "./work-experience.css";
 
-import { useLanguage } from '@i18n/use-language.js';
-import Divider from '@ui/divider/divider.jsx';
-import ExperienceCard from '@pages/about/work-experience/experience-card.jsx';
+import { useLanguage } from "@i18n/use-language.js";
+import Divider from "@ui/divider/divider.jsx";
+import ExperienceCard from "@pages/about/work-experience/experience-card.jsx";
 
 export default function WorkExperience() {
   const { t } = useLanguage();
@@ -20,7 +20,7 @@ export default function WorkExperience() {
   return (
     <section className="work-experience">
       <div className="section-layout__header-center">
-        <span className="header-chip">{i18n.header.chip}</span>
+        <span className="section-layout__chip">{i18n.header.chip}</span>
         <h3 className="section-layout__title">{i18n.header.title}</h3>
         <p className="section-layout__description">{i18n.header.description}</p>
       </div>

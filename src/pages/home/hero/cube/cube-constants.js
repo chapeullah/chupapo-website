@@ -1,7 +1,4 @@
-export const LogoRotationEventName = 'logo-rotation-step';
 export const LogoRotationSpeedMultiplier = 0.25;
-
-export const CubeMouseTrackingStopSelector = '[data-cube-stop-mouse-tracking]';
 
 export const LogoRotationEventTimeout = 140;
 

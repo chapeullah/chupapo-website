@@ -131,7 +131,7 @@
   0 0 0 3px hsla(0, 0%, 0%, 89.56%);
 }
 
-:root[data-theme='dark'] {
+:root[data-theme="dark"] {
   /* BASE COLORS */
   --color-bg: hsl(0, 0%, 13%);
   --color-white: hsl(0, 0%, 100%);
@@ -150,7 +150,7 @@
   --page-color-text: hsla(0, 0%, 100%, 100%);
 
   /* HEADER */
-  --color-bg-header: hsl(var(--color-bg) / 80%);
+  --color-bg-header: var(--color-bg);
   --header-color-text: hsla(0, 0%, 100%, 100%);
   --header-color-border: hsla(0, 0%, 100%, 8.37%);
 

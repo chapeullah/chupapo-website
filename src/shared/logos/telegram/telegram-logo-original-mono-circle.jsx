@@ -1,6 +1,6 @@
-import './telegram-logo-original-mono-circle.css';
+import "./telegram-logo-original-mono-circle.css";
 
-export default function TelegramLogoOriginalMonoCircle({ className = '' }) {
+export default function TelegramLogoOriginalMonoCircle({ className = "" }) {
   return (
     <svg
       className={`logo telegram-logo-original-mono-circle ${className}`}

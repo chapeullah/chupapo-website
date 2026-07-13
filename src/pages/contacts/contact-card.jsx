@@ -1,14 +1,14 @@
-import './contact-card.css';
+import "./contact-card.css";
 
-import ClipboardIcon from '@icons/clipboard/clipboard-icon.jsx';
-import CheckmarkIcon from '@icons/checkmark/checkmark-icon.jsx';
+import ClipboardIcon from "@icons/clipboard/clipboard-icon.jsx";
+import CheckmarkIcon from "@icons/checkmark/checkmark-icon.jsx";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 export default function ContactCard({ contact }) {
   const { name, value, description, Icon, href } = contact;
 
-  const opensInNewTab = href.startsWith('http');
+  const opensInNewTab = href.startsWith("http");
 
   const [copied, setCopied] = useState(false);
   const resetTimerRef = useRef(null);
@@ -41,8 +41,8 @@ export default function ContactCard({ contact }) {
       <a
         className="contact-card__link"
         href={href}
-        target={opensInNewTab ? '_blank' : null}
-        rel={opensInNewTab ? 'noreferrer noopener' : null}
+        target={opensInNewTab ? "_blank" : null}
+        rel={opensInNewTab ? "noreferrer noopener" : null}
       />
       <div className={"contact-card__media"}>
         {Icon && <Icon className="contact-card__icon" />}
@@ -53,11 +53,11 @@ export default function ContactCard({ contact }) {
           {value != null && (
             <button
               className={`contact-card__copy-button ${
-                copied ? 'contact-card__copy-button--copied' : ''
+                copied ? "contact-card__copy-button--copied" : ""
               }`}
               type="button"
               onClick={handleCopy}
-              aria-label={copied ? 'Copied' : `Copy ${value}`}
+              aria-label={copied ? "Copied" : `Copy ${value}`}
             >
               <span className="contact-card__value">{value}</span>
 

@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-import './mobile-menu.css';
-import ContactIcon from '@icons/contact/contact-icon.jsx';
-import InfoIcon from '@icons/info/info-icon.jsx';
-import HomeIcon from '@icons/home/home-icon.jsx';
-import GitHubLogo from '@logos/github/github-logo.jsx';
-import Divider from '@ui/divider/divider.jsx';
-import { useLanguage } from '@i18n/use-language.js';
-import { site } from '@i18n/site.js';
+import "./mobile-menu.css";
+import ContactIcon from "@icons/contact/contact-icon.jsx";
+import InfoIcon from "@icons/info/info-icon.jsx";
+import HomeIcon from "@icons/home/home-icon.jsx";
+import GitHubLogo from "@logos/github/github-logo.jsx";
+import Divider from "@ui/divider/divider.jsx";
+import { useLanguage } from "@i18n/use-language.js";
+import { site } from "@config/site.js";
 
 export default function MobileMenu() {
   const { t } = useLanguage();
@@ -25,17 +25,17 @@ export default function MobileMenu() {
   };
 
   const getLinkClassName = ({ isActive }) =>
-    `mobile-menu__link ${isActive ? 'mobile-menu__link--selected' : ''}`;
+    `mobile-menu__link ${isActive ? "mobile-menu__link--selected" : ""}`;
 
   return (
     <div className="mobile-menu">
       <button
         className={`mobile-menu__button ${
-          isOpen ? 'mobile-menu__button--open' : ''
+          isOpen ? "mobile-menu__button--open" : ""
         }`}
         type="button"
         onClick={handleMenuToggle}
-        aria-label={isOpen ? 'Close mobile menu' : 'Open mobile menu'}
+        aria-label={isOpen ? "Close mobile menu" : "Open mobile menu"}
         aria-expanded={isOpen}
       >
         <span className="mobile-menu__button-line" />
@@ -45,7 +45,7 @@ export default function MobileMenu() {
 
       <div
         className={`mobile-menu__content ${
-          isOpen ? 'mobile-menu__content--open' : ''
+          isOpen ? "mobile-menu__content--open" : ""
         }`}
       >
         <NavLink

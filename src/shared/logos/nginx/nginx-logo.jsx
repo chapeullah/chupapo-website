@@ -1,4 +1,4 @@
-export default function NginxIcon({ className = '' }) {
+export default function NginxIcon({ className = "" }) {
   return (
     <svg
       className={`nginx-icon ${className}`}

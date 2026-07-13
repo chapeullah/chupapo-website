@@ -1,4 +1,4 @@
-export default function GitHubLogoOriginal({ className = '' }) {
+export default function GitHubLogoOriginal({ className = "" }) {
   return (
     <svg
       className={`logo github-logo-original ${className}`}

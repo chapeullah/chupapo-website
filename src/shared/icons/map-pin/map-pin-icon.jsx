@@ -1,6 +1,6 @@
-import './map-pin-icon.css';
+import "./map-pin-icon.css";
 
-export default function MapPinIcon({ className = '' }) {
+export default function MapPinIcon({ className = "" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

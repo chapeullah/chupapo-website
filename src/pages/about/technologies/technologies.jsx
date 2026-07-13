@@ -1,8 +1,8 @@
-import './technologies.css';
+import "./technologies.css";
 
-import { useLanguage } from '@i18n/use-language.js';
-import { technologyItems } from './technology-items.js';
-import Divider from '@ui/divider/divider.jsx';
+import { useLanguage } from "@i18n/use-language.js";
+import { technologyItems } from "./technology-items.js";
+import Divider from "@ui/divider/divider.jsx";
 
 export default function Technologies() {
   const { t } = useLanguage();
@@ -35,7 +35,7 @@ export default function Technologies() {
   return (
     <section className="technologies">
       <header className={"section-layout__header-center"}>
-        <span className="header-chip">{i18n.header.chip}</span>
+        <span className="section-layout__chip">{i18n.header.chip}</span>
         <h2 className="section-layout__title">{i18n.header.title}</h2>
         <p className="section-layout__description">{i18n.header.description}</p>
       </header>

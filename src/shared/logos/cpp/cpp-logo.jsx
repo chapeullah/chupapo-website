@@ -1,4 +1,4 @@
-export default function CppLogo({ className = '' }) {
+export default function CppLogo({ className = "" }) {
   return (
     <svg
       className={`logo cpp-logo ${className}`}

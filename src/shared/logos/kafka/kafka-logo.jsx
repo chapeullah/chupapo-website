@@ -1,4 +1,4 @@
-export default function KafkaLogo({ className = '' }) {
+export default function KafkaLogo({ className = "" }) {
   return (
     <svg
       className={`logo kafka-logo ${className}`}
