@@ -1,7 +1,7 @@
-import previewEnDark from "@assets/projects/chupapo-website/preview-en-dark.png";
-import previewEnLight from "@assets/projects/chupapo-website/preview-en-light.png";
-import previewRuDark from "@assets/projects/chupapo-website/preview-ru-dark.png";
-import previewRuLight from "@assets/projects/chupapo-website/preview-ru-light.png";
+import previewEnDark from "@assets/projects/chupapo-website/preview-en-dark1.png";
+import previewEnLight from "@assets/projects/chupapo-website/preview-en-light1.png";
+import previewRuDark from "@assets/projects/chupapo-website/preview-ru-dark1.png";
+import previewRuLight from "@assets/projects/chupapo-website/preview-ru-light1.png";
 
 export const chupapoWebsite = {
   id: "chupapo-website",

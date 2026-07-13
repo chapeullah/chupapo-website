@@ -9,7 +9,7 @@ import { getAge } from "@pages/about/profile/get-age.js";
 import { getExperienceYears } from "@pages/about/profile/get-experience-years.js";
 import { formatYears } from "@pages/about/profile/format-years.js";
 
-import profilePhoto from "@assets/photo.jpg";
+import profilePhoto from "@assets/photo.webp";
 import { Link } from "react-router-dom";
 
 export default function Profile() {
