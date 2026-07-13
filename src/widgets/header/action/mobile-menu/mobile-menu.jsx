@@ -97,7 +97,7 @@ export default function MobileMenu() {
           onClick={handleMenuClose}
         >
           <ContactIcon className="mobile-menu__link-icon" />
-          <span className="mobile-menu__link-label">{i18n.contact}</span>
+          <span className="mobile-menu__link-label">{i18n.contacts}</span>
         </NavLink>
       </div>
     </div>

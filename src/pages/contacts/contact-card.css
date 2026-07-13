@@ -148,6 +148,11 @@
 }
 
 @media (max-width: 600px) {
+  .contact-card {
+    padding: 16px;
+    gap: 16px;
+  }
+
   .contact-card__header {
     display: grid;
     grid-template-columns: max-content;
@@ -169,7 +174,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .contact-card__copy-button {
     display: none;
   }
