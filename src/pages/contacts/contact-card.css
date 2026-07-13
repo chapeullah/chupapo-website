@@ -156,7 +156,8 @@
   }
 
   .contact-card__title {
-    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
   }
 
   .contact-card__copy-button {
@@ -179,5 +180,6 @@
 
   .contact-card__title {
     font-size: 28px;
+    font-weight: 500;
   }
 }
