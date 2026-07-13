@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import './select-dropdown.css';
 
@@ -12,21 +12,30 @@ export default function SelectDropdown({
   ariaLabel,
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const currentItem =
     items.find((item) => item.code === selectedCode) ||
     items[0];
 
   useEffect(() => {
+    function handlePointerDown(event) {
+      if (!dropdownRef.current?.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
     function handleEscape(event) {
       if (event.key === 'Escape') {
         setIsOpen(false);
       }
     }
 
+    document.addEventListener('pointerdown', handlePointerDown);
     document.addEventListener('keydown', handleEscape);
 
     return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
       document.removeEventListener('keydown', handleEscape);
     };
   }, []);
@@ -36,17 +45,21 @@ export default function SelectDropdown({
     setIsOpen(false);
   }
 
+  function handleButtonClick() {
+    setIsOpen((prev) => !prev);
+  }
+
   return (
     <div
+      ref={dropdownRef}
       className="select-dropdown"
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
     >
       <button
         type="button"
         className="select-dropdown__button"
         aria-label={ariaLabel}
         aria-expanded={isOpen}
+        onClick={handleButtonClick}
       >
         {icon}
 
@@ -63,7 +76,10 @@ export default function SelectDropdown({
 
           <ul className="select-dropdown__list">
             {items.map((item) => (
-              <li className="select-dropdown__item" key={item.code}>
+              <li
+                className="select-dropdown__item"
+                key={item.code}
+              >
                 <button
                   type="button"
                   className={

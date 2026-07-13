@@ -9,7 +9,11 @@ export const site = {
   },
 
   contacts: {
-    email: "chapeullah@gmail.com",
+    email:
+    {
+      label: "Gmail",
+      value: "chapeullah@gmail.com",
+    },
 
     github: {
       label: "GitHub",
@@ -22,5 +26,10 @@ export const site = {
       username: "@chupapodev",
       link: "https://t.me/chupapodev",
     },
+
+    max: {
+      label: "MAX",
+      link: "https://max.ru/u/f9LHodD0cOIHu_w8Yteye0zl-U-e-6Y_v6MshzOTCvre1K_PinctpP02AZw",
+    }
   },
 };

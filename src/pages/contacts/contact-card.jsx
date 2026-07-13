@@ -50,20 +50,23 @@ export default function ContactCard({ contact }) {
       <div className={"contact-card__content"}>
         <div className={"contact-card__header"}>
           <h3 className={"contact-card__title"}>{name}</h3>
-          <button
-            className={`contact-card__copy-button ${
-              copied ? "contact-card__copy-button--copied" : ""
-            }`}
-            type="button"
-            onClick={handleCopy}
-            aria-label={copied ? "Copied" : `Copy ${value}`}
-          >
-            <span className="contact-card__value">{value}</span>
-            <span className="contact-card__copy-icon" aria-hidden="true">
-              <ClipboardIcon className="contact-card__clipboard-icon" />
-              <CheckmarkIcon className="contact-card__checkmark-icon" />
-            </span>
-          </button>
+          {value != null && (
+            <button
+              className={`contact-card__copy-button ${
+                copied ? 'contact-card__copy-button--copied' : ''
+              }`}
+              type="button"
+              onClick={handleCopy}
+              aria-label={copied ? 'Copied' : `Copy ${value}`}
+            >
+              <span className="contact-card__value">{value}</span>
+
+              <span className="contact-card__copy-icon" aria-hidden="true">
+                <ClipboardIcon className="contact-card__clipboard-icon" />
+                <CheckmarkIcon className="contact-card__checkmark-icon" />
+              </span>
+            </button>
+          )}
         </div>
         <p className={"contact-card__description"}>{description}</p>
       </div>

@@ -12,7 +12,7 @@ export default function LanguageSelector() {
       items={Languages}
       selectedCode={language}
       onChange={setLanguage}
-      icon={<LanguageIcon />}
+      icon={<LanguageIcon className="footer__selector-icon" />}
       ariaLabel="Select language"
     />
   );

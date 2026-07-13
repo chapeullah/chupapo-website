@@ -8,4 +8,13 @@ export const footer = {
   },
 
   copyright: `${site.copyrightSymbol} ${site.year} ${site.chupapo.brand}. All rights reserved.`,
+
+  pages: {
+    title: "Pages",
+
+    home: "Home",
+    projects: "Projects",
+    about: "About",
+    contacts: "Contacts",
+  },
 };

@@ -1,8 +1,8 @@
-import SelectDropdown from "../select-dropdown/select-dropdown.jsx";
-import ThemeIcon from "./icons/theme-icon.jsx";
+import SelectDropdown from '../select-dropdown/select-dropdown.jsx';
+import ThemeIcon from './icons/theme-icon.jsx';
 
-import { useLanguage } from "@i18n/use-language.js";
-import { useTheme } from "@theme/use-theme.js";
+import { useLanguage } from '@i18n/use-language.js';
+import { useTheme } from '@theme/use-theme.js';
 
 export default function ThemeSelector() {
   const { t } = useLanguage();
@@ -30,7 +30,7 @@ export default function ThemeSelector() {
       items={themeItems}
       selectedCode={theme}
       onChange={setTheme}
-      icon={<ThemeIcon />}
+      icon={<ThemeIcon className="footer__selector-icon" />}
       ariaLabel="Select theme"
     />
   );

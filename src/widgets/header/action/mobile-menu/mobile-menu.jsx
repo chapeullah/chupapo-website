@@ -64,7 +64,7 @@ export default function MobileMenu() {
           onClick={handleMenuClose}
         >
           <InfoIcon className="mobile-menu__link-icon" />
-          <span className="mobile-menu__link-label">Projects</span>
+          <span className="mobile-menu__link-label">{i18n.projects}</span>
         </NavLink>
 
         <NavLink

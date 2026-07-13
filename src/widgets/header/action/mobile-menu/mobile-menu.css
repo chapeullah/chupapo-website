@@ -25,10 +25,6 @@
   transform: translateX(100%);
   visibility: hidden;
   pointer-events: none;
-
-  transition:
-      transform 0.25s ease,
-      visibility 0.25s ease;
 }
 
 .mobile-menu__content--open {
@@ -102,11 +98,11 @@
 
 .mobile-menu__link--selected {
   background-color: var(--subtle-fill-secondary);
-  color: var(--color-accent);
+  color: var(--accent-text-primary);
 }
 
 .mobile-menu__link--selected .mobile-menu__link-icon {
-  color: var(--color-accent);
+  color: var(--accent-text-primary);
 }
 
 .mobile-menu__button-line {
@@ -115,10 +111,6 @@
 
   background-color: currentColor;
   border-radius: 999px;
-
-  transition:
-      transform 0.2s ease,
-      opacity 0.2s ease;
 }
 
 .mobile-menu__button--open .mobile-menu__button-line:nth-child(1) {

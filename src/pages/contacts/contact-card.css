@@ -11,7 +11,11 @@
   box-shadow: var(--card-shadow);
   background-color: var(--card-background-default);
 
+  gap: 48px;
+
   cursor: pointer;
+
+  overflow: hidden;
 }
 
 .contact-card:has(.contact-card__link:hover) {
@@ -29,7 +33,6 @@
 
   width: 100%;
 
-  margin-left: 48px;
   gap: 8px;
 }
 
@@ -38,6 +41,8 @@
   flex-direction: row;
 
   justify-content: space-between;
+
+  gap: 8px;
 }
 
 .contact-card__title {
@@ -140,4 +145,30 @@
 
 .contact-card__description {
   color: var(--color-text-tertiary);
+}
+
+@media (max-width: 600px) {
+  .contact-card__header {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-auto-rows: 1fr;
+    justify-content: start;
+    gap: 8px;
+  }
+
+  .contact-card__title {
+    margin: 0;
+  }
+
+  .contact-card__copy-button {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 24px;
+  }
 }

@@ -1,0 +1,12 @@
+.telegram-logo-original-mono-circle {
+  --telegram-background: var(--color-text-primary);
+  --telegram-icon: var(--color-bg);
+}
+
+.telegram-logo-original-mono-circle__background {
+  fill: var(--telegram-background);
+}
+
+.telegram-logo-original-mono-circle__icon {
+  fill: var(--telegram-icon);
+}

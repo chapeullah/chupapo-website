@@ -4,7 +4,7 @@ export const hero = {
   buttons: {
     contact: {
       title: "Связаться",
-      subtitle: "Написать мне",
+      subtitle: "Связь со мной",
     },
     github: {
       subtitle: "Открыть профиль",

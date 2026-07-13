@@ -12,6 +12,8 @@
   margin-inline: auto;
 
   gap: 16px;
+
+  padding: var(--spacing-default);
 }
 
 .contacts-page__title {

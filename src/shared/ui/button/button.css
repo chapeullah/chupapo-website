@@ -11,7 +11,5 @@
   text-decoration: none;
   user-select: none;
 
-  transition: var(--control-faster-duration) linear background-color;
-
   cursor: pointer;
 }

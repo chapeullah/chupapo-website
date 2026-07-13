@@ -1,4 +1,4 @@
-import { site } from "@i18n/site.js";
+import { site } from '@i18n/site.js';
 
 export const footer = {
   themeSelector: {
@@ -8,4 +8,13 @@ export const footer = {
   },
 
   copyright: `${site.copyrightSymbol} ${site.year} ${site.chupapo.brand}. Все права защищены.`,
+
+  pages: {
+    title: "Страницы",
+
+    home: "Главная",
+    projects: "Проекты",
+    about: "Обо мне",
+    contacts: "Контакты",
+  },
 };

@@ -14,7 +14,6 @@
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 .language-selector__button:hover {
@@ -46,7 +45,6 @@
   border-radius: 8px;
   transform: translateX(-50%);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
-  animation: language-menu-slide-up 0.22s ease forwards;
 }
 
 .language-selector__menu::before {
@@ -94,9 +92,6 @@
   font-weight: 500;
   text-align: left;
   cursor: pointer;
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease;
 }
 
 .language-selector__option:hover {

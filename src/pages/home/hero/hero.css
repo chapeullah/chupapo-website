@@ -156,6 +156,8 @@
   }
 
   .hero-left {
+    padding-top: var(--header-height);
+
     align-items: center;
     justify-content: flex-start;
     text-align: center;

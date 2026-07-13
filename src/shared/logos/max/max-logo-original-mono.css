@@ -1,0 +1,12 @@
+.max-logo-original-mono {
+  --max-background: var(--color-text-primary);
+  --max-icon: var(--color-bg);
+}
+
+.max-logo-original-mono__background {
+  fill: var(--max-background);
+}
+
+.max-logo-original-mono__icon {
+  fill: var(--max-icon);
+}

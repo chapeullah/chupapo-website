@@ -1,61 +1,115 @@
 .footer {
-  position: relative;
+  display: block;
 
-  color: var(--color-text-tertiary);
+  border-top: solid 1px var(--header-color-border);
+}
 
-  margin-top: auto;
-  padding: 36px;
-
+.footer__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  padding: 72px;
+
+  gap: 24px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo-container {
+  display: inline-flex;
   align-items: center;
 
-  transition: background-color 0.5s ease,
-  color 0.5s ease;
+  inline-size: fit-content;
+
+  margin-block: 12px;
+
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+
+  gap: 6px;
 }
 
-.footer__left {
-  display: flex;
-  justify-content: flex-start;
+.footer__logo {
+  display: block;
+
+  width: 28px;
+  height: 28px;
 }
 
-.theme-icon,
-.language-icon {
-  width: 14px;
-  height: 14px;
+.footer__brand {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer__icon {
+  display: block;
+
+  width: 16px;
+  height: 16px;
 
   color: var(--color-text-primary);
 }
 
-.footer__right {
+.footer__links {
+  margin-top: 12px;
   display: flex;
-  justify-content: flex-end;
+}
+
+.button.footer__link {
+  color: inherit;
+  display: flex;
+  padding: 8px;
+}
+
+.footer__pages-title {
+  color: var(--color-text-tertiary);
+  margin-block: 12px;
+
+  font-size: 14px;
+}
+
+.button.footer__pages-link {
+  display: flex;
+  inline-size: fit-content;
+
+  margin-inline: -11px;
+
+  color: var(--accent-text-primary);
+
+  justify-content: start;
+
+  font-size: 12px;
+  margin-bottom: 8px;
 }
 
 .footer__copyright {
-  display: flex;
-  margin: 0;
+  margin-top: 12px;
 
+  color: var(--color-text-tertiary);
   font-size: 12px;
   font-weight: 400;
-
-  justify-content: flex-end;
-
-  transition: color 0.5s ease;
 }
 
-@media (max-width: 1024px) {
-  .footer {
+.footer__selectors {
+  display: inline-flex;
+  margin-top: 12px;
+  gap: 20px;
+}
+
+.footer__selector-icon {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer__content {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
+    grid-template-rows: 1fr 1fr;
 
-  .footer__left {
-    justify-self: center;
-  }
-
-  .footer__right {
-    justify-content: center;
+    padding: 36px;
   }
 }
