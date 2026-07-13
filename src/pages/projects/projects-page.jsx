@@ -1,7 +1,7 @@
 import "./projects-page.css";
 
 import { projects } from "./projects.js";
-import ProjectCard from "../project-card/project-card.jsx";
+import ProjectCard from "./project-card/project-card.jsx";
 
 
 const listProjects = projects.map((project) => (

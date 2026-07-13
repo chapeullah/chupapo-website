@@ -6,7 +6,7 @@ import WorkExperience from "./work-experience/work-experience.jsx";
 
 export default function About() {
   return (
-    <div  className="about-page">
+    <div className="about-page">
       <div className="about-page__content">
         <Profile />
         <Technologies />
