@@ -1,9 +1,9 @@
-import SelectDropdown from "@ui/select-dropdown/index.js";
+import SelectDropdown from "@ui/select-dropdown";
 import ThemeIcon from "@icons/theme/theme-icon.jsx";
 
 import { useLanguage } from "@i18n/use-language.js";
 import { useTheme } from "@theme/use-theme.js";
-import { getThemes } from "@widgets/footer/get-themes.js";
+import { getThemes } from "./get-themes.js";
 
 export default function ThemeSelector() {
   const { t } = useLanguage();

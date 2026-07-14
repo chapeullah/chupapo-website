@@ -1,7 +1,7 @@
 import "./not-found-page.css";
 
 import { useLanguage } from "@i18n/use-language.js";
-import Button from "@ui/button/index.js";
+import Button from "@ui/button";
 import HomeIcon from "@icons/home/home-icon.jsx";
 import { navigation } from "@config/navigation.js";
 

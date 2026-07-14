@@ -1,8 +1,8 @@
 import "./nav-container.css"
 
-import AboutButton from "@widgets/header/nav/buttons/about-button.jsx";
-import HomeButton from "@widgets/header/nav/buttons/home-button.jsx";
-import ProjectsButton from "@widgets/header/nav/buttons/projects-button.jsx";
+import AboutButton from "./buttons/about-button.jsx";
+import HomeButton from "./buttons/home-button.jsx";
+import ProjectsButton from "./buttons/projects-button.jsx";
 
 import LogoContainer from "./logo/logo-container.jsx";
 

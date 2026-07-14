@@ -1,8 +1,8 @@
 import "./work-experience.css";
 
 import { useLanguage } from "@i18n/use-language.js";
-import Divider from "@ui/divider/divider.jsx";
-import ExperienceCard from "@pages/about/work-experience/experience-card.jsx";
+import Divider from "@ui/divider";
+import ExperienceCard from "./experience-card.jsx";
 
 export default function WorkExperience() {
   const { t } = useLanguage();

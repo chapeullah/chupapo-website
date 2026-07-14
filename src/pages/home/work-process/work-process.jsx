@@ -1,7 +1,7 @@
 import "./work-process.css";
 
 import { useLanguage } from "@i18n/use-language.js";
-import { workProcessSteps } from "@pages/home/work-process/work-process-steps.js";
+import { workProcessSteps } from "./work-process-steps.js";
 
 export default function WorkProcess() {
   const { t } = useLanguage();

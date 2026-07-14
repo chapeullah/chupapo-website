@@ -4,7 +4,7 @@ import Header from "@widgets/header";
 import Footer from "@widgets/footer";
 
 import "./app-layout.css";
-import ScrollReset from "@layouts/scroll-reset.jsx";
+import ScrollReset from "./scroll-reset.jsx";
 
 export default function AppLayout() {
   return (

@@ -1,4 +1,4 @@
-import Button from "@ui/button/index.js";
+import Button from "@ui/button";
 
 import GitHubLogo from "@logos/github/github-logo.jsx";
 import { useLanguage } from "@i18n/use-language.js";

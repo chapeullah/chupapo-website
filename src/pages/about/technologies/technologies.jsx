@@ -2,7 +2,7 @@ import "./technologies.css";
 
 import { useLanguage } from "@i18n/use-language.js";
 import { technologyItems } from "./technology-items.js";
-import Divider from "@ui/divider/divider.jsx";
+import Divider from "@ui/divider";
 
 export default function Technologies() {
   const { t } = useLanguage();

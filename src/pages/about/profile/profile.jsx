@@ -5,9 +5,9 @@ import { site } from "@config/site.js";
 
 import MapPinIcon from "@icons/map-pin/map-pin-icon.jsx";
 
-import { getAge } from "@pages/about/profile/get-age.js";
-import { getExperienceYears } from "@pages/about/profile/get-experience-years.js";
-import { formatYears } from "@pages/about/profile/format-years.js";
+import { getAge } from "./get-age.js";
+import { getExperienceYears } from "./get-experience-years.js";
+import { formatYears } from "./format-years.js";
 
 import profilePhoto from "@assets/photo.webp";
 import { Link } from "react-router-dom";

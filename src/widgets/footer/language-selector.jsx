@@ -1,4 +1,4 @@
-import SelectDropdown from "@ui/select-dropdown/index.js";
+import SelectDropdown from "@ui/select-dropdown";
 import LanguageIcon from "@icons/language/language-icon.jsx";
 
 import { Languages } from "@i18n/languages.js";

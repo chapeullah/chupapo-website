@@ -6,7 +6,7 @@ import ContactIcon from "@icons/contact/contact-icon.jsx";
 import InfoIcon from "@icons/info/info-icon.jsx";
 import HomeIcon from "@icons/home/home-icon.jsx";
 import GitHubLogo from "@logos/github/github-logo.jsx";
-import Divider from "@ui/divider/divider.jsx";
+import Divider from "@ui/divider";
 import { useLanguage } from "@i18n/use-language.js";
 import { navigation } from "@config/navigation.js";
 import { site } from "@config/site.js";

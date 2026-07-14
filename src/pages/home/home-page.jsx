@@ -1,4 +1,4 @@
-import Divider from "@ui/divider/divider.jsx";
+import Divider from "@ui/divider";
 
 import Product from "./product/product.jsx";
 import Hero from "./hero/hero.jsx";

@@ -2,9 +2,9 @@ import "./styles/reset.css";
 import "./styles/global.css";
 import "./styles/scrollbar.css";
 
-import "./styles/shared/card.css";
-import "./styles/shared/icon.css";
-import "./styles/shared/section-layout.css";
+import "../shared/styles/card.css";
+import "../shared/styles/icon.css";
+import "../shared/styles/section-layout.css";
 
 import "./styles/variables/colors.css";
 import "./styles/variables/sizes.css";

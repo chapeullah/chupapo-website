@@ -2,8 +2,8 @@ import "./contacts-page.css";
 
 import { useLanguage } from "@i18n/use-language.js";
 
-import ContactCard from "@pages/contacts/contact-card.jsx";
-import { getContacts } from "@pages/contacts/get-contacts.js";
+import ContactCard from "./contact-card.jsx";
+import { getContacts } from "./get-contacts.js";
 
 export default function ContactsPage() {
   const { t } = useLanguage();

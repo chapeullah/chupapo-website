@@ -3,7 +3,7 @@ import "./contact-card.css";
 import ClipboardIcon from "@icons/clipboard/clipboard-icon.jsx";
 import CheckmarkIcon from "@icons/checkmark/checkmark-icon.jsx";
 
-import { useCopyToClipboard } from "@features/copy-to-clipboard";
+import { useCopyToClipboard } from "@lib/clipboard";
 
 export default function ContactCard({ contact }) {
   const { name, value, description, Icon, href } = contact;

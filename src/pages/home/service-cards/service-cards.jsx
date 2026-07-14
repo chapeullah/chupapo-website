@@ -1,6 +1,6 @@
 import "./service-cards.css";
 
-import Divider from "@ui/divider/divider.jsx";
+import Divider from "@ui/divider";
 import { useLanguage } from "@i18n/use-language.js";
 import { serviceItems } from "./service-items.js";
 

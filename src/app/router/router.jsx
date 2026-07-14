@@ -4,11 +4,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "@layouts";
 import { navigation } from "@config/navigation.js";
 
-const HomePage = lazy(() => import("@pages/home/index.js"));
-const NotFoundPage = lazy(() => import("@pages/not-found/index.js"));
-const AboutPage = lazy(() => import("@pages/about/index.js"));
-const ContactsPage = lazy(() => import("@pages/contacts/index.js"));
-const ProjectsPage = lazy(() => import("@pages/projects/index.js"));
+const HomePage = lazy(() => import("@pages/home"));
+const NotFoundPage = lazy(() => import("@pages/not-found"));
+const AboutPage = lazy(() => import("@pages/about"));
+const ContactsPage = lazy(() => import("@pages/contacts"));
+const ProjectsPage = lazy(() => import("@pages/projects"));
 
 function LazyPage({ component: Page }) {
   return (
