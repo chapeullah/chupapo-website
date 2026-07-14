@@ -34,7 +34,7 @@ This repository contains the source code for Chupapo website, created to present
 
 ## Installation
 
-Requires **Node.js 22.12 or newer**, to run this project:
+Requires **Node.js 22.12 or newer** to run this project:
 
 **1. Clone the repository**
 
