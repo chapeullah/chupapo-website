@@ -2,7 +2,7 @@
   Chupapo Website
 </h1>
 
-<p align="center">
+<p>
   <a href="https://chupapo.com/">chupapo.com</a>
 </p>
 
