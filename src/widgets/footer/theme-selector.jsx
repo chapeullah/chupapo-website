@@ -1,8 +1,9 @@
 import SelectDropdown from "@ui/select-dropdown/index.js";
-import ThemeIcon from "./icons/theme-icon.jsx";
+import ThemeIcon from "@icons/theme/theme-icon.jsx";
 
 import { useLanguage } from "@i18n/use-language.js";
 import { useTheme } from "@theme/use-theme.js";
+import { getThemes } from "@widgets/footer/get-themes.js";
 
 export default function ThemeSelector() {
   const { t } = useLanguage();
@@ -10,24 +11,9 @@ export default function ThemeSelector() {
 
   const i18n = t.footer.themeSelector;
 
-  const themeItems = [
-    {
-      code: "light",
-      label: i18n.light,
-    },
-    {
-      code: "dark",
-      label: i18n.dark,
-    },
-    {
-      code: "system",
-      label: i18n.system,
-    },
-  ];
-
   return (
     <SelectDropdown
-      items={themeItems}
+      items={getThemes(i18n)}
       selectedCode={theme}
       onChange={setTheme}
       icon={<ThemeIcon className="footer__selector-icon" />}

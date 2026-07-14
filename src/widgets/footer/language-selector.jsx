@@ -1,5 +1,5 @@
 import SelectDropdown from "@ui/select-dropdown/index.js";
-import LanguageIcon from "./icons/language-icon.jsx";
+import LanguageIcon from "@icons/language/language-icon.jsx";
 
 import { Languages } from "@i18n/languages.js";
 import { useLanguage } from "@i18n/use-language.js";

@@ -5,6 +5,14 @@ body,
   margin: 0;
 }
 
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
 *,
 *::before,
 *::after {

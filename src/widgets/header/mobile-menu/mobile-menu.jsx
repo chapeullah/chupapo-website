@@ -13,8 +13,7 @@ import { site } from "@config/site.js";
 
 const DesktopMediaQuery = "(min-width: 1025px)";
 const MenuId = "mobile-navigation";
-const FocusableSelector =
-  "a[href], button:not([disabled]), [tabindex]:not([tabindex=\"-1\"])";
+const FocusableSelector = "a[href], button:not([disabled]), [tabindex]:not([tabindex=\"-1\"])";
 
 export default function MobileMenu() {
   const { t } = useLanguage();

@@ -15,8 +15,8 @@ export default function Hero() {
   return (
     <section className="hero" data-cube-tracking-area>
       <div className="hero-left">
-        <h1 className={"hero-left__label"}>{site.chupapo.brand}</h1>
-        <p className={"hero-left__text"}>{i18n.description}</p>
+        <h1 className="hero-left__label">{site.chupapo.brand}</h1>
+        <p className="hero-left__text">{i18n.description}</p>
         <div className="hero-buttons">
           <ContactButton />
           <GitHubButton />

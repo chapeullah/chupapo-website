@@ -18,6 +18,7 @@ export default defineConfig({
       "@assets": fileURLToPath(new URL("./src/assets", import.meta.url)),
       "@config": fileURLToPath(new URL("./src/shared/config", import.meta.url)),
       "@lib": fileURLToPath(new URL("./src/shared/lib", import.meta.url)),
+      "@features": fileURLToPath(new URL("./src/features", import.meta.url)),
     },
   },
 });

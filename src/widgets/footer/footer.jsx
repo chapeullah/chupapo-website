@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 
 import "./footer.css";
 
-import LanguageSelector from "./language-selector/language-selector.jsx";
-import ThemeSelector from "./theme-selector/theme-selector.jsx";
 import { getPages } from "./get-pages.js";
 
 import { useLanguage } from "@i18n/use-language.js";
@@ -13,7 +11,10 @@ import TelegramLogoOriginalMono from "@logos/telegram/telegram-logo-original-mon
 import MaxLogoOriginalMono from "@logos/max/max-logo-original-mono.jsx";
 import { navigation } from "@config/navigation.js";
 import { site } from "@config/site.js";
-import Button from "@ui/button/index.js";
+import Button from "@ui/button";
+
+import LanguageSelector from "./language-selector.jsx";
+import ThemeSelector from "./theme-selector.jsx";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -77,7 +78,6 @@ export default function Footer() {
 
         <div className="footer__column">
           <span className="footer__pages-title">{i18n.pages.title}</span>
-
           {pages.map((page) => (
             <Button
               key={page.id}

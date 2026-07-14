@@ -25,10 +25,6 @@
   background-color: var(--subtle-fill-secondary);
 }
 
-.select-dropdown__icon {
-  flex: 0 0 auto;
-}
-
 .select-dropdown__title {
   line-height: 1;
   white-space: nowrap;

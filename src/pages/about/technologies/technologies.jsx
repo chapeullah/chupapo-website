@@ -34,7 +34,7 @@ export default function Technologies() {
 
   return (
     <section className="technologies">
-      <header className={"section-layout__header-center"}>
+      <header className="section-layout__header-center">
         <span className="section-layout__chip">{i18n.header.chip}</span>
         <h2 className="section-layout__title">{i18n.header.title}</h2>
         <p className="section-layout__description">{i18n.header.description}</p>

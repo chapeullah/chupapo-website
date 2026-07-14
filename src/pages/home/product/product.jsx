@@ -10,7 +10,7 @@ export default function Product() {
   const i18n = t.product;
 
   return (
-    <section id={"product"} className="product">
+    <section id="product" className="product">
       <div className="product__header section-layout__header">
         <h1 className="product__header-label section-layout__header-label">
           {i18n.header.label}

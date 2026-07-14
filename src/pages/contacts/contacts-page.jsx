@@ -13,8 +13,8 @@ export default function ContactsPage() {
 
   return (
     <div className="contacts-page">
-      <h1 className={"contacts-page__title"}>{i18n.header}</h1>
-      <section className={"contacts-page__contacts"}>
+      <h1 className="contacts-page__title">{i18n.header}</h1>
+      <section className="contacts-page__contacts">
         {contacts.map((contact) => (<ContactCard key={contact.id} contact={contact} />))}
       </section>
     </div>
