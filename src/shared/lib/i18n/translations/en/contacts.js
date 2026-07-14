@@ -4,15 +4,15 @@ export const contacts = {
   items: {
     gmail: {
       description:
-        "Send project requirements, technical specifications, reference materials, or collaboration proposals that require a detailed response.",
+        "Tell me about your task and attach any materials you already have.",
     },
     telegram: {
       description:
-        "Suitable for quick questions, discussing project details, receiving an initial estimate, and staying in touch during development.",
+        "We can discuss the idea, requirements, timeline, and work format.",
     },
     max: {
       description:
-        "An alternative messenger for discussing project details, sharing updates, and maintaining ongoing communication.",
+        "Contact me about a project, collaboration, or any work-related question.",
     },
   }
 };
