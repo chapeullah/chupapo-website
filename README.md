@@ -18,7 +18,7 @@ This repository contains the source code for Chupapo website, created to present
 
 ## Features
 
-- Multi-page layout
+- Single-page application with multiple client-side routes
 - Responsive design
 - Light and dark theme support
 - Multi-language localization
@@ -33,6 +33,9 @@ This repository contains the source code for Chupapo website, created to present
 - CSS
 
 ## Installation
+
+Requires Node.js 20.19+ or 22.12+ and npm.
+
 To run this project locally:
 
 **1. Clone the repository**
