@@ -1,9 +1,9 @@
-<h1>
+<h1 align="center">
   Chupapo Website
 </h1>
 
-<p>
-  <strong>Link: </strong><a href="https://chupapo.com/">chupapo.com</a>
+<p align="center">
+  <a href="https://chupapo.com/">chupapo.com</a>
 </p>
 
 This repository contains the source code for Chupapo website, created to present custom **software development services**.
