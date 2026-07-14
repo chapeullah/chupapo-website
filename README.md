@@ -22,6 +22,7 @@ This repository contains the source code for Chupapo website, created to present
 - Responsive design
 - Light and dark theme support
 - Multi-language localization
+- [Feature-Sliced Design](fsd.how)
 
 ## Built With
 
