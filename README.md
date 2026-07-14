@@ -3,7 +3,7 @@
 </h1>
 
 <p>
-  <a href="https://chupapo.com/">chupapo.com</a>
+  <strong>Link: </strong><a href="https://chupapo.com/">chupapo.com</a>
 </p>
 
 This repository contains the source code for Chupapo website, created to present custom **software development services**.
