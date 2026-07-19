@@ -1,5 +1,7 @@
 import "./contact-card.css";
 
+import { useRef } from "react";
+
 import ClipboardIcon from "@icons/clipboard/clipboard-icon.jsx";
 import CheckmarkIcon from "@icons/checkmark/checkmark-icon.jsx";
 
@@ -11,9 +13,21 @@ export default function ContactCard({ contact }) {
   const opensInNewTab = href.startsWith("http");
 
   const { copied, copy } = useCopyToClipboard();
+  const valueRef = useRef(null);
 
   function handleCopy(event) {
     event.stopPropagation();
+
+    const selection = window.getSelection();
+
+    if (selection && valueRef.current) {
+      const range = document.createRange();
+
+      range.selectNodeContents(valueRef.current);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+
     void copy(value);
   }
 
@@ -40,7 +54,9 @@ export default function ContactCard({ contact }) {
               onClick={handleCopy}
               aria-label={copied ? "Copied" : `Copy ${value}`}
             >
-              <span className="contact-card__value">{value}</span>
+              <span ref={valueRef} className="contact-card__value">
+                {value}
+              </span>
 
               <span className="contact-card__copy-icon" aria-hidden="true">
                 <ClipboardIcon className="contact-card__clipboard-icon" />
