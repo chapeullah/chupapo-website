@@ -30,7 +30,7 @@ This repository contains the source code for Chupapo website, created to present
 
 ## Installation
 
-Requires **Node.js 22.12 or newer** to run this project locally:
+Requires **[Node.js](https://nodejs.org/) 22.12 or newer** to run this project locally:
 
 **1. Clone the repository**
 
